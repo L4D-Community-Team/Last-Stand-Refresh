@@ -5,7 +5,7 @@ Minimalist legacy branch of public repo with gamebreaker and other high priority
 Files Kerry can diff in under 5 minutes, and implement on a monthly basis.
 
 # Content
-See [Hotfix_Update_01.md](https://github.com/High-Priority-Fixes/tree/master/changelogs/Hotfix_Update_01.md).
+See [Hotfix_Update_01.md](https://github.com/L4D2-Community-Update/High-Priority-Fixes/blob/main/changelogs/Hotfix_Update_01.md).
 
 Major gamebreaking bugs such as Last Stand 1's intro death, Dead Center 1's Tank spawn, No Mercy 1's ladder shortcut, and unteleportable permanent stuck spots are the extremely finite focus here.
 
