@@ -277,6 +277,7 @@ make_clip( "_cliprework_skylighta", "Survivors", 1, "-192 -193 -23", "192 191 57
 make_clip( "_cliprework_skylightb", "Survivors", 1, "-541 -189 -1", "547 195 32", "4173 -2627 793" );
 make_clip( "_cliprework_skylightc", "Survivors", 1, "-194 -544 -1", "190 544 32", "2274 -672 793" );
 make_clip( "_cliprework_skylightd", "Survivors", 1, "-1017 -167 0", "1018 149 32", "1465 -3418 794", "0 45 0" );
+make_clip( "_permstuck_colddrinks", "Everyone", 1, "-1 -1 -1", "1 1 1", "736 -548 363" );
 
 con_comment( "FIX:\tMoved an exposed stairwell hurt trigger down inside a vending machine." );
 
@@ -896,6 +897,7 @@ make_clip( "_fallenlog_shrub_infected", "SI Players and AI", 1, "-182 -383 -99",
 make_clip( "_chargerassist_commonhop1", "Survivors", 1, "-155 -16 0", "117 5 864", "-7093 6280 160" );
 make_clip( "_chargerassist_commonhop2", "Survivors", 1, "-49 -170 0", "63 134 864", "-7093 6452 160", "0 -3 0" );
 make_clip( "_booster_powerpole", "Survivors", 1, "-9 -8 0", "9 10 582", "-7630 6718 444" );
+patch_ladder( "-6084.5 6272 90", "6 0 0" );
 
 make_prop( "dynamic", "_keepcalmgator", "models/props_fairgrounds/alligator.mdl", "-5274 7386 -19", "0 150 0", "shadow_no", "solid_no" );
 
@@ -958,6 +960,7 @@ make_clip( "_nav_trailertree", "Survivors", 1, "-48 -26 0", "78 36 742", "-7742 
 // This map is clipped like a tunnel. No known gamebreaking exploits.
 
 make_clip( "_boat_smoother", "Everyone", 1, "-16 -24 0", "16 24 30", "-7863 5391 -8", "-10 -30 0" );
+make_clip( "_permstuck_behindrocks", "Everyone", 1, "-14 -40 -24", "14 40 24", "-5326 5524 16" );
 
 			if ( g_BaseMode == "coop" || g_BaseMode == "realism" )
 			{
@@ -1683,7 +1686,7 @@ make_clip( "_cliprework_missingno", "Survivors", 1, "-164 -272 0", "172 240 1626
 				// FIXES
 
 make_clip(	"_nav_eventsign",		"Survivors",	1,	"-4 -10 -908",		"4 10 908",		"-8552 -6310 756" );
-patch_ladder( "-9260 -5130 -152", "0 14 0" );
+patch_ladder( "-9260 -5130 -152", "1 14 0" );
 
 				break;
 			}
@@ -2134,8 +2137,8 @@ make_clip( "_ghostgrief_noio_gate1", "Everyone", 1, "-3 -39 0", "3 39 32", "2547
 make_clip( "_ghostgrief_noio_gate2", "Everyone", 1, "-3 -39 0", "3 39 32", "5187 5445 -950" );
 make_clip( "_booster_electricalbox", "Survivors", 1, "-28 -5 -20", "32 5 836", "917 3163 -4" );
 make_clip( "_booster_acunit", "Survivors", 1, "-64 -32 0", "64 32 721", "743 3135 111" );
-make_clip( "_dispsteps_smoother1", "Everyone", 1, "-95 -104 -4", "150 104 4", "2553 -936 -186", "33.5 0 0" );
-make_clip( "_dispsteps_smoother2", "Everyone", 1, "-95 -104 -4", "135 104 4", "2201 -936 -58", "33.5 0 0" );
+make_clip( "_dispsteps_smoother1", "Everyone", 1, "-95 -104 -4", "150 104 4", "2553 -936 -185", "34 0 0" );
+make_clip( "_dispsteps_smoother2", "Everyone", 1, "-95 -104 -4", "135 104 4", "2201 -936 -57", "34 0 0" );
 make_clip( "_plankescape_smoother", "Everyone", 1, "-82 -30 0", "143 31 8", "190 2976 120", "45 0 0" );
 make_clip( "_permstuck_orangefence", "Everyone", 1, "-32 -32 0", "32 32 64", "2188 1856 -64" );
 make_clip( "_booster_awningnlights", "Survivors", 1, "-124 -41 0", "129 56 762", "1264 3705 8" );
@@ -2561,7 +2564,7 @@ make_clip( "_cliprework_subwayupper", "Survivors", 1, "-201 -94 0", "215 90 4322
 make_clip( "_cliprework_subwayledge", "Survivors", 1, "-218 -18 132", "233 3 4322", "3014 4017 156" );
 make_clip( "_cliprework_subwayfence", "Survivors", 1, "-5 -143 0", "4 149 3926", "3268 4141 552", "0 -8 0" );
 make_clip( "_subwins_smoother", "Everyone", 1, "-120 -9 0", "120 9 3", "2968 4103 48" );
-make_trighurt( "_instakill_griefroom", "Survivor", "-512 -1080 0", "384 1080 125", "1152 936 8" );
+make_trighurt( "_instakill_griefroom", "Survivor", "-512 -1080 0", "384 1080 17", "1152 936 202" );
 
 con_comment( "FIX:\tFans will now rotate. Server-side entities used to have Client-side Animation spawnflag." );
 
@@ -2989,6 +2992,7 @@ make_clip( "_booster_enginecar", "Survivors", 1, "-180 -88 -180", "114 94 463", 
 make_clip( "_booster_telepole1", "Survivors", 1, "-8 -8 -80", "8 8 234", "-1111 -6480 694" );
 make_clip( "_booster_telepole2", "Survivors", 1, "-8 -8 -80", "8 8 464", "50 -5432 464" );
 make_clip( "_clipgap_survivoronly", "Survivors", 1, "-100 -24 -80", "108 40 1072", "1428 -4936 -144" );
+make_clip( "_permstuck_boxwreck_weird", "Everyone", 1, "-1 -1 0", "1 1 1", "-2836.7 -7030 128" );
 
 con_comment( "LOGIC:\tBile anti-skip made 2 breakwalls indestructible until howitzer fires." );
 
@@ -3783,6 +3787,7 @@ make_clip(	"_booster_pipeb",		"Survivors",	1,	"-12 -7 -32",		"24 29 216",		"302 
 make_clip( "_chairbodypile_smoother", "Everyone", 1, "-50 -25 0", "25 40 8", "500 5301 295", "10 0 -15" );
 make_clip( "_hallwayguard_right", "Everyone", 1, "-14 15 0", "9 16 128", "693 5566.3 296", "0 45 0" );
 make_clip( "_hallwayguard_left", "Everyone", 1, "-9 16 0", "14 15 128", "667.5 5679.3 296", "0 -45 0" );
+make_clip( "_permstuck_endrubble", "SI Players and AI", 1, "-34 -17 0", "17 17 64", "2742 989 152" );
 
 make_prop( "dynamic", "_cosmetic_wallpaper", "models/props_unique/zombiebreakwallexteriorairport01_main.mdl", "2507.95 3263.99 216", "0 180 0", "shadow_no" );
 make_prop( "dynamic", "_cosmetic_wallblock", "models/props_unique/zombiebreakwallhospitalexterior01_main.mdl", "2507.99 3263.99 252", "0 180 0", "shadow_no" );
@@ -4042,6 +4047,7 @@ make_clip( "_nav_bridgecollapsea", "Survivors", 1, "-9 -10 0", "19 19 310", "585
 make_clip( "_nav_bridgecollapseb", "Survivors", 1, "-9 -10 0", "19 19 310", "6000 -12656 -41.3", "-5 0 0" );
 make_clip( "_stuckwarp_endtunnel", "Everyone", 1, "-18 -60 0", "48 68 84", "968 -12932 20" );
 make_clip( "_permstuck_terribadcliff", "Everyone", 1, "-68 -1 0", "68 46 148", "7317 -11487 451" );
+make_clip( "_permstuck_shedtree", "Everyone", 1, "-14 -14 -164", "14 14 1640", "3085 -14120 88" );
 
 con_comment( "MOVER:\tClip \"_bridge_dynamic_clip\" simulated to move when bridge collapses." );
 
@@ -4343,6 +4349,9 @@ make_clip( "_permstuck_tree_h", "Everyone", 1, "-17 -17 -32", "17 17 0", "984 66
 make_clip( "_permstuck_tree_i", "Everyone", 1, "-17 -17 -32", "17 17 0", "1151 6258 932" );
 make_clip( "_permstuck_tree_j", "Everyone", 1, "-17 -17 -32", "17 17 0", "1153 5929 981" );
 make_clip( "_stuckwarp_yellowbarrels", "Everyone", 1, "-108 -16 0", "59 13 128", "4861 2732 608", "0 -17 0" );
+make_clip( "_permstuck_taito_ftw", "Everyone", 1, "-8 -8 -8", "28 24 28", "2552 2292 460" );
+make_clip( "_shortcut_eventfence", "Survivors", 1, "-32 -80 0", "32 2 345", "928 5775 415" );
+make_clip( "_permstuck_eventfence", "Everyone", 1, "-8 -40 0", "8 40 32", "905 5829 341" );
 patch_spawninfront( "78 8574 -405", "-70 -8 0", "70 8 256" );
 
 			if ( g_BaseMode == "coop" || g_BaseMode == "realism" )
@@ -4400,7 +4409,7 @@ make_clip(	"_permstuck_treea",		"Everyone",	1,	"-18 -17 -446",		"18 17 446",		"-
 make_clip(	"_permstuck_treeb",		"Everyone",	1,	"-30 -75 -476.5",	"30 75 476.5",		"-3343 -5975 854" );
 make_clip(	"_permstuck_treed",		"Everyone",	1,	"-22 -20.5 -91.5",	"22 20.5 91.5",		"-3310 -3600 405" );
 make_clip(	"_permstuck_treec",		"Everyone",	1,	"-30 -16 -110",		"30 16 110",		"-3305 -4815 442" );
-make_clip(	"_permstuck_jaynjer",		"Everyone",	1,	"-42 -42 -32",		"42 42 10",		"-4495 -4584 719" );
+make_clip(	"_permstuck_jaynjer",		"Everyone",	1,	"-42 -52 -32",		"42 42 90",		"-4495 -4584 719" );
 make_clip( "_hangcancel_perimeter", "Survivors", 1, "-25 -44 0", "28 94 1484", "13 -3620 896", "0 -8 0" );
 make_clip( "_sneaky_hunter", "SI Players", 1, "-19 -1242 0", "37 615 112", "5666 -5383 272" );
 make_clip( "_permstuck_shrubtreea", "Everyone", 1, "-17 -17 -17", "17 17 17", "-5080 -5712 970" );
@@ -4661,6 +4670,8 @@ while ( wep_spawners = Entities.FindByClassname( wep_spawners, "weapon_*" ) )
 				devchap( "BASE VERSUS" );
 
 				// FIXES
+
+				make_clip( "_permstuck_treefence", "Everyone", 1, "-8 -8 -27", "8 8 27", "-2552 4572 482" );
 
 				break;
 			}
