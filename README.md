@@ -2,7 +2,7 @@
 Minimalist legacy branch of public repo with gamebreaker and other high priority fixes
 
 # Goal
-Files Kerry can diff in under 5 minutes, and implement on a monthly basis.
+Files Kerry can diff in under 5 minutes, ~~and implement on a monthly basis~~ probably as a one-time deal since we really don't produce that many high priority fixes.
 
 # Content
 See [Hotfix_Update_01.md](https://github.com/L4D2-Community-Update/High-Priority-Fixes/blob/main/changelogs/Hotfix_Update_01.md).
