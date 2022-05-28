@@ -796,7 +796,7 @@ make_brush( "_losfix_opening_trailer",	"-100 -1 -15",	"100 1 15",	"-3332 417 -1"
 make_brush( "_losfix_start_truck1",	"-45 -1 -12",	"45 1 12",	"-5171 1649 139" );
 make_brush( "_losfix_start_truck2",	"-1 -45 -12",	"1 46 12",	"-5214 1602 139" );
 make_clip(	"_bridgehouse_bush_permstuck",	"SI Players",	1,	"-27 -74 -62",		"27 74 62",		"-1771 -162 60" );
-make_clip(	"_lanternbush_permstuck",	"SI Players",	1,	"-26 -18 -24",		"26 18 24",		"-843 -2834 13" );
+make_clip(	"_lanternbush_permstuck",	"SI Players",	1,	"-28 -14 -24",		"28 14 24",		"-832 -2840 13" );
 make_clip(	"_endhaybails_collisiona",	"SI Players",	1,	"-42 -66 -24",		"42 66 24",		"5126 -3967 378" );
 make_clip(	"_endhaybails_collisionb",	"SI Players",	1,	"-42 -25 -24",		"42 25 24",		"5126 -3967 426" );
 make_clip( "_ladder_afterplankfront_clip", "SI Players", 1, "7 -154 16", "15 43 32", "381 -4026 79" );
