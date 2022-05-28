@@ -94,6 +94,7 @@
 				"versus_boss_spawning"
 				{
 					"spawn_pos_min"		"0.79"
+					"spawn_pos_max"		"0.90"
 					"tank_chance"		"0.3"
 					"witch_chance"		"0.3"
 				}
