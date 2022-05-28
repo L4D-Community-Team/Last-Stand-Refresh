@@ -961,6 +961,7 @@ make_clip( "_nav_trailertree", "Survivors", 1, "-48 -26 0", "78 36 742", "-7742 
 
 make_clip( "_boat_smoother", "Everyone", 1, "-16 -24 0", "16 24 30", "-7863 5391 -8", "-10 -30 0" );
 make_clip( "_permstuck_behindrocks", "Everyone", 1, "-14 -40 -24", "14 40 24", "-5326 5524 16" );
+make_clip( "_permstuck_cypressknees", "Everyone", 1, "-1 -1 -25", "1 1 25", "-4399 3202 9" );
 
 			if ( g_BaseMode == "coop" || g_BaseMode == "realism" )
 			{
@@ -1022,6 +1023,7 @@ make_clip(	"_endhaybails_collision",	"SI Players and AI",	1,	"-42 -66 -24",		"42
 make_clip(	"_permstuck_fridge",		"Everyone",	1,	"-12 -10 -73",		"12 50 0",		"-3791 -2972 136" );
 make_clip( "_trailerhouse_smoother1", "Everyone", 1, "-8 -213 0", "25 219 14", "-3294 -324 -8", "45 15 0" );
 make_clip( "_trailerhouse_smoother2", "Everyone", 1, "-8 -33 0", "25 59 14", "-3298 -549 -8", "45 -75 0" );
+make_clip( "_permstuck_cypressknees", "Everyone", 1, "-1 -1 -29", "1 1 29", "-702 -2868 14" );
 make_clip( "_skyboxshield_endsafehouse", "SI Players", 1, "-185 -50 -40", "183 50 82", "5067 -3777 552" );
 
 make_prop( "dynamic", "_permstuck_cratebot", "models/props_crates/static_crate_40.mdl", "-3749.85 -183.67 -3.164", "0 0 0" );
@@ -2008,6 +2010,7 @@ make_clip(	"_permstuck_fence",		"Survivors",	1,	"-24 -48 0",		"24 48 92",		"-139
 make_clip(	"_fence_onea",			"Survivors",	1,	"-450 -21 0",		"345 111 1216",		"96 1425 496" );
 make_clip(	"_fence_oneb",			"Survivors",	1,	"-16 -325 0",		"16 325 1216",		"-356 1088 496" );
 make_clip(	"_fence_two",			"Survivors",	1,	"-420 -177 0",		"24 177 1216",		"69 592 544" );
+make_clip(	"_permstuck_floodlight",		"Everyone",	1,	"-10 -8 -43",		"10 8 43",		"2012 1626 555" );
 make_clip(	"_commonhop_endfence",		"Survivors",	1,	"-5 -128 0",		"5 128 1200",		"-3874 1647 716" );
 make_clip(	"_commonhop_busa",		"Survivors",	1,	"-216 -20 0",		"216 20 1200",		"-3653 2324 705" );
 make_clip(	"_commonhop_busb",		"Survivors",	1,	"-9 -777 -64",		"9 777 444",		"-3432 1527 926" );
@@ -3332,6 +3335,7 @@ make_clip( "_clipextend_padlockgate", "Survivors", 1, "-14 -311 0", "14 405 1102
 make_clip( "_permstuck_openedrockcliff", "SI Players", 1, "-17 -17 0", "17 17 32", "-9247 -3950 412" );
 make_clip( "_permstuck_fatcliffladder1", "SI Players", 1, "-17 -34 0", "17 17 32", "-8302 -3322 383" );
 make_clip( "_permstuck_fatcliffladder2", "SI Players", 1, "-17 -34 0", "17 17 32", "-8224 -3527 378" );
+make_clip( "_permstuck_housesiderock", "Everyone", 1, "-13 -34 -37", "13 13 37", "-6869 -2445 15" );
 make_clip( "_chargerassist_brokenwall", "Survivors", 1, "-128 0 0", "128 64 275", "-2480 1104 221" );
 make_clip( "_booster_watertowerclip", "Survivors", 1, "-538 -16 0", "348 66 900", "-6472 -871 1024", "0 15 0" );
 
@@ -4336,6 +4340,8 @@ make_clip(	"_permstuck_longhedge_b",	"Everyone",	1,	"-32 -128 -128",	"100 64 128
 make_clip(	"_permstuck_longhedge_c",	"Everyone",	1,	"-32 -32 -32",		"32 32 32",		"1100 3444 506" );
 make_clip(	"_permstuck_longhedge_d",	"Everyone",	1,	"-32 -32 -32",		"32 32 32",		"1072 3879 464" );
 make_clip(	"_permstuck_longhedge_e",	"Everyone",	1,	"-32 -555 -17",		"88 555 128",		"1100 4480 324" );
+make_clip(	"_permstuck_longhedge_f",	"Everyone",	1,	"-32 -32 -128",		"32 32 128",		"3354 2616 560" );
+make_clip(	"_permstuck_longhedge_g",	"Everyone",	1,	"-32 -32 -128",		"32 32 128",		"2160 2620 534" );
 make_clip(	"_permstuck_tree_a",		"Everyone",	1,	"-17 -17 0",		"17 17 8",		"6747 2745 762" );
 make_clip(	"_permstuck_tree_b",		"Everyone",	1,	"-17 -17 0",		"17 17 8",		"1573 1991 441" );
 make_clip(	"_permstuck_tree_c",		"Everyone",	1,	"-17 -17 0",		"17 17 8",		"147 3367 301" );
