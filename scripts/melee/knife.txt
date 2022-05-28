@@ -93,8 +93,8 @@ MeleeWeaponData
 			"starttime"		"0.1"
 			"endtime"		"0.28"
 			"activity"		"ACT_VM_HITRIGHT"
-			"player_activity" 	"ACT_SHOOT_N2S_FRYINGPAN"
-			"player_activity_idle"	"ACT_SHOOT_N2S_IDLE_FRYINGPAN"
+			"player_activity" 	"ACT_SHOOT_W2E_FRYINGPAN"
+			"player_activity_idle"	"ACT_SHOOT_W2E_IDLE_FRYINGPAN"
 			"force_dir"		"8 -4 0"
 		}
 	}

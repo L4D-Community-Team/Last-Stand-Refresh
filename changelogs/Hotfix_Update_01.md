@@ -11,7 +11,10 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 ### Weapons:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L91) Gave the CS:S knife its old slash pattern back. `[knife.txt]`<br/>
+#### Knife:
+
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L91) Slash pattern goes from left to right (W2E) instead of left to bottom-right (W2SE); the knife's old slash pattern is back. `[knife.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L96-L97) Knife's world animations now swings in the same direction as the viewmodel's. `[knife.txt]`<br/>
 
 # Map Fixes
 
