@@ -4350,7 +4350,6 @@ make_clip( "_permstuck_tree_i", "Everyone", 1, "-17 -17 -32", "17 17 0", "1151 6
 make_clip( "_permstuck_tree_j", "Everyone", 1, "-17 -17 -32", "17 17 0", "1153 5929 981" );
 make_clip( "_stuckwarp_yellowbarrels", "Everyone", 1, "-108 -16 0", "59 13 128", "4861 2732 608", "0 -17 0" );
 make_clip( "_permstuck_taito_ftw", "Everyone", 1, "-8 -8 -8", "28 24 28", "2552 2292 460" );
-make_clip( "_shortcut_eventfence", "Survivors", 1, "-32 -80 0", "32 2 345", "928 5775 415" );
 make_clip( "_permstuck_eventfence", "Everyone", 1, "-8 -40 0", "8 40 32", "905 5829 341" );
 patch_spawninfront( "78 8574 -405", "-70 -8 0", "70 8 256" );
 

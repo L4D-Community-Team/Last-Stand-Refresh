@@ -3027,6 +3027,7 @@ make_ladder( "_ladder_crossoverupway_cloned_bunkerdoor", "1064 223 652", "-2326 
 
 make_brush( "_losfix_gastruck1",	"-45 -1 -18",	"45 1 18",	"4992 2301 617" );
 make_brush( "_losfix_gastruck2",	"-1 -40 -18",	"1 40 18",	"4082 2256 524" );
+make_clip( "_shortcut_eventfence", "Survivors", 1, "-32 -80 0", "32 2 345", "928 5775 415" );
 make_ladder( "_ladder_eventphysfence_cloned_endfencefront", "-1401.11 5244.2798 344", "1045 469 9" );
 make_ladder( "_ladder_posttanksecret_cloned_cliffstraightwide", "6914.6465 2713.7744 601", "14585 5833 1212", "10 -176.74 0", "-0.69 0.72 0" );
 make_ladder( "_ladder_pretankleft_cloned_cliffstraightwide", "6914.6465 2713.7744 601", "15420 1150 17", "0 141.65 0", "0 1 0" );
