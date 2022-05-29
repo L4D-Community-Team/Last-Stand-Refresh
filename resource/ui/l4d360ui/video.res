@@ -741,7 +741,7 @@
 		"enabled"			"1"
 		"usetitlesafe"		"0"
 		"tabPosition"		"0"
-		"navUp"				"DrpModelDetail"
+		"navUp"				"DrpQueuedMode"
 		"navDown"			"BtnUseRecommended"
 				
 		//button and label

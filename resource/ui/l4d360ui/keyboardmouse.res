@@ -188,7 +188,7 @@
 		"maxValue"				"20.0f"
 		"stepSize"				"1.0"
 		"navUp"					"DrpMouseFilter"
-		"navDown"				"DrpDeveloperConsole"
+		"navDown"				"DrpRawMouse"
 		"conCommand"			"sensitivity"
 		"inverseFill"			"0"
 				
@@ -391,7 +391,7 @@
 		"enabled"			"1"
 		"usetitlesafe"		"0"
 		"tabPosition"		"0"
-		"navUp"				"SldMouseSensitivity"
+		"navUp"				"SldMouseAcceleration"
 		"navDown"			"DrpGamepadEnable"
 				
 		//button and label
