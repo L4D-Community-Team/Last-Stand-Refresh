@@ -11,10 +11,15 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 ### Weapons:
 
-#### Knife:
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L91) Knife slash pattern goes from left to right (W2E) instead of left to bottom-right (W2SE) to restore its old slash pattern. `[knife.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L96-L97) Knife world animations now swing in the same direction as the viewmodel's. `[knife.txt]`<br/>
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L91) Slash pattern goes from left to right (W2E) instead of left to bottom-right (W2SE); the knife's old slash pattern is back. `[knife.txt]`<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/melee/knife.txt#L96-L97) Knife's world animations now swings in the same direction as the viewmodel's. `[knife.txt]`<br/>
+### Accessibility:
+
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/d9ca80411de6ccf1a89fa28f1f48ee6ae0b79f02) Fixed Audio and Keyboard / Mouse menus in the Options flyout having broken navigation keys when trying to use the arrow keys or a controller. `[keyboardmouse & video.res]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Tank Claw" hint had incorrect binding "+attack2". `[instructor_lessons.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Tank Rock" hint had incorrect binding "+attack". `[instructor_lessons.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Jockey Leap" hint had the incorrect ability_use of "ability_spit", and now uses the correct "ability_leap". `[instructor_lessons.txt]`<br/>
 
 # Map Fixes
 
@@ -22,7 +27,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 1:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/missions/campaign1.txt#L96) <ins>Versus</ins>: Tank will only spawn after Survivors have exited the elevator.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/missions/campaign1.txt#L96-L97) <ins>Versus</ins>: Tank will now only spawn after Survivors have exited the elevator, and no later than leaving the kitchen.<br/>
 
 #### Map 3:
 
@@ -59,27 +64,32 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L1294) <ins>Versus</ins>: New ladder in far corner of manhole drop area to fix permstuck.<br/>
 
+#### Map 4:
+
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L1350-L1355) <ins>Versus</ins>: Reduced a jetstrike trigger after the balcony drop that previously dealt 25 damage per touch (75 total) to Survivors, down to only 2 damage per touch to behave like the other 14 triggers.<br/>
+
 ### The Passing
 
 #### Map 1:
+
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L2013) Blocked a permstuck spot in a corner behind a floodlight in the top floor after the alarm cars.<br/>
 
 #### Map 2:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L2143) Fixed collision issue with clips on the stairs by the saferoom that caused noticeable teleporting when not on a local server.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L2143-L2144) Fixed collision issue with clips on the stairs by the saferoom that caused noticeable teleporting when not on a local server.<br/>
 
 ### The Sacrifice
 
 #### Map 2:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L1537) <ins>Versus</ins>: Delete func clip that blocks SI access into end closet.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L1544) <ins>Versus</ins>: Delete func clip that blocks SI access into end closet.<br/>
 
 ### No Mercy
 
 #### Map 1:
 
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L2570) Lift anti-grief kill trigger off the ground to prevent an incap glitch.<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L1631) <ins>Versus</ins>: Add clip to patch a ladder shortcut at the start.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L1638) <ins>Versus</ins>: Add clip to patch a ladder shortcut at the start.<br/>
 
 ### Crash Course
 
@@ -92,19 +102,19 @@ This changelog comprehensively summarizes all differences from the live game to 
 #### Map 3:
 
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L3338) Blocked a permstuck spot between the cliff rocks and the right side of the mandatory house.<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L2166) <ins>Versus</ins>: Fixed an SI permstuck spot on the barricade by the church.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L2173) <ins>Versus</ins>: Fixed an SI permstuck spot on the barricade by the church.<br/>
 
 ### Dead Air
 
 #### Map 4:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L3794) <ins>Versus</ins>: Fix SI permstuck spot inside the end rubble.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L3794) Fix SI player and AI permstuck spot inside the end rubble.<br/>
 
 ### Blood Harvest
 
 #### Map 2:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L2751) <ins>Versus</ins>: SI permstuck beyond the end of tunnel just before end safe room.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L2758) <ins>Versus</ins>: Fixed SI permstuck beyond the end of tunnel just before end safe room.<br/>
 
 #### Map 3:
 
@@ -112,27 +122,27 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 4:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L2900) <ins>Versus</ins>: Patched fence Infected ladder next to lawnmower room.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L2907) <ins>Versus</ins>: Patched fence Infected ladder next to lawnmower room.<br/>
 
 ### Cold Stream
 
 #### Map 2:
 
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4358) Fix permstuck next to military truck leading to barricade.<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4343) [+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4344) Fix two permstuck spots behind the bushes on the right of after the military truck leading to barricade.<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4359) Fix a regression with easy event skip clip and a permstuck clip nearby.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4343-L4344) Fix two permstuck spots behind the long hedges on the right of after the military truck leading to barricade.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4352) [*](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4359)[*](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L3040) Fix a regression with easy event skip clip and a permstuck clip nearby.<br/>
 
 #### Map 3:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4418) Enlargened a permstuck clip to fully fix it.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4417) Enlargened a permstuck clip to fully fix it.<br/>
 
 ### The Last Stand
 
 #### Map 1:
 
-&emsp;[+](__TODO__) __TODO__ Moved Francis' spawn so the player no longer gets stuck and dies during the intro on single player modes.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4576-L4582) When the intro finishes, adjust Francis' spawn to be further away from the plywood to prevent him from getting stuck and dying on solo Mutations.<br/>
 
 #### Map 2:
 
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L3133) <ins>Versus</ins>: Fix displacement crouch to get under finale map.<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4680) <ins>Versus</ins>: Fixed an SI permstuck spot between a fence and tree cluster at the cliff overlooking the beach.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_versus.nut#L3141) <ins>Versus</ins>: Fixed an out of bounds exploit to get under a cliffside.<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/blob/main/scripts/vscripts/anv_mapfixes.nut#L4687) <ins>Versus</ins>: Fixed an SI permstuck spot between a fence and tree cluster at the cliff overlooking the beach.<br/>
