@@ -4349,7 +4349,7 @@ make_clip(	"_permstuck_tree_d",		"Everyone",	1,	"-17 -17 0",		"17 17 8",		"392 4
 make_clip(	"_permstuck_tree_e",		"Everyone",	1,	"-17 -17 0",		"17 17 8",		"-1459 4319 330" );
 make_clip(	"_permstuck_tree_f",		"Everyone",	1,	"-17 -17 0",		"17 17 8",		"723 6019 375" );
 make_clip(	"_surfsup",			"Survivors",	1,	"-490 -420 0",		"420 420 2160",		"-1485 5630 404" );
-make_clip(	"_dispcrouch_barrelstent",	"Everyone",	1,	"-16 -70 -50",		"16 70 50",		"996 5685 318", "0 20 0" );
+make_clip(	"_dispcrouch_barrelstent",	"Everyone",	1,	"-16 -70 -50",		"16 70 50",		"996 5685 318",		"0 20 0" );
 make_clip( "_permstuck_tree_g", "Everyone", 1, "-17 -17 -32", "17 17 0", "908 6871 697" );
 make_clip( "_permstuck_tree_h", "Everyone", 1, "-17 -17 -32", "17 17 0", "984 6655 798" );
 make_clip( "_permstuck_tree_i", "Everyone", 1, "-17 -17 -32", "17 17 0", "1151 6258 932" );
@@ -4573,6 +4573,14 @@ con_comment( "CVAR:\tSet \"director_convert_pills\" to 0 to prevent excess defib
 
 Convars.SetValue( "director_convert_pills", 0 );
 
+// Francis' spawn X coordinate now changes from -4070 to -4058 when the intro finishes
+// to fix his spawn inside the plywood that he leans on. On solo Mutations with no
+// teammates to warp to, the player can get stuck and die here before getting control.
+// Note that the stuck timer persists even when paused, so if a player is both unlucky
+// enough to get stuck and also pauses, in extremely rare cases this may fire late.
+
+EntityOutputs.AddOutput( Entities.FindByName( null, "relay_intro_finished" ), "OnTrigger", "surv_p8", "AddOutput", "origin -4058 -10540 -303.64", 1.0, -1 );
+
 			// FIXES_ALL_EXCEPT_VERSUS
 
 			if ( g_BaseMode != "versus" )
@@ -4676,7 +4684,7 @@ while ( wep_spawners = Entities.FindByClassname( wep_spawners, "weapon_*" ) )
 
 				// FIXES
 
-				make_clip( "_permstuck_treefence", "Everyone", 1, "-8 -8 -27", "8 8 27", "-2552 4572 482" );
+make_clip( "_permstuck_treefence", "Everyone", 1, "-8 -8 -27", "8 8 27", "-2552 4572 482" );
 
 				break;
 			}

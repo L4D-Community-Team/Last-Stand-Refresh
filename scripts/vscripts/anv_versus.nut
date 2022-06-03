@@ -795,8 +795,8 @@ make_brush( "_losfix_opening_gen",	"-20 -1 -10",	"20 1 10",	"-4385 -2721 131" );
 make_brush( "_losfix_opening_trailer",	"-100 -1 -15",	"100 1 15",	"-3332 417 -1" );
 make_brush( "_losfix_start_truck1",	"-45 -1 -12",	"45 1 12",	"-5171 1649 139" );
 make_brush( "_losfix_start_truck2",	"-1 -45 -12",	"1 46 12",	"-5214 1602 139" );
-make_clip(	"_bridgehouse_bush_permstuck",	"SI Players",	1,	"-27 -74 -62",		"27 74 62",		"-1771 -162 60" );
-make_clip(	"_lanternbush_permstuck",	"SI Players",	1,	"-28 -14 -24",		"28 14 24",		"-832 -2840 13" );
+make_clip(	"_permstuck_bridgehouse_bush",	"SI Players",	1,	"-27 -74 -62",		"27 74 62",		"-1771 -162 60" );
+make_clip(	"_permstuck_lanternbush",	"SI Players",	1,	"-28 -14 -24",		"28 14 24",		"-832 -2840 13" );
 make_clip(	"_endhaybails_collisiona",	"SI Players",	1,	"-42 -66 -24",		"42 66 24",		"5126 -3967 378" );
 make_clip(	"_endhaybails_collisionb",	"SI Players",	1,	"-42 -25 -24",		"42 25 24",		"5126 -3967 426" );
 make_clip( "_ladder_afterplankfront_clip", "SI Players", 1, "7 -154 16", "15 43 32", "381 -4026 79" );
@@ -850,7 +850,7 @@ make_brush( "_brickhome_chimney1_losblock", "-11 -19 0", "11 19 77", "-1779 -371
 make_brush( "_brickhome_chimney2_losblock", "-11 -19 0", "11 19 77", "-1298 -3712 454" );
 make_brush( "_losfix_start_truck1",	"-54 -1 -12",	"54 1 12",	"-1733 -2751 10" );
 make_brush( "_losfix_start_truck2",	"-1 -55 -12",	"1 54 12",	"-1785 -2695 10" );
-make_clip( "_enclosedhedges_permstuck", "SI Players", 1, "-30 -85 -53", "30 85 53", "81 -4523 72" );
+make_clip( "_permstuck_enclosedhedges", "SI Players", 1, "-30 -85 -53", "30 85 53", "81 -4523 72" );
 make_clip( "_brickhome_chimney1_collision", "Everyone", 1, "-11 -19 0", "11 19 77", "-1779 -3712 454" );
 make_clip( "_brickhome_chimney2_collision", "Everyone", 1, "-11 -19 0", "11 19 77", "-1298 -3712 454" );
 make_clip( "_ladder_houselow_clipl", "Everyone", 1, "-8 -2 0", "12 4 136", "-2054 -1026 1", "0 -45 0" );
@@ -1346,6 +1346,13 @@ make_ladder( "_ladder_poolhallinright_cloned_poolhalloutleft", "-640 1598 144", 
 make_ladder( "_ladder_postfloatlowroof_cloned_eventscaffoldright", "-1152 454 170", "-1472 569 244" );
 make_ladder( "_ladder_prefloatalley_cloned_unusedwrongway", "-26 1728 234", "-1852 1566 -4", "0 -90 0", "0 -1 0" );
 make_ladder( "_ladder_unusedareain_cloned_onewayvanfence", "-2512 2434 144", "270 765 0" );
+
+// Versus-only: Reduce trigger_hurt from 25 damage (per touch, 75 total) to 2 damage
+// per touch (5/2 = 2.5, rounded down) to match similar triggers. It's off to the
+// right after the balcony drop. Survivors comment the strike was closer than others.
+// Significant outlier since of 15 triggers all others deal only 1-2 damage per touch.
+
+EntFire( "ds_ext-ds02_HURT", "SetDamage", "5" );
 
 		break;
 	}
@@ -2163,7 +2170,7 @@ make_clip(	"_solidify_permstuck06",	"SI Players",	1,	"-17 -17 0",		"17 17 512",	
 make_clip(	"_solidify_permstuck07",	"SI Players",	1,	"-17 -17 0",		"17 17 512",		"-8918 -860 -42" );
 make_clip(	"_solidify_permstuck08",	"SI Players",	1,	"-17 -17 0",		"17 17 512",		"-8570 -994 -66" );
 make_clip( "_meticulous_funcinfclip01", "SI Players", 1, "-508 -290 -72", "1134 46 402", "-9348 -7694 584" );
-make_clip( "_hellcade_permstuck",		"SI Players", 1, "-13 -188 -24", "13 188 24", "-4598 -1025 -54" );
+make_clip( "_permstuck_hellcade", "SI Players", 1, "-13 -188 -24", "13 188 24", "-4598 -1025 -54" );
 make_ladder( "_ladder_brokenwallL_cloned_graveshort", "-4808 706 6", "2295 383 193" );
 make_ladder( "_ladder_brokenwallM_cloned_graveshort", "-4808 706 6", "2327 383 193" );
 make_ladder( "_ladder_brokenwallR_cloned_graveshort", "-4808 706 6", "2359 383 193" );
@@ -2230,7 +2237,7 @@ make_clip( "_fineantique_surf_collision", "SI Players", 1, "-320 -240 -56", "320
 make_clip( "_hellcade_clipa", "SI Players", 1, "-240 -8 0", "240 17 1792", "-5360 -504 -64" );
 make_clip( "_hellcade_clipb", "SI Players", 1, "-17 -840 0", "8 507 1792", "-5605 -1001 -64" );
 make_clip( "_hellcade_clipc", "SI Players", 1, "-240 -8 0", "275 17 1792", "-5360 -1857 -64" );
-make_clip( "_hellcade_permstuck", "SI Players", 1, "-8 -216 0", "8 216 17", "-5115 -1028 -49" );
+make_clip( "_permstuck_hellcade", "SI Players", 1, "-8 -216 0", "8 216 17", "-5115 -1028 -49" );
 make_clip( "_ladder_eventskybridge_clip", "SI Players", 1, "-11 -23 0", "2 46 8", "-1314 -4766 296" );
 make_clip( "_ladder_starthilltop_clip", "SI Players", 1, "-16 -8 0", "16 8 2", "-4608 -1906 520", "0 -17.7 0" );
 make_clip( "_losblocker_deliveryclip", "Survivors", 1, "-57 -113 0", "56 171 1781", "583 -2463 -52", "0 -20 0" );
@@ -3131,7 +3138,7 @@ patch_ladder( "195 4845.5 -18.624", "-17 0 0" );
 	{
 		// ENTITIES FOR HUMAN-CONTROLLED SI MODES ONLY
 
-		make_clip( "_dispcrouch_cliffside", "SI Players", 1, "-120 -8 -80", "120 8 80", "127 -818 428", "0 8 -10" );
+make_clip( "_dispcrouch_cliffside", "SI Players", 1, "-120 -8 -80", "120 8 80", "127 -818 428", "0 8 -10" );
 
 		break;
 	}
