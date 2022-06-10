@@ -1,0 +1,1639 @@
+"lang" 
+{ 
+"Language" "vietnamese" 
+"Tokens" 
+{
+"L4D_DifficultyEasy"				"Dễ"
+"L4D_DifficultyNormal"				"Thường"
+"L4D_DifficultyHard"				"Nâng cao"
+"L4D_DifficultyImpossible"			"Lão luyện"
+
+"L4D_skill_reminder"				"Nhấn %s1 để thay đổi kỹ năng của bạn."
+"L4D_idle_spectator"				"%s1 đang rời máy."
+
+
+
+									
+//--------------------------------------------------------------------------------------------------------
+// Scoreboard
+"L4D_Scoreboard_Spectator"			"Khán giả: %s1"
+"L4D_Scoreboard_Spectators"			"Khán giả (%s1): %s2"
+"L4D_Scoreboard_Dead"				"CHẾT"
+"L4D_Scoreboard_Incapacitated"			"GỤC"
+"L4D_Scoreboard_IT"				"TRÚNG DỊCH"
+"L4D_Scoreboard_Spawning"			"HỒI SINH"
+"L4D_Scoreboard_Bot"				"Máy"
+"L4D_Scoreboard_s_Loading"			"ĐANG NẠP"
+"L4D_Scoreboard_pz_Loading"			"%s1 (ĐANG NẠP)"
+"L4D_Scoreboard_InfectedPlayers"		"Phe con bệnh"
+"L4D_Scoreboard_Status"				"Trạng thái"
+"L4D_Scoreboard_Score"				"Điểm"
+"L4D_Scoreboard_Deaths"				"Chết"
+"L4D_Scoreboard_Ping"				"Ping"
+"L4D_Scoreboard_SurvivorPlayers"		"Phe sống sót"
+"L4D_Scoreboard_Current_Map"			"Đang chơi"
+"L4D_Scoreboard_Rescue_Map"			"Giải cứu"
+"L4D_Scoreboard_Opponent_Map"			"Tiến độ phe con bệnh"
+"L4D_Scoreboard_PZScore"			"ĐIỂM"
+"L4D_Scoreboard_Idle"				"KHÔNG HOẠT ĐỘNG"
+"L4D_Scoreboard_Select_Player"			"Chọn người chơi"
+"L4D_Scoreboard_View_GamerCard"			"Xem thẻ người chơi"
+"L4D_Scoreboard_Vote_Kick"			"Biểu quyết đuổi người chơi"
+
+// Realism Scoreboard
+"L4D_Realism"						"Như thật"
+
+// Versus Scoreboard
+"L4D_Versus"						"Chế độ đối đầu"
+"L4D_VSScoreboard_Title"			"Điểm chế độ đối đầu"
+"L4D_VSScoreboard_YourTeam"			"Đội của bạn"
+"L4D_VSScoreboard_EnemyTeam"		"Đội của địch"
+"L4D_VSScoreboard_Unplayed"			"N/A"
+"L4D_VSScoreboard_Distance"			"Bình quân quãng đường đã đi:"
+"L4D_VSScoreboard_DistanceShort"	"Bình quân quãng đường:"	
+"L4D_VSScoreboard_Completion"		"Điểm hoàn thành:"
+"L4D_VSScoreboard_SurvivalBonus"	"Thưởng sống sót:"
+"L4D_VSScoreboard_Health"			"Thưởng máu:"
+"L4D_VSScoreboard_SurvivalMult"		"Hệ số nhân sống sót:"
+"L4D_VS_Shutdown_Title"				"ĐANG TẮT MÁY CHỦ"
+"L4D_VS_Shutdown"					"Các chế độ thi đấu yêu cầu phải có con người chơi ở cả hai đội."
+
+// Survival Timer and Scoreboard
+"L4D_Survival"						"Chế độ sinh tồn"
+"L4D_SurvivalScoreboard_FinalTime"	"Thời gian chung cuộc:"
+"L4D_SurvivalScoreboard_BestTime"	"Thời gian tốt nhất"
+"L4D_SurvivalScoreboard_Players"		"Người chơi"
+"L4D_SurvivalTimer_YourBest"			"Tốt nhất của bạn"
+"L4D_SurvivalTimer_TeamBest"			"Tốt nhất của đội"
+"L4D_SurvivalTimer_DescriptionFmt"	"Tốt nhất của %s1"
+"L4D_SurvivalTimer_Description_Gold"	"Tiêu Chuẩn Vàng"
+"L4D_SurvivalTimer_Description_Silver"	"Tiêu Chuẩn Bạc"
+"L4D_SurvivalTimer_Description_Bronze"	"Tiêu Chuẩn Đồng"
+"L4D_SurvivalTimer_Description_TeamRecord"	"Kỷ lục của đội"
+"L4D_SurvivalTimer_Description_WorldRecord"	"Kỷ lục thế giới"
+"L4D_SurvivalTimer_Description_KeepGoing"	"Kỷ lục mới của đội!"
+
+"L4D_BronzeMedalEarned"	"%s1 đã nhận huy chương đồng!"
+"L4D_SilverMedalEarned"	"%s1 đã nhận huy chương bạc!"
+"L4D_GoldMedalEarned"	"%s1 đã nhận huy chương vàng!"
+
+// Scavenge Timer and Scoreboard
+"L4D_Scavenge"						"Chế Độ Thu Thập"
+"L4D_Scavenge_Round_Current"		"Vòng hiện tại"
+"L4D_Scavenge_RoundLimit"			"Chơi %s1 cừ nhất"
+"L4D_Scavenge_TeamFlip"				"CHUẨN BỊ ĐỔI PHE"
+"L4D_Scavenge_NextRound"			"CHUẨN BỊ CHO VÒNG %s1"
+"L4D_Scavenge_EnemyFirst"			"Đội địch sẽ chơi trước tại vòng %s1"
+"L4D_Scavenge_YouFirst"				"Bạn sẽ chơi trước tại vòng %s1"
+"L4D_Scavenge_Tie"					"TRẬN HÒA"
+"L4D_Scavenge_RoundWon"				"BẠN ĐÃ THẮNG VÒNG ĐÓ"
+"L4D_Scavenge_RoundLost"			"BẠN ĐÃ THUA VÒNG ĐÓ"
+"L4D_Scavenge_MatchWon"				"BẠN ĐÃ THẮNG TRẬN ĐẤU!"
+"L4D_Scavenge_MatchLost"			"BẠN ĐÃ THUA TRẬN ĐẤU"
+"L4D_Scavenge_MatchTied"			"TRẬN ĐẤU KẾT THÚC VỚI KẾT QUẢ HÒA!"
+"L4D_Scavenge_Wins"					"Số vòng thắng"
+"L4D_Scavenge_YourTeam"				"Đội của bạn:"
+"L4D_Scavenge_Opponent"				"Đội của địch:"
+"L4D_Scavenge_Survivors_Wiped"		"Phe sống sót đã bị giết!"
+"L4D_Scavenge_Map_Cleared"			"Phe sống sót đã hoàn thành bản đồ!"
+"L4D_Scavenge_Time_Expired"			"Hết giờ!"
+"L4D_Scavenge_TieBreaker_Title"		"VÒNG PHÂN ĐỊNH"
+"L4D_Scavenge_TieBreaker_Description"	"Thời gian cần để đạt %s1 điểm:"
+"L4D_Scavenge_TieBreaker_Description_Singular"	"Thời gian cần để đạt 1 điểm:"
+"L4D_Scavenge_TieBreaker_Description_Zero"	"Thời gian cần để kết thúc vòng:"
+"L4D_Versus_TieBreaker_Description"	"Gây nhiều sát thương nhất khi chơi Phe Con Bệnh:"
+
+
+// Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
+// The control characters can be copied and pasted in notepad.
+//  = 0x02 (STX) - Use team color up to the end of the player name.  This only works at the start of the string, and precludes using the other control characters.
+//  = 0x03 (ETX) - Use team color from this point forward
+//  = 0x04 (EOT) - Use location color from this point forward
+//  = 0x05 (ENQ) - Use achievement color from this point forward
+//  = 0x01 (SOH) - Use normal color from this point forward
+
+"medal_0_earned"	"%s1 đã nhận huy chương đồng!"
+"medal_1_earned"	"%s1 đã nhận huy chương bạc!"
+"medal_2_earned"	"%s1 đã nhận huy chương vàng!"
+
+//--------------------------------------------------------------------------------------------------------
+// Weapons
+"L4D_Weapon_Pistol"				"Súng lục"
+"L4D_Weapon_Pistol_CAPS"			"SÚNG LỤC"
+"L4D_Weapon_SMG"				"Súng tiểu liên"
+"L4D_Weapon_SMG_CAPS"				"SÚNG TIỂU LIÊN"
+"L4D_Weapon_PumpShotgun"			"Shotgun bơm"
+"L4D_Weapon_PumpShotgun_CAPS"			"SHOTGUN BƠM"
+"L4D_Weapon_AutoShotgun"			"Shotgun tự động"
+"L4D_Weapon_AutoShotgun_CAPS"			"SHOTGUN TỰ ĐỘNG"
+"L4D_Weapon_AssaultRifle"			"Súng trường tấn công"
+"L4D_Weapon_AssaultRifle_CAPS"			"SÚNG TRƯỜNG TẤN CÔNG"
+"L4D_Weapon_HuntingRifle"			"Súng săn"
+"L4D_Weapon_HuntingRifle_CAPS"			"SÚNG SĂN"
+"L4D_Weapon_FirstAidKit"			"Bộ sơ cứu"
+"L4D_Weapon_FirstAidKit_CAPS"			"BỘ SƠ CỨU"
+"L4D_Weapon_Molotov"				"Bom xăng"
+"L4D_Weapon_Molotov_CAPS"			"BOM XĂNG"
+"L4D_Weapon_PipeBomb"				"Bom ống"
+"L4D_Weapon_PipeBomb_CAPS"			"BOM ỐNG"
+"L4D_Weapon_PainPills"				"Thuốc giảm đau"
+"L4D_Weapon_PainPills_CAPS"			"THUỐC GIẢM ĐAU"
+
+// Steam controller font mappings
+"GameUI_Icons_SC_None"					"< chưa thiết lập >"
+"GameUI_Icons_SC_A_Button"				"A"
+"GameUI_Icons_SC_B_Button"				"B"
+"GameUI_Icons_SC_X_Button"				"X"
+"GameUI_Icons_SC_Y_Button"				"Y"
+"GameUI_Icons_SC_L_Shoulder"			"2"
+"GameUI_Icons_SC_R_Shoulder"			"3"
+"GameUI_Icons_SC_L_Grip"				"("
+"GameUI_Icons_SC_R_Grip"				")"
+"GameUI_Icons_SC_Start_Button"			"5"
+"GameUI_Icons_SC_Back_Button"			"4"
+"GameUI_Icons_SC_Left_Pad_Touch"		"q"
+"GameUI_Icons_SC_Left_Pad_Swipe"		"w"
+"GameUI_Icons_SC_Left_Pad_Click"		"e"
+"GameUI_Icons_SC_Left_Pad_DPad_N"		"a"
+"GameUI_Icons_SC_Left_Pad_DPad_S"		"s"
+"GameUI_Icons_SC_Left_Pad_DPad_W"		"d"
+"GameUI_Icons_SC_Left_Pad_DPad_E"		"f"
+"GameUI_Icons_SC_Right_Pad_Touch"		"y"
+"GameUI_Icons_SC_Right_Pad_Swipe"		"u"
+"GameUI_Icons_SC_Right_Pad_Click"		"i"
+"GameUI_Icons_SC_Right_Pad_DPad_N"		"h"
+"GameUI_Icons_SC_Right_Pad_DPad_S"		"j"
+"GameUI_Icons_SC_Right_Pad_DPad_W"		"k"
+"GameUI_Icons_SC_Right_Pad_DPad_E"		"l"
+"GameUI_Icons_SC_L_Trigger_Pull"		"z"
+"GameUI_Icons_SC_L_Trigger_Click"		"x"
+"GameUI_Icons_SC_R_Trigger_Pull"		"n"
+"GameUI_Icons_SC_R_Trigger_Click"		"n"
+"GameUI_Icons_SC_L_Stick_Move"			"C"
+"GameUI_Icons_SC_L_Stick_Click"			"V"
+"GameUI_Icons_SC_Gyro_Move"				"6"
+"GameUI_Icons_SC_Gyro_Pitch"			"7"
+"GameUI_Icons_SC_Gyro_Yaw"				"8"
+"GameUI_Icons_SC_Gyro_Roll"				"9"
+
+"GameUI_KeyNames_SC_None"				"< chưa thiết lập >"
+"GameUI_KeyNames_SC_A_Button"			"Nút A"
+"GameUI_KeyNames_SC_B_Button"			"Nút B"
+"GameUI_KeyNames_SC_X_Button"			"Nút X"
+"GameUI_KeyNames_SC_Y_Button"			"Nút Y"
+"GameUI_KeyNames_SC_L_Shoulder"			"đệm trái"
+"GameUI_KeyNames_SC_R_Shoulder"			"đệm phải"
+"GameUI_KeyNames_SC_L_Grip"				"nút tay nắm trái"
+"GameUI_KeyNames_SC_R_Grip"				"nút tay nắm phải"
+"GameUI_KeyNames_SC_Start_Button"		"Nút START"
+"GameUI_KeyNames_SC_Back_Button"		"Nút BACK"
+"GameUI_KeyNames_SC_Left_Pad_Touch"		"bàn di trái - chạm"
+"GameUI_KeyNames_SC_Left_Pad_Swipe"		"bàn di trái - di chuyển"
+"GameUI_KeyNames_SC_Left_Pad_Click"		"bàn di trái - nhấp"
+"GameUI_KeyNames_SC_Left_Pad_DPad_N"	"nút điều hướng trái - lên"
+"GameUI_KeyNames_SC_Left_Pad_DPad_S"	"nút điều hướng trái - xuống"
+"GameUI_KeyNames_SC_Left_Pad_DPad_W"	"nút điều hướng trái - sang trái"
+"GameUI_KeyNames_SC_Left_Pad_DPad_E"	"nút điều hướng trái - sang phải"
+"GameUI_KeyNames_SC_Right_Pad_Touch"	"bàn di phải - chạm"
+"GameUI_KeyNames_SC_Right_Pad_Swipe"	"bàn di phải - di chuyển"
+"GameUI_KeyNames_SC_Right_Pad_Click"	"bàn di phải - nhấn"
+"GameUI_KeyNames_SC_Right_Pad_DPad_N"	"nút điều hướng phải - lên"
+"GameUI_KeyNames_SC_Right_Pad_DPad_S"	"nút điều hướng phải - xuống"
+"GameUI_KeyNames_SC_Right_Pad_DPad_W"	"nút điều hướng phải - sang trái"
+"GameUI_KeyNames_SC_Right_Pad_DPad_E"	"nút điều hướng phải - sang phải"
+"GameUI_KeyNames_SC_L_Trigger_Pull"		"cò trái - kéo"
+"GameUI_KeyNames_SC_L_Trigger_Click"	"cò trái - nhấn"
+"GameUI_KeyNames_SC_R_Trigger_Pull"		"right trigger pull"
+"GameUI_KeyNames_SC_R_Trigger_Pull"		"cò phải - nhấn"
+"GameUI_KeyNames_SC_L_Stick_Move"		"cần - di chuyển"
+"GameUI_KeyNames_SC_L_Stick_Click"		"cần - nhấn"
+"GameUI_KeyNames_SC_Gyro_Move"			"gyro - di chuyển"
+"GameUI_KeyNames_SC_Gyro_Pitch"			"gyro trục dọc xuống"
+"GameUI_KeyNames_SC_Gyro_Yaw"			"gyro trục đảo"
+"GameUI_KeyNames_SC_Gyro_Roll"			"gyro trục nghiêng"
+									
+//--------------------------------------------------------------------------------------------------------
+// Keyboard Options
+//"L4D_melee_ability"					"Push Away Enemies" [$X360]
+"L4D_melee_ability"					"Đẩy địch ra xa" [$WIN32]
+//"L4D_zoom"							"Use Hunting/Sniper Rifle Scope" [$X360]
+"L4D_zoom"							"Dùng ống ngắm súng săn/súng tỉa" [$WIN32]
+//"L4D_give"							"Give Weapon" [$X360]
+"L4D_give"							"Đưa vũ khí" [$WIN32]
+//"L4D_vote_yes"						"Vote Yes on Active Issue" [$X360]
+"L4D_vote_yes"						"Biểu quyết có cho vấn đề hiện hữu" [$WIN32]
+//"L4D_vote_no"						"Vote No on Active Issue" [$X360]
+"L4D_vote_no"						"Biểu quyết không cho vấn đề hiện hữu" [$WIN32]
+//"L4D_call_vote"						"Call Vote" [$X360]
+"L4D_call_vote"						"Đề nghị biểu quyết" [$WIN32]
+"L4D_orders"						"Mệnh Lệnh"
+//"L4D_questions"						"Questions and Answers" [$X360]
+"L4D_questions"						"Hỏi và đáp" [$WIN32]
+"L4D_alerts"						"Cảnh Báo"
+"L4D_taunt"							"Chế Giễu"
+//"L4D_select_class"					"Select Class" [$X360]
+"L4D_select_class"					"Chọn lớp nhân vật" [$WIN32]
+//"L4D_reportscreen"					"Show Report Screen" [$X360]
+"L4D_reportscreen"					"Hiện màn hình báo cáo" [$WIN32]
+//"L4D_reposition"					"Pick New Infected Class" [$X360]
+"L4D_reposition"					"Chọn nhân vật Con Bệnh mới" [$WIN32]
+//"L4D_hide_messagepanel"				"Hide Message Panel" [$X360]
+"L4D_hide_messagepanel"				"Ẩn khung tin nhắn" [$WIN32]
+//"L4D_Walk"							"Walk (Move Slowly)" [$X360]
+"L4D_Walk"							"Đi (di chuyển chậm)" [$WIN32]
+"L4D_ReportBug"						"Báo cáo lỗi"
+
+//--------------------------------------------------------------------------------------------------------
+// Voting
+"L4D_vote_yes_binding"				"Có: %s1"
+"L4D_vote_no_binding"				"Không: %s1"
+"L4D_vote_yes_tally"				"Có"
+"L4D_vote_no_tally"					"Không"
+"L4D_vote_before_spawn_exit"		"Bạn chỉ có thể biểu quyết cho vấn đề đó trước khi mọi người rời khỏi khu vực bắt đầu."
+"L4D_vote_server_disabled_issue"	"Máy chủ đã vô hiệu sự cố đó."
+"L4D_vote_arg_between_1_and_4"		"Cần giá trị từ 1 đến 4."
+"L4D_vote_arg_between_0_and_4"		"Cần giá trị từ 0 đến 4."
+"L4D_vote_already_survivor_limit"	"Giới hạn người sống sót đã là %s1."
+"L4D_vote_survivor_limit"			"Biểu quyết: Đổi giới hạn người sống sót thành %s1?"
+"L4D_vote_passed_max_survivors"		"Đã Biểu quyết xong: Tối đa %s1 người sống sót."
+"L4D_vote_infected_limit"			"Giới hạn Người Chơi vai Con Bệnh đã là %s1."
+"L4D_vote_dis_controlled_infected"	"Biểu quyết: Không cho phép Con Bệnh được điều khiển bởi người chơi."
+"L4D_vote_controlled_infected"		"Biểu quyết: Cho phép Con Bệnh được điều khiển bởi người chơi."
+"L4D_vote_passed_dis_cont_infect"	"Đã biểu quyết xong: Không cho phép người chơi điều khiển Con Bệnh."
+"L4D_vote_passed_cont_infect"		"Đã biểu quyết xong: Cho phép người chơi điều khiển Con Bệnh."
+"L4D_vote_needs_difficulty"			"Cần có giá trị Dễ, Thường, Nâng Cao hoặc Lão Luyện."
+"L4D_vote_difficulty_is"			"Độ khó đã là %s1."
+"L4D_vote_needs_on_off"				"Cần giá trị bật hoặc tắt."
+"L4D_vote_light_already_allow"		"Đã cho phép sử dụng đèn pin."
+"L4D_vote_light_already_disallow"	"Đã không cho phép sử dụng đèn pin."
+"L4D_vote_allow_lights"				"Biểu quyết: Cho phép sử dụng đèn pin."
+"L4D_vote_stop_lights"				"Biểu quyết: Dừng sử dụng đèn pin."
+"L4D_vote_passed_allow_lights"		"Đã biểu quyết xong: Cho phép sử dụng đèn pin: %s1."
+
+"L4D_vote_friend_pushing_allowed"	"Đã cho phép phe sống sót đẩy đồng đội."
+"L4D_vote_no_friend_pushing"		"Đã cấm phe sống sót đẩy đồng đội."
+"L4D_vote_allow_pushing"			"Biểu quyết: Cho phép đẩy đồng đội."
+"L4D_vote_disallow_pushing"			"Biểu quyết: Không cho phép đẩy đồng đội."
+"L4D_vote_passed_pushing"			"Đã biểu quyết xong: Cho phép đẩy đồng đội: %s1."
+"L4D_vote_requires_valid"			"Cần có người chơi hợp lệ."
+"L4D_vote_already_has_grenades"		"Người chơi đó đã bị cấm sử dụng lựu đạn %s1."
+"L4D_vote_ban_grenades_from"		"Biểu quyết: Cấm %s1 sử dụng lựu đạn."
+"L4D_vote_lift_ban_grenades_from"	"Biểu quyết: Cho phép %s1 sử dụng lựu đạn."
+"L4D_vote_grenades_from_to"			"Biểu quyết: %s1 lựu đạn từ %s2."
+"L4D_vote_scramble_next_round"		"Các đội sẽ bị trộn vào vòng tiếp theo."
+"L4D_vote_should_scramble_round"	"Biểu quyết: Trộn các đội vào vòng tiếp theo."
+"L4D_vote_passed_scramble"			"Đã biểu quyết xong: Các đội bị trộn vào vòng tiếp theo."
+"L4D_vote_not_valid_mission"		"Chiến dịch không hợp lệ."
+"L4D_vote_change_mission_to"		"Biểu quyết: Đổi chiến dịch thành %s1."
+"L4D_vote_should_change_mission"	"Biểu quyết: Đổi chiến dịch tiếp theo thành %s1?"
+"L4D_vote_will_change_mission"		"Biểu quyết xong: Chiến dịch tiếp theo là %s1."
+"L4D_vote_call_impossible"			"Biểu quyết: Đặt %s1 thành Lão Luyện."
+"L4D_vote_call_hard"				"Biểu quyết: Đặt %s1 thành Nâng Cao."
+"L4D_vote_call_normal"				"Biểu quyết: Đặt %s1 thành Thường."
+"L4D_vote_call_easy"				"Biểu quyết: Đặt %s1 thành Dễ."
+"L4D_vote_kick_player"				"Vote: Kick %s1."
+"L4D_vote_should_player"			"Biểu quyết: Đuổi %s1?"
+"L4D_vote_defeated"					"Biểu quyết thất bại."
+
+"L4D_vote_header"					"BIỂU QUYẾT:"
+
+"L4D_vote_kick_player"				"Đuổi người chơi: %s1?"
+"L4D_vote_passed_kick_player"		"Đang đuổi người chơi: %s1..."
+
+"L4D_vote_change_difficulty"		"Thay đổi độ khó thành %s1?"
+"L4D_vote_passed_change_difficulty"	"Đang thay đổi độ khó thành %s1..."
+
+"L4D_vote_restart_game"				"Bắt đầu lại chiến dịch?"
+"L4D_vote_passed_restart_game"		"Bắt đầu lại chiến dịch..."
+
+"L4D_vote_mission_change"			"Đổi chiến dịch thành %s1?"
+"L4D_vote_passed_mission_change"	"Đang đổi chiến dịch thành %s1..."
+
+"L4D_vote_return_to_lobby"			"Quay lại Sảnh?"
+"L4D_vote_passed_return_to_lobby"	"Đang quay lại Sảnh..."
+
+"L4D_vote_chapter_change"			"Đổi thành chương %s1?"
+"L4D_vote_passed_chapter_change"	"Đang đổi thành chương %s1..."
+
+"L4D_vote_yes_instruction_a"		"Nhấn START"
+"L4D_vote_no_instruction_a"			"Nhấn BACK"
+"L4D_vote_yes_instruction_b"		"để biểu quyết CÓ"
+"L4D_vote_no_instruction_b"			"để biểu quyết KHÔNG"
+
+"L4D_vote_yes_pc_instruction"		"Nhấn %vote yes% để biểu quyết CÓ"
+"L4D_vote_no_pc_instruction"		"Nhấn %vote no% để biểu quyết KHÔNG"
+
+"L4D_vote_current_vote_count"		"Số phiếu biểu quyết hiện tại:"
+
+"L4d_vote_vote_passed"				"BIỂU QUYẾT XONG!"
+"L4d_vote_vote_failed"				"BIỂU QUYẾT KHÔNG THÀNH."
+"L4d_vote_not_enough_votes"			"Số phiếu Thuận phải nhiều hơn số phiếu Chống."
+"L4d_vote_not_enough_votes2"		"Cần có nhiều số phiếu Thuận hơn phiếu Chống."
+"L4d_vote_not_enough_votes3"		"Số phiếu Thuận không chiếm đa số."
+
+"L4D_vote_skip_outtro"				"Biểu quyết để bỏ qua"
+"L4D_vote_skip_outtro_pc"			"Phím Cách - Biểu quyết để bỏ qua"
+"L4D_vote_skip_outtro_pc_singleplayer"	"Phím Cách - Quay lại Sảnh"
+
+"L4d_vote_no_vote_spam"				"Bạn không thể đề nghị biểu quyết quá nhanh kể từ lần đề nghị trước."
+"L4d_vote_no_transition_vote"		"Bạn không thể đề nghị biểu quyết trong khi những người chơi khác vẫn đang nạp."
+
+"L4D_vote_endgame_title"		"ĐẤU LẠI"
+"L4D_vote_endgame_text"			"Đấu lại với đội này?"
+"L4D_vote_endgame_vote_again_timer"	"Còn %s1 giây để biểu quyết."
+"L4D_vote_endgame_vote_return_won"	"Cả hai đội đều không biểu quyết để đấu lại.\nĐang quay lại phòng."
+"L4D_vote_endgame_vote_again_won"	"Cải hai đội đều biểu quyết để đấu lại.\nĐang chơi lại!"
+"L4D_vote_endgame_vote_waiting"		"Đang chờ các đội khác kết thúc biểu quyết."
+"L4D_vote_endgame_vote_player1"		"Người chơi 1"
+"L4D_vote_endgame_vote_player2"		"Người chơi 2"
+"L4D_vote_endgame_vote_team_again"	"Đội của bạn đã biểu quyết để chơi lại."
+"L4D_vote_endgame_vote_team_return"	"Đội của bạn đã biểu quyết để quay lại phòng."
+
+//--------------------------------------------------------------------------------------------------------
+// Rosetta
+"L4D_rosetta_help"				"Cứu!"
+"L4D_rosetta_letsgo"				"Đi nào"
+"L4D_rosetta_hurry"				"Nhanh lên!"
+"L4D_rosetta_coverme"				"Bọc lót cho tôi!"
+"L4D_rosetta_lightsout"				"Tắt hết đèn!"
+"L4D_rosetta_watchbehind"			"Coi chừng sau lưng"
+"L4D_rosetta_followme"				"Đi theo tôi"
+"L4D_rosetta_staytogether"			"Bám sát nhau!"
+"L4D_rosetta_youtakelead"			"Bạn hãy dẫn đường"
+"L4D_rosetta_ready"				"Sẵn sàng?"
+"L4D_rosetta_thankyou"				"Cảm ơn"
+"L4D_rosetta_withyou"				"Tôi đi cùng bạn"
+"L4D_rosetta_no"				"Không"
+"L4D_rosetta_whereareyou"			"Bạn đang ở đâu?"
+"L4D_rosetta_sorry"				"Xin lỗi"
+"L4D_rosetta_negative"				"Argh!"
+"L4D_rosetta_yes"				"Có"
+"L4D_rosetta_welcome"				"Không có chi"
+"L4D_rosetta_look"				"Nhìn Kìa!"
+"L4D_rosetta_heartank"				"Tôi nghe tiếng Tank"
+"L4D_rosetta_hearhunter"			"Tôi nghe tiếng Hunter"
+"L4D_rosetta_hearwitch"				"Tôi nghe tiếng Witch"
+"L4D_rosetta_hearboomer"			"Tôi nghe tiếng Boomer"
+"L4D_rosetta_hearsmoker"			"Tôi nghe tiếng Smoker"
+"L4D_rosetta_hearspitter"			"Tôi nghe tiếng Spitter"
+"L4D_rosetta_hearcharger"			"Tôi nghe tiếng Charger"
+"L4D_rosetta_hearjockey"			"Tôi nghe tiếng Jockey"
+"L4D_rosetta_clear"				"An toàn"
+"L4D_rosetta_becareful"				"Cẩn thận"
+"L4D_rosetta_hurrah"				"Hoan hô!"
+"L4D_rosetta_grrrr"				"Grrrr"
+"L4D_rosetta_orders"				"MỆNH LỆNH..."
+"L4D_rosetta_waithere"				"Hãy chờ"
+"L4D_rosetta_nicejob"				"Tốt lắm!"
+"L4D_rosetta_laugh"				"Cười"
+"L4D_rosetta_taunt"				"Khiêu khích"
+"L4D_rosetta_totherescue"			"Tôi sẽ cứu bạn"
+
+
+//--------------------------------------------------------------------------------------------------------
+// Instructor
+
+// Commentary Lessons
+"L4D_Instructor_commentary_node1"			"Hãy tìm kiếm bài học trong trò chơi! Chúng có thể cho bạn thông tin quý giá"
+
+// Infected Lessons
+"L4D_Instructor_boomer_claw"				"ĐÒN TẤN CÔNG PHỤ: CÀO XÉ"
+"L4D_Instructor_boomer_vomit"				"ĐÒN ĐÁNH CHÍNH: NÔN ỌE"
+"L4D_Instructor_hunter_claw"				"ĐÒN TẤN CÔNG PHỤ: CÀO XÉ"
+"L4D_Instructor_hunter_lunge"				"ĐÒN ĐÁNH CHÍNH: CÚI ĐỂ CHỘP"
+"L4D_Instructor_smoker_claw"				"ĐÒN TẤN CÔNG PHỤ: CÀO XÉ"
+"L4D_Instructor_smoker_tongue"				"ĐÒN ĐÁNH CHÍNH: PHÓNG LƯỠI"
+"L4D_Instructor_spitter_claw"				"ĐÒN TẤN CÔNG PHỤ: CÀO XÉ"
+"L4D_Instructor_spitter_goo"				"ĐÒN ĐÁNH CHÍNH: KHẠC"
+"L4D_Instructor_charger_claw"				"ĐÒN TẤN CÔNG PHỤ: CÀO XÉ"
+"L4D_Instructor_charger_charge"				"ĐÒN ĐÁNH CHÍNH: HÚC"
+"L4D_Instructor_jockey_claw"				"ĐÒN TẤN CÔNG PHỤ: CÀO XÉ"
+"L4D_Instructor_jockey_jump"				"ĐÒN ĐÁNH CHÍNH: LAO VÀO"
+"L4D_Instructor_tongue_break_bent"			"Lưỡi bị gãy! Nó uốn hoặc thè ra quá xa..."
+"L4D_Instructor_tongue_break_shove"			"Lưỡi bị gãy! Nạn nhân đã bị đẩy..."
+"L4D_Instructor_tongue_break_shot"			"Lưỡi bị gãy! Nó đã bị sát thương..."
+"L4D_Instructor_tank_claw"				"ĐÒN TẤN CÔNG PHỤ: NÉM"
+"L4D_Instructor_tank_rock"				"ĐÒN ĐÁNH CHÍNH: ĐẤM"
+"L4D_Instructor_break_checkpoint_door"		"BẠN KHÔNG THỂ PHÁ CỬA PHÒNG AN TOÀN"
+"L4D_Instructor_break_rescue_doors"			"BẠN KHÔNG THỂ PHÁ CỬA GIẢI CỨU"
+"L4D_Instructor_prevent_rescue"				"MỘT ĐỘI GIẢI CỨU ĐANG TRÊN ĐƯỜNG ĐẾN. GIẾT NGƯỜI SỐNG SÓT TRƯỚC KHI ĐỘI ĐÓ ĐẾN ĐÂY..."
+"L4D_Instructor_prevent_escape"				"NGĂN NGƯỜI SỐNG SÓT TRỐN THOÁT"
+
+											
+// Survivor Lessons							
+"L4D_Instructor_board_chopper"				"Đến lúc chạy rồi! Lên thôi!"
+"L4D_Instructor_survive_rescue"				"Sắp được cứu rồi! Hãy bảo vệ bản thân!"
+"L4D_Instructor_revive_end"				"Giữ để kéo dậy %s1"
+
+"L4D_Instructor_saved_by"				"%s1 đã cứu bạn"
+"L4D_Instructor_saved_other"				"Bạn đã cứu %s1"
+
+"L4D_Instructor_rescued_by"				"%s1 đã giải cứu bạn"
+"L4D_Instructor_rescued_other"				"Bạn đã giải cứu %s1"
+										
+"L4D_Instructor_explain_enter_safe_room"		"Vào trong phòng an toàn"
+"L4D_Instructor_explain_close_safe_room"		"Đóng cửa lại khi mọi người đã ở trong"
+"L4D_Instructor_explain_wait_to_exit_safe_room"		"Vẫn còn có đồng đội chưa sẵn sàng"
+"L4D_Instructor_explain_wait_to_push_button"		"Chờ cho mọi người sẵn sàng đã"
+
+"L4D_Instructor_explain_pre_radio"			"Trả lời bộ đàm"
+"L4D_Instructor_explain_radio"				"Gọi đội giải cứu"
+"L4D_Instructor_explain_gas_truck"			"Kích hoạt bơm nhiên liệu"
+"L4D_Instructor_explain_radio2"				"Hãy sẵn sàng trước khi bạn hồi âm"
+"L4D_Instructor_explain_panic_disturbance"		"Coi chừng! Một vài xe có còi báo động..."
+"L4D_Instructor_explain_panic_disturbance_triggered"	"%s1 đã báo động lũ thây ma"
+"L4D_Instructor_explain_panic_disturbance_triggered2"	"Chúng tới nè..."
+"L4D_Instructor_explain_witch_spooked"			"%s1 đã chọc giận Witch"
+"L4D_Instructor_explain_witch_spooked2"			"Bạn đã chọc giận Witch"
+												
+"L4D_Instructor_explain_panic_button"			"Lật công tắc trên cửa..."
+"L4D_Instructor_explain_panic_button2"			"Hãy sẵn sàng chiến đấu với lũ zombie"
+"L4D_Instructor_explain_elevator_button"		"Gọi thang máy..."
+"L4D_Instructor_explain_lift_button"			"Khởi động trục nâng..."
+"L4D_Instructor_explain_train_lever"			"Dùng toa tàu đã tách rời để ném vào cây cầu..."
+"L4D_Instructor_explain_gas_can_panic"			"Phá hủy rào chắn..."
+"L4D_Instructor_explain_van_panic"				"Khởi động xe để dọn đường..."
+"L4D_Instructor_explain_crane"				"Dùng cần điều khiển để hạ cần trục..."
+"L4D_Instructor_explain_emergency_door"			"Mở cửa thoát hiểm..."
+"L4D_Instructor_explain_mainstreet"				"Hạ hệ thống nâng hàng để làm cầu dẫn..."
+"L4D_Instructor_explain_bridge"				"Đóng cửa lũ để làm một cây cầu..."
+"L4D_Instructor_explain_church_door"			"Kêu hắn cho bạn vào phòng an toàn..."
+
+"L4D_Instructor_explain_inventory"			"Chọn vũ khí/vật phẩm"
+"L4D_Instructor_explain_rifle_zoom"			"Ống ngắm súng săn/súng bắn tỉa"
+"L4D_Instructor_explain_ammo_resupply_get"		"Bổ sung đạn"
+"L4D_Instructor_explain_ammo_resupply"			"Kho đạn"
+"L4D_Instructor_explain_first_aid_get"			"Lấy bộ sơ cứu"
+"L4D_Instructor_explain_first_aid"			"Bộ sơ cứu"
+"L4D_Instructor_explain_molotov_get"			"Lấy bom xăng"
+"L4D_Instructor_explain_molotov"			"Bom xăng"
+"L4D_Instructor_explain_pipebomb_get"			"Lấy bom ống"
+"L4D_Instructor_explain_pipebomb"			"Bom ống"
+"L4D_Instructor_explain_vomitjar_get"			"Lấy dịch mật Boomer"
+"L4D_Instructor_explain_vomitjar"			"Dịch mật Boomer"
+
+"L4D_Instructor_explain_weapon"				"Vũ khí"
+"L4D_Instructor_explain_melee_get"			"Lấy vũ khí cận chiến"
+"L4D_Instructor_explain_melee"				"Vũ khí cận chiến"
+"L4D_Instructor_explain_chainsaw_get"			"Lấy cưa máy"
+"L4D_Instructor_explain_chainsaw"				"Cưa máy"
+"L4D_Instructor_explain_trade_melee_for_pistol"		"Đổi vũ khí cận chiến lấy súng lục"
+"L4D_Instructor_explain_pistol"				"Súng lục"
+"L4D_Instructor_explain_2nd_pistol_get"			"Lấy súng lục thứ hai"
+"L4D_Instructor_explain_2nd_pistol"			"Súng lục thứ hai"
+"L4D_Instructor_explain_rifle_get"			"Lấy súng trường tấn công M-16"
+"L4D_Instructor_explain_rifle"				"Súng trường tấn công M-16"
+"L4D_Instructor_explain_hunting_rifle_get"		"Lấy súng săn"
+"L4D_Instructor_explain_hunting_rifle"			"Súng săn"
+"L4D_Instructor_explain_pumpshotgun_get"		"Lấy shotgun bơm"
+"L4D_Instructor_explain_pumpshotgun"			"Shotgun bơm"
+"L4D_Instructor_explain_autoshotgun_get"		"Lấy shotgun chiến thuật"
+"L4D_Instructor_explain_autoshotgun"			"Shotgun chiến thuật"
+"L4D_Instructor_explain_smg_get"			"Lấy súng tiểu liên"
+"L4D_Instructor_explain_smg"				"Súng tiểu liên"
+"L4D_Instructor_explain_smg_silenced_get"	"Lấy súng tiểu liên giảm thanh"
+"L4D_Instructor_explain_smg_silenced"		"Súng tiểu liên giảm thanh"
+"L4D_Instructor_explain_shotgun_chrome_get"	"Lấy shotgun chrome"
+"L4D_Instructor_explain_shotgun_chrome"		"Shotgun Chrome"
+"L4D_Instructor_explain_shotgun_spas_get"	"Lấy shotgun giao tranh"
+"L4D_Instructor_explain_shotgun_spas"		"Shotgun giao tranh"
+"L4D_Instructor_explain_rifle_desert_get"	"Lấy súng trường giao tranh"
+"L4D_Instructor_explain_rifle_desert"		"Súng trường giao tranh"
+"L4D_Instructor_explain_rifle_desert_get_alt"	"Lấy súng trường giao tranh sa mạc"
+"L4D_Instructor_explain_rifle_desert_alt"		"Súng trường giao tranh sa mạc"
+"L4D_Instructor_explain_rifle_ak47_get"		"Lấy AK-47"
+"L4D_Instructor_explain_rifle_ak47"			"AK-47"
+"L4D_Instructor_explain_rifle_ak47_get_alt"		"Lấy súng trường Liên Xô"
+"L4D_Instructor_explain_rifle_ak47_alt"			"Súng trường Liên Xô"
+"L4D_Instructor_explain_sniper_military_get"	"Lấy súng bắn tỉa"
+"L4D_Instructor_explain_sniper_military"	"Súng bắn tỉa"
+"L4D_Instructor_explain_grenade_launcher_get"		"Lấy súng phóng lựu"
+"L4D_Instructor_explain_grenade_launcher"			"Súng phóng lựu"
+"L4D_Instructor_explain_pills_get"			"Lấy thuốc giảm đau"
+"L4D_Instructor_explain_pills"				"Thuốc giảm đau"
+"L4D_Instructor_explain_reload"				"Nạp đạn thủ công"
+"L4D_Instructor_explain_pistol_ammo"			"Súng lục không bao giờ hết đạn"
+"L4D_Instructor_explain_grenade_limit"			"Bạn chỉ có thể mang theo một vật phẩm ném"
+"L4D_Instructor_explain_friendly_fire"			"Đừng bắn đồng đội!"
+"L4D_Instructor_explain_friendly_fire_melee"	"Đừng tấn công đồng đội!"
+"L4D_Instructor_explain_reckless"			"Tránh làn đạn!"
+"L4D_Instructor_explain_rescue"				"Giải cứu người sống sót"
+"L4D_Instructor_notify_awaiting_rescue"			"Bạn sắp được giải cứu"
+"L4D_Instructor_notify_last_life"			"Cần bộ sơ cứu! Sẽ chết ở lần bị đánh gục tiếp theo..."
+"L4D_Instructor_notify_fire_damage"			"Tránh xa lửa!"
+"L4D_Instructor_notify_stay_together"			"Đi cùng nhau để sống sót"
+"L4D_Instructor_notify_crouch_accuracy"			"Cúi người sẽ tăng độ chính xác"
+"L4D_Instructor_notify_crouch_tactic"			"Cúi người sẽ giúp đồng đội bắn qua trên đầu bạn"
+"L4D_Instructor_notify_communicate"			"Liên lạc với đồng đội"
+"L4D_Instructor_explain_heal_interrupted"		"Giữ %+attack% để tự hồi máu"
+"L4D_Instructor_notify_shove_infected"			"Đẩy chúng lùi lại!"
+"L4D_Instructor_notify_infected_behind"			"Đối đầu với kẻ thù phía sau"
+"L4D_Instructor_notify_shove_boomer"			"Đẩy Boomer lùi lại trước khi bắn"
+"L4D_Instructor_notify_given_item_pain_pills"		"%s1 đã cho bạn thuốc giảm đau"
+"L4D_Instructor_notify_failed_to_give_duplicate_pills"	"%s1 đã có thuốc giảm đau"
+"L4D_Instructor_notify_failed_to_use_pills"		"Bạn không cần uống thuốc giảm đau"
+"L4D_Instructor_notify_heal_self"			"Tự hồi máu bằng bộ sơ cứu"
+"L4D_Instructor_notify_heal_self_hold"			"Giữ %+attack% để tự hồi máu"
+"L4D_Instructor_notify_pill_self"			"Uống thuốc giảm đau để tạm thời tăng lượng máu"
+"L4D_Instructor_notify_heal_other"			"Hồi máu cho %s1 bằng bộ sơ cứu"
+"L4D_Instructor_notify_heal_other_far"			"Tiến lại gần để hồi máu cho %s1"
+"L4D_Instructor_notify_heal_other_near"			"Giữ %+attack2% để hồi máu cho %s1"
+"L4D_Instructor_notify_heal_other_near_select"		"Chọn túi sơ cứu"
+"L4D_Instructor_explain_heal_other_interrupted"		"Giữ %+attack2% để hồi máu cho %s1"
+
+"L4D_Instructor_explain_defibrillator_get"		"Lấy máy khử rung tim"
+"L4D_Instructor_explain_defibrillator"			"Máy khử rung tim"
+"L4D_Instructor_notify_failed_to_use_defibrillator"		"%s1 không cần được hồi sinh"
+"L4D_Instructor_notify_use_defibrillator"		"Hồi sinh %s1 bằng máy khử rung tim"
+"L4D_Instructor_notify_use_defibrillator_hold"	"Giữ %+attack% hoặc %+attack2% để hồi sinh %s1"
+"L4D_Instructor_defibrillator_usage"		"Sử dụng máy khử rung tim để hồi sinh người chơi đã chết"
+
+"L4D_Instructor_explain_upgradepack_incendiary_get"		"Lấy hộp đạn cháy"
+"L4D_Instructor_explain_upgradepack_incendiary"			"Hộp đạn cháy"
+"L4D_Instructor_notify_failed_to_use_incendiary_ammo_pile"	"Bạn đã sử dụng nâng cấp Đạn Cháy này"
+
+"L4D_Instructor_explain_upgradepack_explosive_get"		"Lấy hộp đạn nổ"
+"L4D_Instructor_explain_upgradepack_explosive"			"Hộp đạn nổ"
+"L4D_Instructor_notify_failed_to_use_explosive_ammo_pile"	"Bạn đã sử dụng nâng cấp Đạn Nổ này"
+
+"L4D_Instructor_notify_upgrade_failed_no_primary"	"Bạn phải có một vũ khí chính để sử dụng nâng cấp này"
+
+"L4D_Instructor_upgradepack_usage"		"Rải hộp đạn lên mặt đất để cả đội dùng"
+
+"L4D_Instructor_notify_give_pills"			"Bạn có thể đưa thuốc giảm đau cho %s1"
+"L4D_Instructor_notify_give_pills_far"			"Tiến lại gần để đưa thuốc giảm đau cho %s1"
+"L4D_Instructor_notify_give_pills_near"			"Đưa thuốc giảm đau cho %s1"
+"L4D_Instructor_notify_give_pills_near_select"		"Chọn thuốc giảm đau"
+
+"L4D_Instructor_explain_pill_temp_health"		"Thuốc giảm đau giúp bạn tạm thời tăng lượng máu"
+
+"L4D_Instructor_explain_use_door"			"Mở/đóng cửa"
+
+"L4D_Instructor_notify_ledge"				"Một đồng đội phải kéo bạn lên"
+								
+"L4D_Instructor_help_ledge"				"Kéo %s1 lên"
+
+"L4D_Instructor_notify_dead"				"Bạn đã chết! Vui lòng chờ để hồi sinh..."
+"L4D_Instructor_notify_dead_by_witch1"			"Con Witch đã giết bạn! Đừng có làm mụ ta giật mình vào lần tới..."
+"L4D_Instructor_notify_dead_by_witch2"			"Witch bị giật mình bởi đèn pin và tiếng súng"											
+
+"L4D_Instructor_notify_incapacitated"			"Đã bị vô hiệu! Một đồng đội phải trợ giúp bạn"
+"L4D_Instructor_notify_incapacitated_by_witch"		"Witch đã làm bạn bị thương! Đừng có làm mụ ta giật mình vào lần tới..."
+
+"L4D_Instructor_help_incapacitated"			"Giúp %s1 đứng dậy"
+											
+"L4D_Instructor_notify_it1_vomit"			"Một con Boomer đã nôn vào bạn"
+"L4D_Instructor_notify_it1_splatter"			"Một con Boomer đã nổ trên người bạn"
+"L4D_Instructor_notify_it1_jar"			"Một người chơi đã ném bom dịch mật vào bạn"
+"L4D_Instructor_notify_it2"				"Coi chừng! Dịch mật của Boomer sẽ thu hút lũ thây ma..."
+											
+"L4D_Instructor_notify_pounced"				"Đã bị ghìm chặt! Một đồng đội phải trợ giúp..."
+
+"L4D_Instructor_notify_choked"				"Đã bị siết! Một đồng đội phải trợ giúp..."
+"L4D_Instructor_notify_choked_miss"			"Đã trượt: Không có mục tiêu"
+
+"L4D_Instructor_notify_charger_pummeled"	"Đang bị tẩn túi bụi! Cần phải có một đồng đội trợ giúp..."
+											
+"L4D_Instructor_help_it"				"Một Boomer đã nôn vào %s1"
+"L4D_Instructor_help_choked"				"Một Smoker đang siết %s1"
+"L4D_Instructor_help_choked_near"			"Giải thoát cho %s1"
+"L4D_Instructor_help_choked_far"			"Bắn Smoker"
+"L4D_Instructor_help_pounced"				"Một con Hunter đã ghìm chặt %s1"
+"L4D_Instructor_help_pounced_near"			"Đẩy Hunter"
+"L4D_Instructor_help_pounced_far"			"Bắn Hunter"
+"L4D_Instructor_help_jockey_ridden"			"Một con Jockey đang cưỡi %s1"
+"L4D_Instructor_help_jockey_ridden_near"	"Đẩy Jockey"
+"L4D_Instructor_help_jockey_ridden_far"		"Bắn Jockey"
+"L4D_Instructor_help_charger_pummeled"		"Một con Charger đang tẩn %s1"
+"L4D_Instructor_help_charger_pummeled_kill"	"Giết con Charger"
+"L4D_Instructor_explain_tank"				"Tank có thể chịu rất nhiều sát thương trước khi chúng chết"
+
+"L4D_Instructor_explain_pickup_item"			"Nhặt lên"
+"L4D_Instructor_explain_use_turret"			"Dùng ụ súng"
+						
+// Survival lessons
+"L4D_Instructor_earned_bronze_medal"		"Bạn đã nhận được huy chương đồng!"
+"L4D_Instructor_earned_silver_medal"		"Bạn đã nhận được huy chương bạc!"
+"L4D_Instructor_earned_gold_medal"			"Bạn đã nhận được huy chương vàng!"
+"L4D_Instructor_player_record"				"Bạn đã phá thời gian kỷ lục của mình!"
+"L4D_Instructor_team_record"				"Bạn đã phá kỷ lục của đội!"
+"L4D_Instructor_world_record"				"Bạn đã phá kỷ lục thế giới!"
+
+"L4D_Instructor_explain_adrenaline"					"Adrenaline"
+"L4D_Instructor_explain_adrenaline_get"				"Lấy adrenaline"
+"L4D_Instructor_notify_adrenaline_self"				"Tiêm adrenaline để tăng tốc độ tạm thời"
+"L4D_Instructor_notify_given_item_adrenaline"		"%s1 đã đưa adrenaline cho bạn"
+"L4D_Instructor_notify_give_adrenaline"				"Bạn có thể đưa adrenaline của mình cho %s1"
+"L4D_Instructor_notify_give_adrenaline_far"			"Tiến lại gần để đưa adrenaline của bạn cho %s1"
+"L4D_Instructor_notify_give_adrenaline_near"		"Đưa adrenaline của bạn cho %s1"
+"L4D_Instructor_notify_give_adrenaline_near_select"	"Chọn adrenaline"
+"L4D_Instructor_adrenaline_usage"					"Arenaline giúp bạn thực hiện nhiều hành động nhanh hơn"
+
+"L4D_Instructor_notify_failed_to_give_duplicate_belt_item"		"%s1 đã có một vật phẩm trên thắt lưng"
+
+"L4D_Instructor_explain_ammo_pack"				"Hộp đạn"
+"L4D_Instructor_explain_ammo_pack_get"			"Lấy hộp đạn"
+"L4D_Instructor_notify_give_ammo_other_near"	"Giữ %+attack2% để đưa đạn cho %s1"
+"L4D_Instructor_notify_give_ammo_self"			"Bổ sung lượng đạn bằng hộp đạn"
+"L4D_Instructor_notify_give_ammo_self_hold"		"Giữ %+attack% để bổ sung lượng đạn của bạn"
+
+"L4D_Instructor_notify_failed_to_use_ammo_pack_no_weapon_on_other"	"%s1 không cần đạn bây giờ"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_no_weapon_on_self"	"Bạn không cần đạn bây giờ"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_full_on_other"		"%s1 đã có đầy đạn"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_full_on_self"		"Bạn đã có đầy đạn"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_doesnt_use_ammo"		"Bạn không cần đạn bây giờ"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_other_doesnt_use_ammo"	"%s1 không cần đạn bây giờ"
+
+"L4D_Instructor_explain_scavenge_goal_survivor"			"Thu thập can xăng và đổ vào máy phát điện..."
+"L4D_Instructor_explain_scavenge_goal_infected"			"Ngăn phe người sống sót trước khi họ thu thập tất cả các can xăng"
+"L4D_Instructor_begin_scavenge_overtime_survivor"		"BÙ GIỜ: Ít nhất một người sống sót phải đang mang một can xăng!"
+"L4D_Instructor_begin_scavenge_overtime_infected"		"BÙ GIỜ: Buộc tất cả những người sống sót phải thả can xăng của họ!"
+"L4D_Instructor_scavenge_score_tied"					"Chỉ cần thêm một điểm nữa là phe người sống sót sẽ thắng vòng này!"
+"L4D_Instructor_exaplin_scavenge_leave_area"			"Vòng sẽ được bắt đầu nếu rời khu vực này"
+"L4D_Instructor_explain_scavenge_vulnerable_cans"		"Những can xăng bị thả dễ bị bốc cháy trước dịch nhầy của Spitter"
+
+"L4D_Instructor_explain_survivor_glows_disabled"		"Tắt hiệu ứng viền sáng quanh Người Sống Sót!"
+"L4D_Instructor_explain_item_glows_disabled"			"Tắt hiệu ứng viền sáng quanh vật phẩm. Hãy tìm thật kỹ!"
+"L4D_Instructor_explain_rescue_disabled"				"Vô hiệu tính năng giải cứu. Người chơi chỉ có thể hồi sinh tại phòng an toàn."
+"L4D_Instructor_explain_bodyshots_reduced"				"Thây ma chịu ít sát thương hơn ở phần cơ thể. Hãy ngắm bắn vào đầu!"
+"L4D_Instructor_explain_witch_kills"					"Witch sẽ giết chết bạn tức thì. Hãy coi chừng mụ ta!"
+"L4D_Instructor_notify_grenade_launcher_range"			"Oái! Bạn ở quá gần vụ nổ của súng phóng lựu!"
+
+//--------------------------------------------------------------------------------------------------------
+// Tips
+"L4D_Tip_Revive"					"Hồi sinh đồng đội bị gục trước khi họ hết máu."
+"L4D_Tip_Heal"						"Tự hồi máu cho mình và đồng đội bằng các bộ sơ cứu, thuốc giảm đau, máy khử rung tim và mũi tiêm adrenaline."
+"L4D_Tip_Shove"						"Đẩy Con Bệnh nếu chúng tiến lại quá gần. Nhấn %+attack2% để đẩy."
+"L4D_Tip_Items"						"Tìm kiếm vũ khí và các vật phẩm hữu ích."
+"L4D_Tip_Boomer"					"Đẩy Boomer ra xa trước khi bạn bắn chúng."
+"L4D_Tip_Witch"						"Hãy rình quanh con Witch. Mụ ta nguy hiểm hơn vẻ bề ngoài."
+"L4D_Tip_Smoker"					"Smoker có thể kéo Người Sống Sót đi rất xa."
+"L4D_Tip_Tank"						"Cả đội sẽ cần phối hợp cùng nhau để hạ con Tank."
+"L4D_Tip_Hunter"					"Hunter di chuyển nhanh chóng và có thể nhảy rất xa. Hãy dỏng tai nghe tiếng gào thét đặc trưng của chúng."
+"L4D_Tip_Hunter2"					"Đòn vồ chộp của Hunter sẽ khiến Người Sống Sót hoàn toàn vô vọng. Hãy cứu đồng đội bị chộp, nếu không họ sẽ chết!"
+"L4D_Tip_Checkpoint"				"Đến phòng an toàn tiếp theo. Tìm những cánh cửa thép màu đỏ."
+"L4D_Tip_bullets"				"Đạn có thể bắn xuyên cửa, đồ nội thất và tường mỏng. Đạn súng săn có thể xuyên thủng hầu hết mọi thứ."
+"L4D_Tip_doors"				"Con Bệnh không thể mở cửa. Chúng phải phá cửa để đi vào."
+"L4D_Tip_pain_pills"				"Thuốc giảm đau giúp bạn tạm thời tăng lượng máu. Nhưng hãy cẩn thận—nó giảm tác dụng theo thời gian."
+"L4D_Tip_crouch"				"Cúi người trong đàn zombie tấn công để đồng đội đứng sau có thể bắn qua trên đầu bạn."
+"L4D_Tip_reload_speeds"			"Cần nhiều thời gian hơn để nạp đạn nếu bạn bắn hết toàn bộ băng đạn."
+"L4D_Tip_shotgun"				"Shotgun có thể rất uy lực khi giao tranh tầm gần. Chúng giảm hiệu quả ở tầm xa."
+"L4D_Tip_pipe_bomb"				"Bom ống sẽ nhử Con Bệnh loại thường ra xa bạn trước khi phát nổ."
+"L4D_Tip_safe_room_heal"			"Phải luôn hồi máu và lấy thêm đạn trước khi rời phòng an toàn."
+"L4D_Tip_witch_annoyances"			"Witch sẽ tấn công nếu chúng nghe thấy tiếng ồn lớn, thấy đèn pin hoặc bị tiến lại gần."
+"L4D_Tip_Charger"				"Charger có khả năng đẩy ngã cả một đội. Charger sẽ không thả Người Sống Sót khi chúng đã ghìm chặt bạn."
+"L4D_Tip_Jockey"				"Jockey có thể lái bạn đi xa đồng đội, ra sau chướng ngại vật hoặc vào chỗ nguy hiểm."
+
+"L4D_Tip_grenadelauncher"		"Súng phóng lựu có thể giết nhiều kẻ thù bằng một phát bắn."
+"L4D_Tip_explosive_ammo"		"Đạn Nổ làm choáng Con Bệnh Đặc Biệt."
+"L4D_Tip_incendiary_ammo"		"Đạn Lửa khiến mục tiêu bốc cháy."
+"L4D_Tip_spitter"			"Coi chừng dịch nhầy của Spitter. Càng đứng lâu trong dịch, bạn càng nhận nhiều sát thương."
+"L4D_Tip_adrenaline"			"Adrenaline giúp bạn tăng năng lượng tạm thời và giúp bạn băng qua đàn zombie dễ hơn."
+"L4D_Tip_lasersight"			"Ống ngắm laser giúp tăng độ chính xác cho vũ khí của bạn."
+"L4D_Tip_melee"				"Đẩy Con Bệnh về lùi lại để giảm bớt áp lực và để bắn hiệu quả hơn."
+"L4D_Tip_upgradepack"			"Nâng cấp vũ khí của bạn để bắn đạn cháy và đạn nổ chuyên dụng."
+"L4D_Tip_boomer_bile"			"Ném Bom Dịch Mật vào Con bệnh để thu hút chúng."
+"L4D_Tip_vulnerable_gascan"			"Trong trận đấu Thu Thập, can xăng được thả có thể dễ cháy trước dịch nhầy của Spitter."
+
+//--------------------------------------------------------------------------------------------------------
+// Player Zombie Tips
+
+"L4D_Z_Tip_falling"				"Con Bệnh không bị sát thương khi ngã."
+"L4D_Z_Tip_glows"				"Con Bệnh có thể nhìn thấy Người Sống Sót xuyên tường. Màu hiệu ứng viền sáng cho biết lượng máu của họ."
+"L4D_Z_Tip_break_doors"			"Phá cửa bị đóng bằng cách nhấn liên tục %+attack2%"
+"L4D_Z_Tip_no_break_saferoom_doors"		"Bạn không thể phá cửa của phòng an toàn. Hãy tìm lối đi khác."						
+"L4D_Z_Tip_hunter_leap_aim"			"Để nhảy xa khi chơi Hunter, hãy ngắm lên phía trên trước khi nhảy."
+"L4D_Z_Tip_hunter_wallkick"			"Hunter có thể lên chỗ cao bằng cách nhảy bật khỏi tường giữa không trung. Ngay khi chạm tường, hãy xoay người, nhắm lên trên và nhảy tiếp!"
+"L4D_360_Hint_hunter_wallkick"			"Hunter có thể lên chỗ cao bằng cách nhảy bật khỏi tường giữa không trung. Ngay khi chạm tường, nhấn %+lookspin%, rồi %+jump% để nhảy tiếp!"
+"L4D_Z_Tip_hunter_pounce_committed"	"Khi chơi Hunter, sau khi chộp một nạn nhân, bạn có thể ngừng tấn công bất kỳ lúc nào."
+
+"L4D_Z_Tip_hunter_pounce_incaps"		"Hunter có thể chộp Người Sống Sót đã ngã."
+									
+"L4D_Z_Tip_boomer_slow"				"Ẩn nấp và mai phục Người Sống Sót. Đừng lao vào họ khi ở chỗ thoáng."
+"L4D_Z_Tip_boomer_pop"				"Khi chơi Boomer, cố tiến lại gần Người Sống Sót trước khi bạn bị bắn hoặc bị đốt, để bạn có thể làm dịch mật bắn lên người họ."
+"L4D_Z_Tip_boomer_bomb"				"Khi chơi Boomer, bổ nhào từ trên cao xuống Người Sống Sót là cách tuyệt vời để làm dịch mật bắn tung tóe lên cả đội."
+"L4D_Z_Tip_boomer_it"				"Dịch mật của Boomer sẽ thu hút zombie. Số lượng lớn Con Bệnh sẽ nhắm vào một Người Sống Sót bị bám dịch mật để tấn công."
+"L4D_Z_Tip_boomer_recharge"			"Một con Boomer có thể phóng dịch nôn nhiều hơn một lần. Khi dạ dày của bạn đầy lại, bạn có thể nôn lần nữa."
+"L4D_Z_Tip_boomer_vomit_no_move"		"Boomer không thể di chuyển khi đang nôn ọe."
+									
+"L4D_Z_Tip_smoker_choke"				"Khi Smoker tấn công từ trên mái nhà, chúng có thể trói Người Sống Sót mà không bị biến thành mục tiêu dễ diệt."
+"L4D_Z_Tip_smoker_choke_committed"	"Khi chơi Smoker, nhấn %+attack% để ngừng tấn công và thả Người Sống Sót."
+
+"L4D_Z_Tip_smoker_poison"			"Khi chơi Smoker, nếu kéo một Người Sống Sót về sát mình, bạn có thể tấn công họ mà không bị kháng cự."
+									
+"L4D_Z_Tip_tank_health"				"Đừng đứng yên khi chơi vai Tank. Hãy liên tục gây áp lực lên Phe Người Sống Sót–nhào vào mà đánh!"
+"L4D_Z_Tip_tank_self_control"		"Khi chơi Tank, nếu không liên tục tấn công, bạn sẽ mất quyền điều khiển và mất lượt."
+"L4D_Z_Tip_tank_throw"				"Nếu một Người Sống Sót ở ngoài tầm đấm của bạn, hãy ném đá tảng vào họ bằng cách nhấn %+attack2%."
+"L4D_Z_Tip_tank_attack_incaps"		"Tank có thể nhanh chóng giết Người Sống Sót đã ngã bằng cách đứng lên họ và nhấn %+attack%."
+"L4D_Z_Tip_tank_break_walls"			"Khi chơi Tank, hãy tìm kiếm các bức tường có viền phát sáng. Nhấn %+attack% để đấm xuyên tường."
+"L4D_Z_Tip_tank_punch_cars"			"Khi chơi Tank, hãy chú ý những chiếc xe có viền phát sáng. Nhấn %+attack% để ném chúng vào Người Sống Sót."
+
+
+//--------------------------------------------------------------------------------------------------------
+// Legacy CStrike strings
+
+"Cstrike_Combat_Title"			"CHIẾN ĐẤU"
+"Cstrike_Fire"					"Bắn"
+"Cstrike_Menu_Title"			"MENU"
+"Cstrike_Menu_Item_0"			"Mục menu 0"
+"Cstrike_Menu_Item_1"			"Mục menu 1"
+"Cstrike_Menu_Item_2"			"Mục menu 2"
+"Cstrike_Menu_Item_3"			"Mục menu 3"
+"Cstrike_Menu_Item_4"			"Mục menu 4"
+"Cstrike_Menu_Item_5"			"Mục menu 5"
+"Cstrike_Menu_Item_6"			"Mục menu 6"
+"Cstrike_Menu_Item_7"			"Mục menu 7"
+"Cstrike_Menu_Item_8"			"Mục menu 8"
+"Cstrike_Menu_Item_9"			"Mục menu 9"
+"Cstrike_Select_Team"			"Chọn đội"
+								
+
+// Titles.txt strings
+"Cstrike_TitlesTXT_CT_Forces"				"Con Bệnh"
+"Cstrike_TitlesTXT_CTs_Full"				"Đội Con Bệnh đã đầy"
+"Cstrike_TitlesTXT_CTs_Win"					"Con Bệnh chiến thắng!"
+"Cstrike_TitlesTXT_Game_join_ct"				"%s1 đang gia nhập phe Con Bệnh"
+"Cstrike_TitlesTXT_Game_join_ct_auto"			"%s1 đang gia nhập phe Con Bệnh (tự động)"
+"Cstrike_TitlesTXT_Game_join_terrorist"			"%s1 đang gia nhập phe Người Sống Sót"
+"Cstrike_TitlesTXT_Game_join_terrorist_auto"	"%s1 đang gia nhập phe Người Sống Sót (tự động)"
+"Cstrike_TitlesTXT_Game_timelimit"				"Thời Gian Còn Lại: %s1:%s2. Chiến dịch tiếp theo là %s3."
+"Cstrike_TitlesTXT_Terrorist_Forces"			"Phe Người Sống Sót"
+"Cstrike_TitlesTXT_Terrorists_Full"				"Đội Người Sống Sót đã đầy"
+"Cstrike_TitlesTXT_Terrorists_Win"				"Phe Người Sống Sót chiến thắng!"
+"Cstrike_TitlesTXT_Game_connected"				"%s1 đã kết nối"
+"Cstrike_TitlesTXT_Game_disconnected"			"%s1 đã rời khỏi trò chơi"
+"Cstrike_TitlesTXT_Game_idle_kick"				"%s1 đứng yên quá lâu và đã bị đuổi"
+												
+// Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
+// The control characters can be copied and pasted in notepad.
+//  = 0x02 (STX) - Use team color up to the end of the player name.  This only works at the start of the string, and precludes using the other control characters.
+//  = 0x03 (ETX) - Use team color from this point forward
+//  = 0x04 (EOT) - Use location color from this point forward
+//  = 0x01 (SOH) - Use normal color from this point forward
+
+"L4D_Chat_Infected"				"(Con Bệnh) %s1 :  %s2"
+"L4D_Chat_Survivor"				"(Sống Sót) %s1 :  %s2"
+"L4D_Chat_Infected_Dead"		"*CHẾT*(Con Bệnh) %s1 :  %s2"
+"L4D_Chat_Survivor_Dead"		"*CHẾT*(Sống Sót) %s1 :  %s2"
+"L4D_Chat_Spec"					"(Khán Giả) %s1 :  %s2"
+"L4D_Chat_All"					"%s1 :  %s2"
+"L4D_Chat_AllDead"				"*CHẾT* %s1 :  %s2"
+"L4D_Chat_AllSpec"				"*QSÁT* %s1 :  %s2"
+
+"L4D_Chat_Prompt_Team_General"		"Nói (ĐỘI)"
+"L4D_Chat_Prompt_Team_Infected"		"Nói (Con Bệnh)"
+"L4D_Chat_Prompt_Team_Survivor"		"Nói (Sống Sót):"
+								
+"Cstrike_Name_Change"				"* %s1 đã đổi tên thành %s2"
+"Cstrike_Nextlevel_Quit"			"Máy chủ sẽ tắt vào vòng tới"
+"Cstrike_Nextlevel_Set"				"Máy chủ sẽ chuyển qua %s1 vào vòng tới"
+"Cstrike_Nextlevel_Unset"			"Đã hủy thay đổi chiến dịch"
+"Cstrike_Nextlevel_Blank"			"Máy chủ sẽ không thay đổi chiến dịch"
+"Cstrike_Nextlevel_Unset2"			"Đã hủy thay đổi chương"
+"Cstrike_Nextlevel_Blank2"			"Máy chủ sẽ không thay đổi chương"
+"Cstrike_game_join_terrorist"		"%s1 đang gia nhập Phe Sống Sót\n"
+"Cstrike_game_join_ct"				"%s1 đang gia nhập Phe Con Bệnh\n"
+"L4D_Teammate_Attack"				"%s1 đã tấn công %s2"
+"L4D_Teammate_Attack_Involved"		"%s1 đã tấn công %s2"
+"Cstrike_game_join_spectators"		"%s1 đang gia nhập nhóm Quan Sát"
+								
+//--------------------------------------------------------------------------------------------------------
+// TargetID (mouseover) strings
+"L4D_TargetID_Player"			"%s1"
+"L4D_TargetID_Player_Health"	"%s1 (%s2)"
+"L4D_Use_Revive"				"NHẤN '%s1' ĐỂ KÉO DẬY ĐỒNG ĐỘI"
+"L4D_Use_LedgeHang"			"NHẤN '%s1' ĐỂ GIÚP ĐỒNG ĐỘI TRÈO LÊN"
+"L4D_Use_Minigun"				"NHẤN '%s1' ĐỂ DÙNG MINIGUN"
+"L4D_Use_Radio"				"NHẤN '%s1' ĐỂ PHÁT TÍN HIỆU GỌI GIẢI CỨU"
+"L4D_Heal_Other"				"NHẤN '%s1' ĐỂ HỒI MÁU CHO ĐỒNG ĐỘI"
+								
+//--------------------------------------------------------------------------------------------------------
+// Tank UI
+"L4D_tank_attack_survivors"		"TẤN CÔNG NGƯỜI SỐNG SÓT"
+"L4D_tank_lose_control"			"Bạn phải tấn công hoặc không thì"
+"L4D_tank_lose_control_1"		"mất quyền điều khiển Tank"
+"L4D_tank_control"				"ĐIỀU KHIỂN"
+
+"L4D_tank_take_control"			"BẠN SẼ TRỞ THÀNH TANK"
+"L4D_tank_take_control_tip"		"Hãy sẵn sàng tấn công những người sống sót"
+"L4D_tank_awoken"               "MỘT CON TANK ĐANG TIẾN ĐẾN"
+"L4D_tank_is_becoming"          "%s1 sẽ trở thành Tank"
+								
+//--------------------------------------------------------------------------------------------------------
+// Infected Spectator UI
+"L4D_pz_spectator_title"		"BẠN ĐÃ CHẾT"
+"L4D_pz_tank_battle"			"Đang chờ phân định kết quả trận đấu Tank..."
+"L4D_pz_finale_setup"			"Đang chờ hồi kết bắt đầu..."
+"L4D_pz_finale_wave"			"Đang chờ bầy Con Bệnh tiếp theo..."
+"L4D_pz_survivors_escaped"		"Phe Người Sống Sót đã trốn thoát..."
+"L4D_pz_waiting_for_survivors"	"Đang chờ Người Sống Sót..."
+"L4D_pz_scrimmage_wait"			"Đang chờ một Người Sống Sót băng qua vạch giao chiến... %s1"
+"L4D_pz_spawn_countdown"		"Bạn sẽ vào chế độ hồi sinh sau %s1 giây"
+"L4D_pz_spawn_countdown_single"	"Bạn sẽ vào chế độ hồi sinh sau 1 giây nữa"
+"L4D_pz_spawn_spawning"			"Đang vào chế độ hồi sinh..."
+
+//--------------------------------------------------------------------------------------------------------
+// Infected "just joined Infected team" menu
+"L4D_pz_now_infected_title"		"BÂY GIỜ BẠN ĐÃ LÀ CON BỆNH"
+"L4D_pz_now_infected_subtitle"	"Bạn sẽ cần chờ những Người Sống Sót rời khu vực bắt đầu trước khi bạn có thể hồi sinh."
+"L4D_pz_spawn_btn_overview"		"TỔNG QUAN"
+"L4D_pz_spawn_overview"			"Lớp nhân vật mà bạn dùng có thể thay đổi sau mỗi lần hồi sinh, tùy thuộc vào các lớp nhân vật khác hiện đang chơi.\n\nBạn sẽ bắt đầu trong 'Chế độ chọn hồi sinh'. Di chuyển xung quanh để chọn một vị trí tối ưu để hồi sinh tại đó."
+"L4D_pz_spawn_btn_hunter"		"HUNTER"
+"L4D_pz_spawn_btn_boomer"		"BOOMER"
+"L4D_pz_spawn_btn_smoker"		"SMOKER"
+"L4D_pz_spawn_btn_tank"			"TANK"
+"L4D_pz_spawn_btn_zombie"		"THÂY MA"
+//--------------------------------------------------------------------------------------------------------
+// Infected Stats panels		
+"L4D_pz_AsAHunter"	"CHƠI VAI HUNTER"
+"L4D_pz_AsASmoker"	"CHƠI VAI SMOKER"
+"L4D_pz_AsABoomer"	"CHƠI VAI BOOMER"
+"L4D_pz_AsATank"	"CHƠI VAI TANK"
+"L4D_pz_ThatLife"			"MẠNG ĐÓ:"
+"L4D_pz_Rank"				"TỔNG ĐIỂM:"
+"L4D_pz_TankTickets"		"VÉ"
+"L4D_pz_TotalPointsEarned"	"Tổng điểm nhận được:"
+"L4D_pz_DamageDealt"		"Sát thương gây ra cho Người Sống Sót:"
+"L4D_pz_SurvivorIncapCount" "Số Người Sống Sót bị vô hiệu:"
+"L4D_pz_SurvivorKillCount"	"Số Người Sống Sót bị giết:"
+"L4D_pz_VomitCount"			"Số Người Sống Sót bị dính dịch mật Boomer:"
+"L4D_pz_BoomerBombCount"	"Số Bom của Boomer:"
+"L4D_pz_PounceCount"		"Số Người Sống Sót bị chộp:"
+"L4D_pz_LungeCount"			"Số Người Sống Sót bị đẩy:"
+"L4D_pz_HangCount"			"Số Người Sống Sót bị siết:"
+"L4D_pz_PullCount"			"Số Người Sống Sót bị kéo lê:"
+"L4D_pz_TankPunchCount"		"Số Người Sống Sót bị hạ gục:"
+"L4D_pz_TankThrowCount"		"Số lần ném thành công:"
+							
+//--------------------------------------------------------------------------------------------------------
+// Survivor Stats panels
+"L4D_Loading_Map"			"Đang nạp..."
+"L4D_Checkpoint_Cleared"	"CHẶNG ĐÃ HOÀN THÀNH"
+"L4D_Event_History"			"LỊCH SỬ SỰ KIỆN"
+"L4D_s_current_status"		"TRẠNG THÁI PHE SỐNG SÓT HIỆN TẠI"
+"L4D_s_Kills"				"GIẾT"
+"L4D_s_Damage_Taken"		"SÁT THƯƠNG\nPHẢI CHỊU"
+"L4D_s_pzs_killed"			"Con Bệnh Đặc Biệt đã giết:"
+"L4D_s_others_revived"		"Số người sống sót đã kéo dậy:"
+"L4D_s_first_aid_shared"	"Bộ sơ cứu đã chia sẻ:"
+"L4D_s_mission_difficulty"	"%s1, %s2"
+
+//--------------------------------------------------------------------------------------------------------
+// Transition stats screen
+"L4D_s_loading"	"Đang nạp: \"%s1\" - %s2"
+
+//--------------------------------------------------------------------------------------------------------
+//Spawn Select Mode
+"L4D_spawn_select_mode_title"				"Chọn vị trí hồi sinh"
+"L4D_spawn_select_mode_class_HUNTER"		"HUNTER"
+"L4D_spawn_select_mode_class_CHARGER"		"CHARGER"
+"L4D_spawn_select_mode_class_SPITTER"		"SPITTER"
+"L4D_spawn_select_mode_class_JOCKEY"		"JOCKEY"
+"L4D_spawn_select_mode_class_SMOKER"		"SMOKER"
+"L4D_spawn_select_mode_class_BOOMER"		"BOOMER"
+"L4D_spawn_select_mode_text_1" 				"Tránh xa những Người Sống Sót, tìm một nơi lý tưởng để ẩn nấp, sau đó hồi sinh vào thế giới."
+"L4D_spawn_select_mode_text_2" 				"Bạn không cần hồi sinh ngay lập tức. Hãy chờ đến khi tìm được nơi hoàn hảo để tấn công."
+"L4D_spawn_select_mode_text_3" 				"Bạn di chuyển nhanh hơn trong chế độ hồi sinh. Nếu không thì sẽ mất nhiều thời gian để tìm điểm ẩn nấp."
+"L4D_spawn_select_mode_boomer_secondary"	"Nôn ọe"
+"L4D_spawn_select_mode_boomer_1_title"		"Chính: NÔN ỌE"
+"L4D_spawn_select_mode_boomer_1_text"		"Tấn công ở tầm trung"
+"L4D_spawn_select_mode_boomer_2_title"		"Phụ: CÀO XÉ"
+"L4D_spawn_select_mode_boomer_2_text"		"Tấn công ở tầm gần"
+"L4D_spawn_select_mode_hunter_title"		"BẠN SẼ HỒI SINH TRONG VAI HUNTER"
+"L4D_spawn_select_mode_hunter_text"			"Bạn sẽ hồi sinh trong vai Hunter"
+"L4D_spawn_select_mode_hunter_secondary"	"Chộp"
+"L4D_spawn_select_mode_hunter_1_title"		"Chính: CHỘP"
+"L4D_spawn_select_mode_hunter_1_text"		"Cúi xuống, sau đó nhấn để tấn công"
+"L4D_spawn_select_mode_hunter_2_title"		"Phụ: CÀO XÉ"
+"L4D_spawn_select_mode_hunter_2_text"		"Tấn công ở tầm gần"
+"L4D_spawn_select_mode_smoker_title"		"BẠN SẼ HỒI SINH TRONG VAI SMOKER"
+"L4D_spawn_select_mode_smoker_text"			"Bạn sẽ hồi sinh trong vai Smoker"
+"L4D_spawn_select_mode_smoker_secondary"	"Phóng Lưỡi"
+"L4D_spawn_select_mode_smoker_1_title"		"Chính: PHÓNG LƯỠI"
+"L4D_spawn_select_mode_smoker_1_text"		"Tấn công ở tầm xa"
+"L4D_spawn_select_mode_smoker_2_title"		"Phụ: CÀO XÉ"
+"L4D_spawn_select_mode_smoker_2_text"		"Tấn công ở tầm gần"
+"L4D_spawn_select_mode_boomer_title"		"BẠN SẼ HỒI SINH TRONG VAI BOOMER"
+"L4D_spawn_select_mode_boomer_text"			"Bạn sẽ hồi sinh trong vai Boomer"
+"L4D_spawn_select_mode_primary"				"Tấn Công Bằng Cào Xé"
+"L4D_spawn_select_mode_cant_spawn"			"Bạn không thể hồi sinh tại đây"
+"L4D_spawn_select_mode_in_sight"			"Bạn có thể bị Người Sống Sót nhìn thấy"
+"L4D_spawn_select_mode_too_close"			"Bạn ở quá gần Người Sống Sót"
+"L4D_spawn_select_mode_restricted_area"		"Đây là khu vực cấm"
+"L4D_spawn_select_mode_inside_entity"		"Có thứ gì đó đang chặn điểm này"
+
+"L4D_spawn_select_mode_spitter_title"		"BẠN SẼ HỒI SINH TRONG VAI SPITTER"
+"L4D_spawn_select_mode_spitter_text"			"Bạn sẽ hồi sinh trong vai Spitter"
+"L4D_spawn_select_mode_spitter_1_title"		"Chính: KHẠC"
+"L4D_spawn_select_mode_spitter_1_text"		"Tấn công ở tầm trung đến tầm xa"
+"L4D_spawn_select_mode_spitter_2_title"		"Phụ: CÀO XÉ"
+"L4D_spawn_select_mode_spitter_2_text"		"Tấn công ở tầm gần"
+
+"L4D_spawn_select_mode_jockey_title"		"BẠN SẼ HỒI SINH TRONG VAI JOCKEY"
+"L4D_spawn_select_mode_jockey_text"			"Bạn sẽ hồi sinh trong vai Jockey"
+"L4D_spawn_select_mode_jockey_1_title"		"Chính: NHẢY"
+"L4D_spawn_select_mode_jockey_1_text"		"Nhảy vào Người Sống Sót và hướng họ vào nơi nguy hiểm"
+"L4D_spawn_select_mode_jockey_2_title"		"Phụ: CÀO XÉ"
+"L4D_spawn_select_mode_jockey_2_text"		"Tấn công ở tầm gần"
+
+"L4D_spawn_select_mode_charger_title"		"BẠN SẼ HỒI SINH TRONG VAI CHARGER"
+"L4D_spawn_select_mode_charger_text"		"Bạn sẽ hồi sinh trong vai Charger"
+"L4D_spawn_select_mode_charger_1_title"		"Chính: HÚC"
+"L4D_spawn_select_mode_charger_1_text"		"Húc vào Người Sống Sót và tẩn họ xuống đất"
+"L4D_spawn_select_mode_charger_2_title"		"Phụ: CÀO XÉ"
+"L4D_spawn_select_mode_charger_2_text"		"Tấn công ở tầm gần"
+											
+											
+//--------------------------------------------------------------------------------------------------------
+//Infected Team/class Menu
+"L4D_pz_team_join_title"	"CHƠI VAI CON BỆNH"
+"L4D_pz_team_join_subtitle" "Chọn lớp nhân vật mà bạn muốn chơi. Không phải lúc nào lớp nhân vật bạn chọn cũng có sẵn khi bạn sẵn sàng hồi sinh."
+"L4D_pz_class_select_title" "CHỌN NHÂN VẬT CON BỆNH"
+							
+//--------------------------------------------------------------------------------------------------------
+//Survivor Team/class Menu	
+"L4D_s_team_join_title"				"GIA NHẬP ĐỘI NGƯỜI SỐNG SÓT"
+"L4D_s_team_join_takeover_title"	"HIỆN ĐANG QUAN SÁT"
+"L4D_s_team_join_subtitle"			"Chọn một Người Sống Sót có sẵn"
+"L4D_s_team_join_state_inactive"	"(không hoạt động)"
+"L4D_s_team_join_state_bot"			"%s1 (BOT)"
+"L4D_s_team_join_state_loading"		"%s1 (ĐANG NẠP)"
+"L4D_s_team_join_hour_played"		"Đã chơi 1 tiếng"
+"L4D_s_team_join_hours_played"		"Đã chơi %s1 tiếng"
+"L4D_s_class_select_title"			"CHỌN NHÂN VẬT NGƯỜI SỐNG SÓT"
+
+//--------------------------------------------------------------------------------------------------------
+// Team Full Menu
+"L4D_s_team_full_title"			"ĐỘI NGƯỜI SỐNG SÓT ĐÃ ĐẦY"
+"L4D_s_team_full_subtitle"		"Đội Người Sống Sót đã có bốn người chơi"
+"L4D_pz_team_full_title"		"ĐỘI CON BỆNH ĐÃ ĐẦY"
+"L4D_pz_team_full_subtitle"		"Đội Con Bệnh đã có bốn người chơi"
+"L4D_both_team_full_title"		"CẢ HAI ĐỘI ĐÃ ĐẦY"
+"L4D_both_team_full_subtitle"	"Đã có bốn người chơi ở cả hai đội"
+"L4D_team_menu_full"			"ĐẦY"		// The team is full, all player slots are used
+
+//--------------------------------------------------------------------------------------------------------
+// Lobby Menu
+"L4D_Lobby_Title"			"PHÒNG CHẾ ĐỘ CHIẾN DỊCH"
+"L4D_Lobby_Subtitle"			"Tập hợp đội của bạn để chiến đấu với bầy lũ Con Bệnh"
+"L4D_Lobby_Status_Waiting"		"Đang chờ 4 người chơi tham gia"
+"L4D_Lobby_PlayerSlotAvailable"		"Đang có suất chơi"
+"L4D_Lobby_Button_StartGame"		"BẮT ĐẦU CHƠI"
+"L4D_Lobby_PlayerDropDown"		"Tắt tiếng, gửi tin nhắn cho hoặc xem trang ID Steam của người chơi.\nLà chủ phòng, bạn có thể loại người chơi khỏi phòng."
+
+//--------------------------------------------------------------------------------------------------------
+//Class Descriptions
+"L4D_class_special_ability_title"	"KHẢ NĂNG ĐẶC BIỆT:"
+"L4D_class_primary_attack_title"	"ĐÒN ĐÁNH CHÍNH:"
+"L4D_class_hunter_name"				"Hunter"
+"L4D_class_hunter_ability_text"		"KHẢ NĂNG ĐẶC BIỆT: Chộp\nNhảy ở khoảng cách rất xa và chộp Người Sống Sót để gây sát thương."
+"L4D_class_boomer_name"				"Boomer"
+"L4D_class_boomer_ability_text"		"KHẢ NĂNG ĐẶC BIỆT: Nôn ọe\nNôn ọe lên Người Sống Sót để thu hút đàn zombie. Khi chết sẽ làm dịch mật nổ tung tóe."
+"L4D_class_smoker_name"				"Smoker"
+"L4D_class_smoker_ability_text"		"KHẢ NĂNG ĐẶC BIỆT: Phóng Lưỡi\nDùng lưỡi siết chặt Người Sống Sót. Sử dụng độ cao hoặc chướng ngại vật để gài bẫy Người Sống Sót bất cẩn."
+"L4D_class_spitter_name"				"Spitter"
+"L4D_class_spitter_ability_text"		"KHẢ NĂNG ĐẶC BIỆT: Khạc\nKhạc chất độc để cô lập Người Sống Sót."
+"L4D_class_charger_name"				"Charger"
+"L4D_class_charger_ability_text"		"KHẢ NĂNG ĐẶC BIỆT: Húc\nTóm Người Sống Sót và kéo họ ra xa đội của họ."
+"L4D_class_jockey_name"				"Jockey"
+"L4D_class_jockey_ability_text"		"KHẢ NĂNG ĐẶC BIỆT: Nhảy\nNhảy vào Người Sống Sót và hướng họ vào chướng ngại vật."
+"L4D_class_random_name"				"Ngẫu nhiên"
+"L4D_class_random_ability_text"		"Chọn ngẫu nhiên một lớp nhân vật mỗi lần bạn hồi sinh."
+"L4D_class_tank_name"				"Tank"
+"L4D_class_witch_name"				"Witch"
+"L4D_class_infected_name"			"Con bệnh"
+"L4D_class_hunter_player_name"		"%s1 (Hunter)"
+"L4D_class_boomer_player_name"		"%s1 (Boomer)"
+"L4D_class_smoker_player_name"		"%s1 (Smoker)"
+"L4D_class_spitter_player_name"		"%s1 (Spitter)"
+"L4D_class_charger_player_name"		"%s1 (Charger)"
+"L4D_class_jokcey_player_name"		"%s1 (Jockey)"
+"L4D_class_tank_player_name"		"%s1 (Tank)"
+									
+//--------------------------------------------------------------------------------------------------------
+//Spectator UI
+"L4D_spectator_select_side" "CHỌN MỘT PHE ĐỂ THAM GIA"
+"L4D_spectator_cant_change_teams" "KHÔNG THỂ THAY ĐỔI ĐỘI"
+"L4D_spectator_team_change_limit" "Bạn đã sử dụng hết số lần thay đổi đội tối đa được phép dành cho bản đồ này."
+"L4D_spectator_waiting_for_players" "Bạn phải chờ đến khi tất cả người chơi đã nạp vào."
+"L4D_spectator_team_on_team_game" "Bạn không thể thay đổi đội trong ván đấu đội đấu đội."
+
+//--------------------------------------------------------------------------------------------------------
+// Taking over a survivor bot
+"L4D_s_bot_control_subtitle"	"Nhấn để chơi với vai %s1"
+
+//--------------------------------------------------------------------------------------------------------
+// Waiting for the Survivor team to be ready
+"L4D_s_team_ready_title"		"ĐANG CHỜ VÒNG ĐẤU BẮT ĐẦU"
+"L4D_s_team_ready_subtitle"		"Trang bị sẵn sàng cho hành trình nguy hiểm phía trước"
+"L4D_s_team_ready_seconds_1"	"GIÂY CÒN LẠI ĐẾN KHI"
+"L4D_s_team_ready_seconds_2"	"VÒNG ĐẤU BẮT ĐẦU"
+"L4D_s_team_ready_please_wait"	"VUI LÒNG CHỜ ĐỒNG ĐỘI CỦA BẠN"
+"L4D_s_team_ready_playtest"		"VUI LÒNG CHỜ TẤT CẢ NGƯỜI CHƠI THAM GIA"
+
+//--------------------------------------------------------------------------------------------------------
+// Teammate in peril notification
+"L4D_teammate_is_in_peril"			"MỘT ĐỒNG ĐỘI ĐANG GẶP SỰ CỐ"
+"L4D_teammate_is_in_peril_use"		"NHẤN NÚT %s1 ĐỂ THẤY HỌ"
+"L4D_teammate_is_in_peril_use_word"	"DÙNG"
+
+//--------------------------------------------------------------------------------------------------------
+// Healing progress bar
+"L4D_progress_reviving_friend"		"ĐANG HỒI SINH ĐỒNG ĐỘI"
+"L4D_progress_being_revived"		"ĐANG ĐƯỢC KÉO DẬY"
+"L4D_progress_helping_friend_up"	"ĐANG GIÚP BẠN BÈ ĐỨNG LÊN"
+"L4D_progress_being_helped_up"		"ĐANG ĐƯỢC ĐỨNG LÊN"
+"L4D_progress_heal"					"ĐANG TỰ HỒI MÁU"
+"L4D_progress_heal_friend"			"ĐANG HỒI MÁU CHO ĐỒNG ĐỘI"
+"L4D_progress_being_healed"			"ĐANG ĐƯỢC HỒI MÁU"
+"L4D_progress_reviving_player"		"Người cứu bạn: %s1"
+"L4D_progress_healing_player"		"Người hồi máu cho bạn: %s1"
+"L4D_progress_healing_target"		"Hồi máu cho: %s1"
+"L4D_progress_giving_ammo"			"ĐANG ĐƯA ĐẠN"
+"L4D_progress_giving_ammo_to_self"	"ĐANG MỞ HỘP ĐẠN"
+"L4D_progress_being_given_ammo"		"ĐANG LẤY ĐẠN"
+"L4D_progress_giving_ammo_target"	"Đưa đạn cho: %s1"
+"L4D_progress_defibrillator"		"ĐANG SỬ DỤNG MÁY KHỬ RUNG TIM"
+"L4D_progress_defibrillator_target"	"Khử rung cho: %s1"
+"L4D_progress_open_upgrade_pack_incendiary"	"ĐANG TRIỂN KHAI ĐẠN CHÁY"
+"L4D_progress_open_upgrade_pack_explosive"	"ĐANG TRIỂN KHAI ĐẠN NỔ"
+"L4D_progress_using_gas_can"		"ĐANG ĐỔ NHIÊN LIỆU"
+"L4D_progress_open_upgrade_pack_explosive"	"DEPLOYING EXPLOSIVE AMMO"
+"L4D_progress_using_cola_bottles"	"ĐANG GẮN CHAI COLA"
+"L4D_progress_using_cola_bottles_alt1"	"ĐANG GIAO CHAI COLA"
+"L4D_progress_using_cola_bottles_alt2"	"ĐANG CUNG CẤP CHAI COLA"
+
+//--------------------------------------------------------------------------------------------------------
+//Button Text
+"L4D_btn_ok"						"OK"
+"L4D_btn_select"					"CHỌN"
+"L4D_btn_cancel"					"HỦY"
+"L4D_btn_spectate"					"QUAN SÁT"
+"L4D_btn_continue"					"TIẾP TỤC"
+"L4D_btn_dont_show_again"			"Không hiển thị lại cho tôi nữa"
+"L4D_btn_dont_show_hunter_again"	"Không hiển thị lại thông tin về Hunter cho tôi nữa"
+"L4D_btn_dont_show_smoker_again"	"Không hiển thị lại thông tin về Smoker cho tôi nữa"
+"L4D_btn_dont_show_boomer_again"	"Không hiển thị lại thông tin về Boomer cho tôi nữa"
+"L4D_btn_dont_show_spitter_again"	"Không hiển thị lại thông tin về Spitter cho tôi nữa"
+"L4D_btn_dont_show_charger_again"	"Không hiển thị lại thông tin về Charger cho tôi nữa"
+"L4D_btn_dont_show_jockey_again"	"Không hiển thị lại thông tin về Jockey cho tôi nữa"
+"L4D_btn_play_survivor"				"CHƠI VAI NGƯỜI SỐNG SÓT"
+"L4D_btn_play_infected"				"CHƠI VAI CON BỆNH"
+
+//--------------------------------------------------------------------------------------------------------
+// HitAnnouncements
+"L4D_HIT_ASSIST_ATTACK"						"%s1 đánh trúng %s2, được hỗ trợ bởi %s3"
+"L4D_HIT_ATTACK"							"%s1 đánh trúng %s2"
+"L4D_HIT_ASSIST"							"%s1 hỗ trợ chống lại %s2"
+"L4D_HIT_PUSH_ASSIST_ATTACK"				"%s1 đã đẩy %s2, được hỗ trợ bởi %s3"
+"L4D_HIT_PUSH_ATTACK"						"%s1 đã đẩy %s2"
+"L4D_HIT_POUNCE_ATTACK"						"%s1 đã chộp %s2 để gây %s3 sát thương"
+"L4D_INCAPACITATE"							"%s1 đã vô hiệu %s2"
+"L4D_INCAPACITATE_ASSIST"					"%s1 đã hỗ trợ vô hiệu %s2"
+"L4D_KILLED"								"%s1 đã giết %s2"
+"L4D_KILLED_HUNTER"							"%s1 đã giết một Hunter"
+"L4D_KILLED_BOOMER"							"%s1 đã giết một Boomer"
+"L4D_KILLED_SMOKER"							"%s1 đã giết một Smoker"
+"L4D_KILLED_SPITTER"							"%s1 đã giết một Spitter"
+"L4D_KILLED_CHARGER"							"%s1 đã giết một Charger"
+"L4D_KILLED_JOCKEY"							"%s1 đã giết một Jockey"
+"L4D_DEFIBRILLATOR_USED"					"%s1 đã hồi sinh %s2"
+"L4D_SCAVENGE_DESTROY_GASCAN"					"%s1 đã phá hủy một can xăng"
+"L4D_VS_REACHED_MARKER"						"Người Sống Sót đã vượt qua %s1% quãng đường!"
+
+//--------------------------------------------------------------------------------------------------------
+// Hints
+"L4D_Z_Tip_TANK_FRUSTRATED"							"Tank không được phép đứng chờ–nó phải tấn công!\nBạn đã mất quyền điều khiển con Tank này."
+"L4D_Z_Tip_RELOCATED_CLOSER_TO_SURVIVORS"			"Đạo diễn đã di chuyển bạn lại gần hơn phe Người Sống Sót"
+
+//--------------------------------------------------------------------------------------------------------
+// EndScenario strings
+"L4D_Scenario_Restart"						"Đang khởi động lại kịch bản..."
+"L4D_Scenario_Survivors_Dead"				"Phe Người Sống Sót đã bị áp đảo"
+"L4D_Scenario_Finale_Death_Message"			"...nhưng đồng đội của bạn vẫn có thể trốn thoát"
+"L4D_Scenario_Radio_Destroyed"				"Bộ đàm đã bị phá hủy"
+"L4D_Scenario_Finale_Won"					"Phe Người Sống Sót đã trốn thoát!"
+
+//--------------------------------------------------------------------------------------------------------
+// OnAward strings
+"L4D_OnAwardSaved"							"%s1 đã cứu %s2"
+"L4D_OnAwardSharing"						"%s1 đã đưa máu cho %s2"
+"L4D_OnAwardSharingAdrenaline"				"%s1 đã đưa adrenaline cho %s2"
+"L4D_OnAwardProtector"						"%s1 đã bảo vệ %s2"
+"L4D_OnAwardRescuer"						"%s1 đã giải cứu %s2"
+"L4D_OnAwardMedic"							"%s1 đã hồi máu %s2"
+
+//--------------------------------------------------------------------------------------------------------
+// Infected specific Hints
+"L4D_TankRangeCull"							"Tất cả người sống sót\nđang ở quá xa.\nTiến lại gần, nếu không sẽ sớm bị giết..."
+"L4D_ZombieRangeCull"						"Tất cả những người sống sót\nđang ở quá xa.\nTiến lại gần không sẽ bị di chuyển lại gần hơn..."
+"L4D_ZombieFinaleStart"						"Giết người sống sót trước khi họ được giải cứu"
+"L4D_ZombieGoal"							"Ngăn người sống sót đến chỗ an toàn"
+"L4D_ZombieCheckPointDoor"					"Bạn không thể phá cửa phòng an toàn. Hãy tìm lối đi khác."
+
+//--------------------------------------------------------------------------------------------------------
+// Infected UI and notifications
+"L4D_Zombie_UI_Press"						"Nhấn "
+"L4D_Zombie_UI_Not_Bound"					"< chưa gán >"
+"L4D_Zombie_UI_Become"						" để trở thành "
+"L4D_Zombie_UI_Tank"						"TANK"
+"L4D_Zombie_UI_Will_Become"					"Bạn sẽ trở thành "
+"L4D_Zombie_UI_One_Second"					" sau 1 giây"
+"L4D_Zombie_UI_Are_Become"					"Bạn sẽ trở thành "
+"L4D_Zombie_UI_In"							" sau"
+"L4D_Zombie_UI_Seconds"						"giây"
+"L4D_Zombie_UI_Become_This"					" để trở thành "
+"L4D_Zombie_UI_Too_Far"			            "QUÁ XA NGƯỜI SỐNG SÓT"
+"L4D_Zombie_UI_Being_Moved_Closer"			"Bạn được di chuyển gần đến những Người Sống Sót..."
+"L4D_Zombie_UI_To_Be_Moved"					"Di chuyển gần đến những Người Sống Sót"
+"L4D_Zombie_UI_BadPlace"					"Không thể hồi sinh tại đây"
+"L4D_Zombie_UI_Wait_For_Tank"				"Đang chờ kết quả trận đấu với Tank..."
+"L4D_Zombie_UI_Spawn_Disabled"				"Khả năng hồi sinh đã bị vô hiệu..."
+"L4D_Zombie_UI_Wait_For_Finale"				"Đang chờ hồi kết bắt đầu..."
+"L4D_Zombie_UI_Wait_For_Stampede"			"Đang chờ con bệnh chạy toán loạn..."
+"L4D_Zombie_UI_Survivor_Escaped"			"Phe Người Sống Sót đã trốn thoát..."
+"L4D_Zombie_UI_Wait_For_Survivors"			"Đang chờ người sống sót..."
+"L4D_Zombie_UI_Wait_For_Scrimmage"			"Đang chờ một Người Sống Sót băng qua vạch giao chiến..."
+"L4D_Zombie_UI_Enter_Spawn_Mode"			"Bạn sẽ vào chế độ hồi sinh trong"
+"L4D_Zombie_UI_Spawn_In_Second"				"Bạn sẽ vào chế độ hồi sinh trong 1 giây"
+"L4D_Zombie_UI_Entering_Spawn"				"Đang vào chế độ hồi sinh..."
+"L4D_Zombie_UI_Director_TimeOut"			"Đạo diễn yêu cầu tạm dừng..."
+"L4D_Zombie_UI_Wait_For_Safe_Area"			"Đang chờ Người Sống Sót rời khu vực an toàn..."
+"L4D_Zombie_UI_Get_Ready_For_Spawn"			"Hãy sẵn sàng..."
+"L4D_Zombie_UI_Invalid"						"[KHÔNG HỢP LỆ]"
+"L4D_Zombie_UI_Press_Fire_To_Play"			"Nhấn để chơi"
+"L4D_Zombie_UI_Action"						"Sẵn sàng hồi sinh"
+
+//--------------------------------------------------------------------------------------------------------
+// Report Screen
+"L4D_ReportScreen_Performance"              "Kết quả của đội:"
+"L4D_ReportScreen_Title_Safe"               "Giờ thì... chúng ta an toàn."
+
+//--------------------------------------------------------------------------------------------------------
+// Outtro Stats
+"L4D_Hour"									"giờ"
+"L4D_Hours"									"giờ"
+"L4D_Minute"								"phút"
+"L4D_Minutes"								"phút"
+"L4D_MissionTime_Format_Hours"				"%s1 giờ, %s2 phút"
+"L4D_Gameplay_Stats"						"Thông số trò chơi"
+"L4D_Stat_Mission_Time"						"Tổng thời gian chiến dịch"
+"L4D_Stat_Time_Played"						"Tổng thời gian chơi"
+"L4D_Stat_Favorite_Mission"					"Chiến dịch yêu thích"
+"L4D_Stat_Favorite_Weapon"					"Vũ khí yêu thích"
+"L4D_Stat_Achievements_Earned"				"Thành tựu nhận được" [$WIN32]
+//"L4D_Stat_Achievements_Earned"				"Achievements earned" [$X360]
+"L4D_Stat_Restarts"							"Số lần bắt đầu lại"
+"L4D_Stat_Tagline"							"%s1 zombie đã bị làm hại khi thực hiện bộ phim này."
+
+//--------------------------------------------------------------------------------------------------------
+// Highlights
+"L4D_Highlight_LeastFriendlyFire"			"ĐỒNG ĐỘI CẨN THẬN NHẤT:"
+"L4D_Highlight_MostSpecialsKilled"			"SÁT THỦ ĐẶC BIỆT:"
+"L4D_Highlight_MostHeals"					"Y SĨ CỦA ĐỘI:"
+"L4D_Highlight_MostSaves"					"NGƯỜI CỨU MẠNG TUYỆT VỜI NHẤT:"
+"L4D_Highlight_LeastDamageTaken"			"BỊ SÁT THƯƠNG ÍT NHẤT:"
+"L4D_Highlight_LeastIncaps"					"BỊ VÔ HIỆU ÍT NHẤT:"
+"L4D_Highlight_MostDamageToTank"			"SÁT THỦ DIỆT TANK:"
+"L4D_Highlight_MostDamageToWitch"			"THỢ SĂN WITCH:"
+"L4D_Highlight_MostAccurate"				"XẠ THỦ:"
+"L4D_Highlight_MostHeadshots"				"THỢ SĂN ĐẦU NGƯỜI:"
+"L4D_Highlight_MostInfectedKilled"			"PHÒNG VỆ CHUNG:"
+"L4D_HIghlight_MostProtects"				"NGƯỜI BẢO VỆ:"
+"L4D_Highlight_MostMeleeKills"				"CHIẾN BINH GIÁP LÁ CÀ:"
+
+"L4D_Highlight_LeastFriendlyFire_Desc"			"Ít bắn nhầm đồng đội nhất"
+"L4D_Highlight_MostSpecialsKilled_Desc"			"Giết nhiều Con Bệnh Đặc Biệt nhất"
+"L4D_Highlight_MostHeals_Desc"				"Hồi máu cho nhiều đồng đội nhất"
+"L4D_Highlight_MostSaves_Desc"				"Kéo dậy nhiều đồng đội nhất"
+"L4D_Highlight_LeastDamageTaken_Desc"			"Chịu lượng sát thương ít nhất"
+"L4D_Highlight_LeastIncaps_Desc"			"Bị vô hiệu ít lần nhất"
+"L4D_Highlight_MostDamageToTank_Desc"			"Gây ra nhiều sát thương nhất cho Tank"
+"L4D_Highlight_MostDamageToWitch_Desc"			"Gây ra nhiều sát thương nhất cho Witch"
+"L4D_Highlight_MostAccurate_Desc"			"Mức độ chính xác cao nhất"
+"L4D_Highlight_MostHeadshots_Desc"			"Most headshots"
+"L4D_Highlight_MostInfectedKilled_Desc"			"Giết nhiều Con Bệnh nhất"
+"L4D_Highlight_MostProtects_Desc"			"Bảo vệ nhiều đồng đội nhất"
+"L4D_Highlight_MostMeleeKills_Desc"			"Giết nhiều mạng nhất bằng vũ khí cận chiến"
+
+"L4D_Highlight_MostDeaths_Desc"			"Chết"
+"L4D_Highlight_Incaps_Desc"			"Số lần bị vô hiệu"
+"L4D_Highlight_MedkitsUsed_Desc"			"Số túi sơ cứu sử dụng"
+"L4D_Highlight_PillsUsed_Desc"			"Số thuốc giảm đau sử dụng"
+"L4D_Highlight_PipebombsUsed_Desc"			"Số bom ống sử dụng"
+"L4D_Highlight_MolotovsUsed_Desc"			"Số bom xăng sử dụng"
+"L4D_Highlight_BoomerBilesUsed_Desc"			"Số bom dịch mật sử dụng"
+"L4D_Highlight_AdrenalinesUsed_Desc"			"Số adrenaline sử dụng"
+"L4D_Highlight_DefibrillatorsUsed_Desc"			"Số máy khử rung tim sử dụng"
+"L4D_Highlight_MeleeKills_Desc"			"Số mạng giết bằng cận chiến"
+"L4D_Highlight_HuntersKilled_Desc"			"Số Hunter giết"
+"L4D_Highlight_BoomersKilled_Desc"			"Số Boomer giết"
+"L4D_Highlight_SmokersKilled_Desc"			"Số Smoker giết"
+"L4D_Highlight_ChargersKilled_Desc"			"Số Charger giết"
+"L4D_Highlight_JockeysKilled_Desc"			"Số Jockey bị giết"
+"L4D_Highlight_SpittersKilled_Desc"			"Số Spitter giết"
+"L4D_Highlight_TanksKilled_Desc"			"Số Tank giết"
+"L4D_Highlight_WitchesKilled_Desc"			"Số Witch giết"
+"L4D_Highlight_MostCommonInfectedKilled_Desc"			"Số con bệnh thường giết"
+"L4D_Highlight_WitchDisturbances_Desc"			"Làm Witch kinh động nhiều nhất"
+"L4D_Highlight_GavePills_Desc"				"Chia sẻ nhiều thuốc giảm đau nhất"
+"L4D_Highlight_Accuracy_Desc"				"Độ chính xác chung"
+"L4D_Highlight_MostHeadshots_Desc"			"Tổng số phát bắn trúng đầu"
+"L4D_Highlight_HeadshotPercent_Desc"		"Bắn trúng đầu (tỷ lệ trên tất cả phát bắn trúng)"
+"L4D_Highlight_KillsPerMinute_Desc"			"Số Con Bệnh bình quân bị giết/phút"
+
+//--------------------------------------------------------------------------------------------------------
+// Infected Highlights
+"L4D_Highlight_MostDamage"					"TỔNG SÁT THƯƠNG:"
+"L4D_Highlight_MostIncaps"					"VÔ HIỆU NHIỀU NHẤT:"
+"L4D_Highlight_MostTankDamage"				"SÁT THƯƠNG TANK:"
+"L4D_Highlight_MostHunterDamage"				"SÁT THƯƠNG HUNTER:"
+"L4D_Highlight_MostSmokerDamage"				"SÁT THƯƠNG SMOKER:"
+"L4D_Highlight_MostBoomerDamage"				"SÁT THƯƠNG BOOMER:"
+"L4D_Highlight_MostSpitterDamage"				"SÁT THƯƠNG SPITTER:"
+"L4D_Highlight_MostChargerDamage"				"SÁT THƯƠNG CHARGER:"
+"L4D_Highlight_MostJockeyDamage"				"SÁT THƯƠNG JOCKEY:"
+"L4D_Highlight_MostKills"					"SÁT THỦ NGƯỜI CHƠI:"
+"L4D_Highlight_MostPounces"					"LƯỢT CHỘP CỦA HUNTER:"
+"L4D_Highlight_MostPushes"					"LƯỢT ĐẨY CỦA HUNTER:"
+"L4D_Highlight_MostTankPunches"				"LƯỢT ĐẤM CỦA TANK:"
+"L4D_Highlight_MostTankThrows"				"LƯỢT NÉM CỦA TANK:"
+"L4D_Highlight_MostHung"					"SỐ NGƯỜI SỐNG SÓT BỊ SIẾT:"
+"L4D_Highlight_MostPulled"					"SỐ NGƯỜI SỐNG SÓT BỊ KÉO LÊ:"
+"L4D_Highlight_MostBombed"					"SỐ BOM CỦA BOOMER:"
+"L4D_Highlight_MostVomited"					"NÔN ỌE NHIỀU NHẤT:"
+
+"L4D_Highlight_MostDamage_Desc"				"Gây nhiều sát thương nhất lên phe Sống Sót"
+"L4D_Highlight_MostIncaps_Desc"				"Vô hiệu nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostTankDamage_Desc"			"Gây nhiều sát thương nhất khi chơi Tank"
+"L4D_Highlight_MostHunterDamage_Desc"		"Gây nhiều sát thương nhất khi chơi Hunter"
+"L4D_Highlight_MostSmokerDamage_Desc"		"Gây nhiều sát thương nhất khi chơi Smoker"
+"L4D_Highlight_MostBoomerDamage_Desc"		"Gây nhiều sát thương nhất khi chơi Boomer"
+"L4D_Highlight_MostSpitterDamage_Desc"		"Gây nhiều sát thương nhất khi chơi Spitter"
+"L4D_Highlight_MostChargerDamage_Desc"		"Gây nhiều sát thương nhất khi chơi Charger"
+"L4D_Highlight_MostJockeyDamage_Desc"		"Gây nhiều sát thương nhất khi chơi Jockey"
+"L4D_Highlight_MostKills_Desc"				"Giết nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostPounces_Desc"			"Chộp nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostPushes_Desc"				"Đẩy nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostTankPunches_Desc"		"Đấm nhiều Người Sống Sót nhất khi chơi Tank"
+"L4D_Highlight_MostTankThrows_Desc"			"Ném vật thể trúng nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostHung_Desc"				"Siết Người Sống Sót nhất"
+"L4D_Highlight_MostPulled_Desc"				"Kéo lê nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostBombed_Desc"				"Nổ trên nhiều Người Sống Sót nhất"
+"L4D_Highlight_MostVomited_Desc"			"Nôn ọe lên nhiều Người Sống Sót nhất"
+
+"L4D_Highlight_Best_Hunter_Pounce"			"CÚ CHỘP GÂY NHIỀU SÁT THƯƠNG NHẤT:"
+"L4D_Highlight_Best_Smoker_Pull"			"LẦN KÉO LÊ LÂU NHẤT CỦA SMOKER:"
+"L4D_Highlight_Most_Boomer_Victims"			"SỐ NẠN NHÂN BỊ NÔN LÊN NHIỀU NHẤT:"
+"L4D_Highlight_Most_Jockey_Rides"			"LẦN CƯỠI LÂU NHẤT CỦA JOCKEY:"
+"L4D_Highlight_Most_Charges"				"SỐ NGƯỜI SỐNG SÓT BỊ HÚC NHIỀU NHẤT:"
+
+"L4D_Highlight_Best_Hunter_Pounce_Desc"		"Sát thương lớn nhất qua một lần Hunter chộp"
+"L4D_Highlight_Best_Smoker_Pull_Desc"		"Lần Smoker kéo lê dài nhất"
+"L4D_Highlight_Most_Boomer_Victims_Desc"	"Ói trúng nhiều người sống sót nhất"
+"L4D_Highlight_Most_Jockey_Rides_Desc"		"Lần cưỡi Jockey lâu nhất"
+"L4D_Highlight_Most_Charges_Desc"			"Lao vào nhiều người sống sót nhất"
+
+// Genders
+"L4D_Gender_CEDA"						"Đặc vụ CEDA"
+"L4D_Gender_Crawler"						"Người bùn"
+"L4D_Gender_Undistractable"					"Công nhân xây dựng"
+"L4D_Gender_Fallen"						"Người sống sót bại trận"
+"L4D_Gender_Riot_Control"					"Sĩ quan chống bạo loạn"
+"L4D_Gender_Clown"						"Tên hề"
+
+// Weapons
+"L4D_Melee_Baseball_Bat"					"Gậy bóng chày"
+"L4D_Melee_Cricket_Bat"						"Gậy cricket"
+"L4D_Melee_Crowbar"						"Xà beng"
+"L4D_Melee_Electric_Guitar"					"Guitar điện"
+"L4D_Melee_FireAxe"						"Rìu cứu hỏa"
+"L4D_Melee_Frying_Pan"						"Chảo chiên"
+"L4D_Melee_Katana"						"Katana"
+"L4D_Melee_Machete"						"Mã tấu"
+"L4D_Melee_Tonfa"						"Gậy tonfa"
+
+// Campaign Completion Achievements
+"ACH_SURVIVE_MALL_NAME"				"GIÁ CẮT CỔ"
+"ACH_SURVIVE_MALL_DESC"				"Sống sót qua chiến dịch Dead Center."
+"ACH_SURVIVE_ROAD_NAME"				"MIDNIGHT RIDER"
+"ACH_SURVIVE_ROAD_DESC"				"Sống sót qua chiến dịch Dark Carnival."
+"ACH_SURVIVE_SWAMP_NAME"			"MÓN NAM KHÓ NUỐT"
+"ACH_SURVIVE_SWAMP_DESC"			"Sống sót qua chiến dịch Swamp Fever."
+"ACH_SURVIVE_TOWN_NAME"				"NHÀ KHÍ TƯỢNG"
+"ACH_SURVIVE_TOWN_DESC"				"Sống sót qua chiến dịch Hard Rain."
+"ACH_SURVIVE_BRIDGE_NAME"			"KẺ ĐỐT CẦU"
+"ACH_SURVIVE_BRIDGE_DESC"			"Sống sót qua chiến dịch Parish."
+"ACH_BEAT_CAMPAIGNS_EXPERT_MODE_NAME"		"VÀNG THẬT KHÔNG SỢ LỬA"
+"ACH_BEAT_CAMPAIGNS_EXPERT_MODE_DESC"		"Sống sót tất cả chiến dịch tại độ khó Lão Luyện."
+"ACH_SURVIVE_EXPERT_REALISM_NAME"		"HÀNG THIỆT CHÍNH GỐC"
+"ACH_SURVIVE_EXPERT_REALISM_DESC"		"Sống sót một chiến dịch tại độ khó Lão Luyện ở chế độ Như Thật."
+
+// Melee Achievements
+"ACH_FINISH_CAMPAIGN_MELEE_ONLY_NAME"		"BINH ĐOÀN GIÁP LÁ CÀ"
+"ACH_FINISH_CAMPAIGN_MELEE_ONLY_DESC"		"Hoàn thành chiến dịch chỉ với vũ khí cận chiến."
+"ACH_CUT_OFF_HEADS_MELEE_NAME"			"ĐẦU ĐÀN"
+"ACH_CUT_OFF_HEADS_MELEE_DESC"			"Chặt đầu 200 con bệnh bằng vũ khí cận chiến."
+"ACH_KILL_WITH_EVERY_MELEE_NAME"		"TẨN NHỪ TỬ"
+"ACH_KILL_WITH_EVERY_MELEE_DESC"		"Dùng mọi vũ khí cận chiến để giết con bệnh."
+"ACH_KILL_INFECTED_WITH_CHAINSAW_NAME"		"CƯA DÂY LỆNH"
+"ACH_KILL_INFECTED_WITH_CHAINSAW_DESC"		"Giết 100 con bệnh bằng cưa máy."
+"ACH_KILL_TANK_MELEE_ONLY_NAME"			"TANK BURGER"
+"ACH_KILL_TANK_MELEE_ONLY_DESC"			"Giết một Tank bằng vũ khí cận chiến."
+
+// Rescue/Coop Achievements
+"ACH_RES_SURVIVORS_WITH_DEFIB_NAME"		"DJ NHẠC SỐC"
+"ACH_RES_SURVIVORS_WITH_DEFIB_DESC"		"Kéo dậy 10 người sống sót đã chết bằng máy khử rung tim."
+"ACH_SPEED_REVIVE_WITH_ADRENALINE_NAME"		"NHANH TAY VÀ CHẾT NGỦM"
+"ACH_SPEED_REVIVE_WITH_ADRENALINE_DESC"		"Vực dậy 10 người sống sót bị nằm tê liệt khi đang chịu tác động tăng tốc từ adrenaline."
+
+// New Weapons Achievements
+"ACH_DEPLOY_AMMO_UPGRADE_NAME"			"ANH HÙNG TẢI ĐẠN"
+"ACH_DEPLOY_AMMO_UPGRADE_DESC"			"Đặt một hộp nâng cấp đạn và được đồng đội sử dụng."
+"ACH_IGNITE_INFECTED_FIRE_AMMO_NAME"		"CẢM GIÁC BỐC CHÁY"
+"ACH_IGNITE_INFECTED_FIRE_AMMO_DESC"		"Kích cháy 50 Con Bệnh Thông Thường bằng đạn cháy."
+"ACH_KILL_ZOMBIES_GRENADE_BLAST_NAME"		"KẾ HOẠCH PHANH THÂY"
+"ACH_KILL_ZOMBIES_GRENADE_BLAST_DESC"		"Giết 15 Con Bệnh bằng một cú bắn súng phóng lựu."
+"ACH_BILE_A_TANK_NAME"				"TANK HÔI TANH"
+"ACH_BILE_A_TANK_DESC"				"Sử dụng bom dịch mật lên một Tank."
+
+// Uncommon Infected Achievements
+"ACH_KILL_EVERY_UNCOMMON_INFECTED_NAME"		"BỘ SƯU TẬP BỆNH LẠ"
+"ACH_KILL_EVERY_UNCOMMON_INFECTED_DESC"		"Giết một con bệnh lạ thường của mỗi loại."
+"ACH_KILL_SUBMERGED_MUDMEN_NAME"		"CHẾT TRONG TRỨNG NƯỚC"
+"ACH_KILL_SUBMERGED_MUDMEN_DESC"		"Giết 10 người bùn đầm lầy khi chúng đang ở dưới nước."
+"ACH_COLLECT_CEDA_VIALS_NAME"			"LUỘC ĐỒ ZOMBIE"
+"ACH_COLLECT_CEDA_VIALS_DESC"			"Thu thập 10 lọ dịch nôn của Boomer từ nhân viên CEDA mà bạn đã giết."
+"ACH_HONK_A_CLOWNS_NOSE_NAME"			"CL0WND"
+"ACH_HONK_A_CLOWNS_NOSE_DESC"			"Bóp mũi 10 chú hề."
+"ACH_INCENDIARY_CLOWN_POSSE_NAME"		"HỀ CHIÊN GIÒN"
+"ACH_INCENDIARY_CLOWN_POSSE_DESC"		"Dùng bom xăng, đốt một chú hề đang dẫn ít nhất 10 con bệnh loại thường. "
+
+// Speical Infected Achievements
+"ACH_KILL_SPITTER_FAST_NAME"			"PHẢN ỨNG AXÍT"
+"ACH_KILL_SPITTER_FAST_DESC"			"Giết một con Spitter trước khi ả có cơ hội khạc."
+"ACH_SAVE_PLAYER_FROM_JOCKEY_FAST_NAME"		"KHÔNG CHO CƯỠI"
+"ACH_SAVE_PLAYER_FROM_JOCKEY_FAST_DESC"		"Giết một con Jockey trong vòng 2 giây khi nó nhảy lên một Người Sống Sót."
+"ACH_MELEE_A_CHARGER_NAME"			"SAN BẰNG GÁNH NẶNG"
+"ACH_MELEE_A_CHARGER_DESC"			"Giết một Charger đang lao tới bằng vũ khí cận chiến."
+
+// Campaign Special Achievements
+"ACH_STASH_WHACKER_NAME"			"RÂU XỒM QUÁI GỞ"
+"ACH_STASH_WHACKER_DESC"			"Chứng tỏ rằng bạn nhanh hơn cả Moustachio."
+"ACH_STRONGMAN_GAME_NAME"			"BIỂU DIỄN CỒNG"
+"ACH_STRONGMAN_GAME_DESC"			"Chứng tỏ rằng bạn mạnh hơn cả Moustachio."
+"ACH_GNOME_RESCUE_NAME"				"BẢO VỆ THẦN LÙN"
+"ACH_GNOME_RESCUE_DESC"				"Giải cứu thần lùn Chompski từ lễ hội Carnival."
+"ACH_WITCH_TOWN_NO_WITCH_KILLS_NAME"		"CÂU CHUYỆN NỨC NỞ"
+"ACH_WITCH_TOWN_NO_WITCH_KILLS_DESC"		"Di chuyển đến nhà máy đường và vào phòng an toàn nhưng không giết con Witch nào."
+"ACH_AIRLINE_FINALE_NO_DAMAGE_NAME"		"CHẮP CÁNH VÀ CẦU NGUYỆN"
+"ACH_AIRLINE_FINALE_NO_DAMAGE_DESC"		"Bảo vệ bản thân lành lặn, không thương tích tại nơi máy bay rơi."
+"ACH_IMPOUND_LOT_NO_ALARMS_NAME"		"BẠO LỰC TRONG YÊN LẶNG"
+"ACH_IMPOUND_LOT_NO_ALARMS_DESC"		"Tìm đường qua khu giam xe và đến phòng an toàn ở nghĩa địa nhưng không kích hoạt còi báo động nào."
+"ACH_BRIDGE_TIMED_RUN_NAME"			"MUỐN SỐNG THÌ BẮC CẦU KIỀU"
+"ACH_BRIDGE_TIMED_RUN_DESC"			"Băng qua cây cầu cuối cùng dưới 3 phút."
+
+// Versus Achievements
+"ACH_VS_LEAVE_SAFE_ROOM_DEFIB_TEAMMATE_NAME"	"TRÁI TIM NHÂN HẬU"
+"ACH_VS_LEAVE_SAFE_ROOM_DEFIB_TEAMMATE_DESC"	"Trong một vòng Đối Đầu, hãy rời phòng an toàn để khử rung tim cho một đồng đội tử nạn."
+"ACH_VS_FORM_PARTY_AND_WIN_4V4_NAME"		"CÀNG ĐÔNG CÀNG MANH ĐỘNG"
+"ACH_VS_FORM_PARTY_AND_WIN_4V4_DESC"		"Lập một đội và đánh bại một đội địch trong chế độ Đối Đầu hoặc Thu Thập 4 đấu 4."
+"ACH_VS_JOCKEY_LONG_RIDE_NAME"			"CÚ CƯỠI ĐỂ ĐỜI"
+"ACH_VS_JOCKEY_LONG_RIDE_DESC"			"Khi chơi vai Jockey, cưỡi một Người Sống Sót lâu hơn 12 giây."
+"ACH_VS_JOCKEY_TWO_PLAYERS_NAME"		"QUAY LẠI LƯNG NGỰA"
+"ACH_VS_JOCKEY_TWO_PLAYERS_DESC"		"Khi chơi vai Jockey, cưỡi Người Sống Sót hai lần trong một mạng."
+"ACH_VS_JOCKEY_INTO_ACID_NAME"			"LÁI VỀ CHƯỚNG NGẠI VẬT"
+"ACH_VS_JOCKEY_INTO_ACID_DESC"			"Là Jockey, cưỡi một người sống sót về phía bãi axit của Spitter."
+"ACH_VS_SPIT_ON_ENEMY_TEAM_NAME"		"CÚ NHỔ ĐỈNH CAO"
+"ACH_VS_SPIT_ON_ENEMY_TEAM_DESC"		"Là Spitter, nhổ axit trúng toàn bộ phe sống sót chỉ với 1 lần thử."
+"ACH_VS_SPIT_ON_SMOKERED_PLAYER_NAME"		"EM LÀ BÔNG HỒNG NHỔ"
+"ACH_VS_SPIT_ON_SMOKERED_PLAYER_DESC"		"Là Spitter, nhổ lên một người sống sót đang bị Smoker xiết cổ."
+"ACH_VS_BOWL_ENEMY_TEAM_NAME"			"TAN ĐÀN XẺ NGHÉ"
+"ACH_VS_BOWL_ENEMY_TEAM_DESC"			"Là Charger, đánh đổ toàn bộ phe địch chỉ trong 1 lần lao tới."
+"ACH_VS_CHARGER_GROUND_SMASH_NAME"		"TỪ TỪ CHÁO NHỪ"
+"ACH_VS_CHARGER_GROUND_SMASH_DESC"		"Là Charger, túm lấy một người sống sót và đập người đó xuống đất trong 15 giây chẵn."
+"ACH_VS_CHARGER_LONG_CARRY_NAME"		"VẬN CHUYỂN ĐƯỜNG DÀI"
+"ACH_VS_CHARGER_LONG_CARRY_DESC"		"Là Charger, túm lấy một người sống sót và vác người đó đi hơn 25m."
+
+// Survival Achievements
+"ACH_SURVIVAL_GET_MEDAL_MELEE_ONLY_NAME"	"CÓ GÌ CHƠI NẤY"
+"ACH_SURVIVAL_GET_MEDAL_MELEE_ONLY_DESC"	"Trong một vòng Sinh Tồn, kiếm được một chiếc huy chương khi chỉ dùng vũ khí cận chiến."
+
+// Scavenge Achievements
+"ACH_SCAVENGE_WIN_A_GAME_NAME"			"TIỆC SĂN BẮN"
+"ACH_SCAVENGE_WIN_A_GAME_DESC"			"Thắng một ván ở chế độ Thu Thập."
+"ACH_SCAVENGE_COLLECT_CAN_GRIND_NAME"		"THAM GA"
+"ACH_SCAVENGE_COLLECT_CAN_GRIND_DESC"		"Gom 100 can ga ở chế độ Thu Thập."
+"ACH_SCAVENGE_COLLECT_ALL_CANS_NAME"		"GIỮ VÀ TRỮ"
+"ACH_SCAVENGE_COLLECT_ALL_CANS_DESC"		"Thu thập 15 can xăng trong một vòng Thu Thập duy nhất."
+"ACH_SCAVENGE_SHUT_OUT_NAME"			"LÊN ĐƯỜNG THU LƯỢM"
+"ACH_SCAVENGE_SHUT_OUT_DESC"			"Ngăn đội địch thu thập bất kỳ can xăng nào trong vòng Thu Thập."
+"ACH_SCAVENGE_MAKE_SURVIVOR_DROP_CAN_NAME"	"KHỦNG HOẢNG XĂNG DẦU"
+"ACH_SCAVENGE_MAKE_SURVIVOR_DROP_CAN_DESC"	"Khiến một người sống sót đánh rơi can xăng khi đang ở bù giờ."
+"ACH_SCAVENGE_CAN_DROP_GRIND_NAME"		"THIẾU HỤT GA"
+"ACH_SCAVENGE_CAN_DROP_GRIND_DESC"		"Làm rơi 25 can xăng khi chơi phe con bệnh đặc biệt."
+
+// Holiday promo 2011
+"ACH_COLLECT_HOLIDAY_GIFTS_NAME"	"Lượm quà Valve 2011 – L4D2"
+"ACH_COLLECT_HOLIDAY_GIFTS_DESC"	"Nhặt 3 hộp quà do con bệnh đặc biệt đánh rơi trong chế độ Đối Đầu."
+
+// Avatar Awards - In Game
+"ASSET_MED_KIT_NAME"				"TÚI Y TẾ"
+"ASSET_MED_KIT_DESC"				"Mở khóa túi y tế bằng cách thắng hết năm chiến dịch ở bất kỳ cấp độ kỹ năng."
+"ASSET_FRYING_PAN_NAME"				"CHẢO CHIÊN"
+"ASSET_FRYING_PAN_DESC"				"Mở khóa chảo chiên bằng cách giết 10.000 con bệnh."
+"ASSET_GNOME_NAME"				"THẦN LÙN VƯỜN"
+"ASSET_GNOME_DESC" 				"Mở khóa thần lùn vườn bằng cách giải cứu Gnome Chompski."
+"ASSET_BULL_SHIFTERS_SHIRT_NAME"		"ÁO BULL SHIFTERS"
+"ASSET_BULL_SHIFTERS_SHIRT_DESC"		"Mở khóa áo Bull Shifters bằng cách thắng 10 trận Đối Đầu."
+"ASSET_LEFT_4_DEAD_2_SHIRT_NAME"		"ÁO LEFT 4 DEAD 2"
+"ASSET_LEFT_4_DEAD_2_SHIRT_DESC"		"Mở khóa áo Left 4 Dead 2 bằng cách thắng 10 trận Thu Thập."
+"ASSET_ZOMBIE_HAND_SHIRT_NAME"			"ÁO ZOMBIE HAND"
+"ASSET_ZOMBIE_HAND_SHIRT_DESC"			"Mở khóa áo Zombie Hand bằng cách giết 10.000 con bệnh."
+"ASSET_DEPECHE_MODE_SHIRT_NAME"			"ÁO DEPECHE MODE"
+"ASSET_DEPECHE_MODE_SHIRT_DESC"			"Mở khóa áo Depeche Mode bằng cách giải cứu Gnome Chompski."
+
+// Avatar Awards - XLAST
+"AVATARITEM_MEDKIT_DSP"				"Túi y tế"
+"AVATARITEM_MEDKIT_DSC"				"Nhận một túi y tế bằng cách thắng cả năm chiến dịch."
+"AVATARITEM_MEDKIT_HOW"				"Mở khóa túi y tế bằng cách thắng cả năm chiến dịch."
+"AVATARITEM_BULLSHIFTERSSHIRT_DSP"		"Áo Bull Shifters"
+"AVATARITEM_BULLSHIFTERSSHIRT_DSC"		"Nhận một áo Bull Shifters bằng cách thắng 10 trận Đối Đầu."
+"AVATARITEM_BULLSHIFTERSSHIRT_HOW"		"Mở khóa áo Bull Shifters bằng cách thắng 10 trận Đối Đầu."
+"AVATARITEM_LEFT4DEAD2SHIRT_DSP"		"Áo Left 4 Dead 2"
+"AVATARITEM_LEFT4DEAD2SHIRT_DSC"		"Nhận một áo Left 4 Dead 2 bằng cách thắng 10 trận Thu Thập."
+"AVATARITEM_LEFT4DEAD2SHIRT_HOW"		"Mở khóa áo Left 4 Dead 2 bằng cách thắng 10 trận Thu Thập."
+"AVATARITEM_ZOMBIEHANDSHIRT_DSP"		"Áo Zombie Hand"
+"AVATARITEM_ZOMBIEHANDSHIRT_DSC"		"Nhận một áo zombie đáng sợ bằng cách giết 10.000 con bệnh."
+"AVATARITEM_ZOMBIEHANDSHIRT_HOW"		"Mở khóa áo Zombie Hand bằng cách giết 10.000 con bệnh."
+"AVATARITEM_DEPECHEMODESHIRT_DSP"		"Áo Depeche Mode"
+"AVATARITEM_DEPECHEMODESHIRT_DSC"		"Nhận một áo Depeche Mode bằng cách giải cứu Gnome Chompski trong chiến dịch Dark Carnival."
+"AVATARITEM_DEPECHEMODESHIRT_HOW"		"Mở khóa áo Depeche Mode bằng cách giải cứu Gnome Chompski trong chiến dịch Dark Carnival."
+
+
+
+"L4D_infection_announcement"		"%s1 đã lây bệnh cho %s2!"
+
+"L4D_vs_YourTeamWon"          "Đội của bạn đã thắng!"
+"L4D_vs_EnemyTeamWon"      "Đội của địch đã thắng!"
+"L4D_vs_YourTeamIsWinning"     "Đội của bạn đang thắng!"
+"L4D_vs_EnemyTeamIsWinning"         "Đội của địch đang thắng!"
+"L4D_vs_CampaignScores"          "Điểm chiến dịch chế độ Đối Đầu"
+"L4D_vs_MapDifficultyModifier"         "Bộ điều chỉnh độ khó bản đồ:"
+"L4D_vs_MapLengthModifier"         "Bộ điều chỉnh độ dài bản đồ:"
+"L4D_vs_TotalScore"				"Điểm của chương:"
+"L4D_vs_IncapBonus"				"Điểm từ việc vô hiệu:"
+"L4D_vs_CampaignScore_Short"	"Tổng chiến dịch:"
+"L4D_vs_RoundScore"				"Điểm của vòng:"
+"L4D_vs_TotalScore_Embedded"	"Tổng điểm:"
+
+"L4D_vs_Survivors_First"	"Bạn sẽ chơi phe Người Sống Sót trước trong chương tiếp theo."	// you, as in the user, will play the role of the survivors
+"L4D_vs_Infected_First"		"Bạn sẽ chơi phe Con Bệnh trước trong chương tiếp theo."	// you, as in the user, will play the role of the infected
+"L4D_vs_TeamsTied"			"Các đội đang ngang điểm"
+
+//--------------------------------------------------------------------------------------------------------
+// MOTD
+"L4D_MOTD"					"THÔNG ĐIỆP TRONG NGÀY"
+"L4D_motd_key_string"		"Nhấn %s1 để mở lại cửa sổ này"
+"L4D_ThirdPartyTitle"		"Máy chủ của bên thứ ba được cung cấp bởi:"
+"L4D_Server_Rank"			"Thứ hạng máy chủ toàn cầu:"
+"L4D_Server_Player_Count"	"Tổng số người chơi đã phục vụ:"
+"L4D_Server_Player_Average" "Phiên chơi trung bình của người chơi:"
+"L4D_Default_Hostname"		"Left 4 Dead 2"
+"L4D_JoinSteamGroup"		"Tham gia Nhóm Steam của máy chủ này..."
+
+"Voice"			"Đàm thoại"		// prepend on a chat line when it is a subtitle to a voice command
+"Cancel"		"Hủy"
+
+"L4D360UI_Lobby_Survival"							"Sinh Tồn"
+"L4D360UI_MainMenu_PlaySurvivalCoopWithAnyone_Tip"		"Tìm trận trực tuyến ở chế độ Sinh Tồn phù hợp với sở thích của bạn."
+
+"L4D_vote_restart_chapter"			"Bắt đầu lại vòng?"
+"L4D_vote_passed_restart_chapter"	"Đang bắt đầu lại vòng..."
+
+"L4D360UI_MainMenu_SurvivalPackLoaded"					"Đã nạp gói sinh tồn"
+"L4D360UI_MsgBx_SurvivalJoinInProgress"					"Bạn đã tham gia một vòng Sinh Tồn đang diễn ra.\nThời gian của bạn sẽ không được ghi lại đến vòng tiếp theo."
+
+"L4D360UI_MsgBx_ConfirmDLCRestrictedSelection"			"Một hoặc nhiều người chơi trong sảnh này không có nội dung tải xuống cần thiết\nđể chơi chiến dịch này. Những người chơi đó sẽ bị đuổi nếu bạn tiếp tục.\nBạn có muốn tiếp tục không?"
+
+"L4D_SurvivalScoreboard_InfectedKilled"	"Số Con Bệnh Giết"
+"L4D_SurvivalScoreboard_Common"			"Con Bệnh Thông Thường:"
+"L4D_SurvivalScoreboard_Hunters"		"Hunter:"
+"L4D_SurvivalScoreboard_Boomers"		"Boomer:"
+"L4D_SurvivalScoreboard_Smokers"		"Smoker:"
+"L4D_SurvivalScoreboard_Chargers"		"Charger:"
+"L4D_SurvivalScoreboard_Jockeys"		"Jockey:"
+"L4D_SurvivalScoreboard_Spitters"		"Spitter:"
+"L4D_SurvivalScoreboard_Tanks"			"Tank:"
+
+
+"L4D_ServerShuttingDownIdle"	"Máy chủ đang tắt bởi vì tất cả người chơi đều không hoạt động."
+
+//--------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+//		LEFT 4 DEAD 2 Strings
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+"L4D2_Instructor_explain_pre_drawbridge"		"Sử dụng bộ đàm để gọi trợ giúp"
+"L4D2_Instructor_explain_drawbridge"			"Nhấn nút để hạ cầu nâng xuống"
+
+"L4D2_Instructor_explain_c4m4_finale_no_gas"		"Bạn nên mang can xăng đến đây trước khi bạn lật công tắc"
+"L4D2_Instructor_explain_c4m4_finale_start"		"Phát tín hiệu cho xuồng bằng biểu hiệu nhà hàng Burger Tank"
+
+"L4D2_Survive_Gauntlet"					"Tìm cách tới chỗ trực thăng ở phía bên kia"
+
+"L4D2_Instructor_explain_perimeter1"			"Còi báo động sẽ kêu khi xâm phạm vành đai"
+"L4D2_Instructor_explain_perimeter2"			"Chạy đến tháp an ninh để vô hiệu còi báo động"
+"L4D2_Instructor_explain_deactivate_alarm"		"Vô hiệu còi báo động để mở cửa thoát"
+
+"L4D2_Instructor_explain_decon_wait"			"Đóng cửa khi mọi người đều ở trong toa moóc"
+"L4D2_Instructor_explain_decon"				"Thả cửa để ra khỏi toa moóc"
+
+"L4D2_Instructor_explain_impound_lot"			"Cẩn trọng khi bắn! Báo động xe hơi có ở khắp nơi!"
+
+"L4D2_Instructor_explain_float"				"Di chuyển xe diễu hành"
+"L4D2_Instructor_explain_ferry"				"Gọi phà"
+"L4D2_Instructor_explain_hatch"				"Mở cửa hầm"
+"L4D2_Instructor_explain_shack"				"Hạ cầu xuống"
+"L4D2_Instructor_explain_coaster"			"Cấp điện cho tàu lượn cao tốc để khởi hành"
+"L4D2_Instructor_explain_mall_window"			"Bắn vỡ cửa sổ cửa hàng"
+
+"L4D2_Instructor_explain_coaster_stop"			"Tắt tàu lượn để ngắt còi báo động"
+"L4D2_Instructor_explain_mall_alarm"			"Ngắt còi báo động trên tầng ba"
+
+"L4D_Instructor_explain_gascan_pour_blocked"	"Chờ đã! Có người vẫn đang đổ..."
+
+"L4D2_Instructor_explain_ammo_pile_failure"		"Bạn không thể nạp thêm đạn cho vũ khí này."
+
+//------------------------------------
+// survival
+//------------------------------------
+"L4D2_Instructor_explain_survival_help_button"		"Nhấn nút..."
+"L4D2_Instructor_explain_survival_help_alarm"		"Kích hoạt báo động..."
+"L4D2_Instructor_explain_survival_help_radio"		"Sử dụng bộ đàm..."
+
+//------------------------------------
+// ammo
+//------------------------------------
+"L4D2_Instructor_explain_incendiary_ammo_received"			"Bạn đã nhặt đạn cháy"
+"L4D2_Instructor_explain_explosive_ammo_received"			"Bạn đã nhặt đạn nổ"
+"L4D2_Instructor_explain_laser_sight_received"				"Nâng cấp ống ngắm laser giúp tăng độ chính xác cho vũ khí của bạn"
+"L4D2_Instructor_explain_upgrade"							"Có vật phẩm nâng cấp"
+
+"L4D2_Instructor_explain_incendiary_ammo_available"			"Có đạn cháy"
+"L4D2_Instructor_explain_explosive_ammo_available"			"Có đạn nổ"
+"L4D2_Instructor_explain_laser_sight_available"				"Có nâng cấp ống ngắm laser"
+
+"L4D2_Instructor_explain_replace_ammo_get"		"Thay vũ khí sắp hết đạn của bạn"
+"L4D2_Instructor_explain_replace_ammo"			"Đã nạp đầy %s1"
+
+"L4D2_Instructor_explain_vehicle_arrival"		"Nhanh chóng đến chỗ phương tiện giải cứu!"
+"L4D2_Instructor_explain_use_mounted_gun"		"Súng máy hạng nặng"
+"L4D2_Instructor_explain_mounted_gun_overheated"	"Súng tạm thời quá nóng và không thể sử dụng được!"
+"L4D2_Instructor_explain_carousel_start"		"Hãy bật điện để mở cổng"
+"L4D2_Instructor_explain_carousel_start2"		"Chạy đến buồng điều khiển để tắt đu quay"
+"L4D2_Instructor_explain_carousel_destination"		"Tắt đu quay"
+"L4D2_Instructor_explain_stage_lighting"		"Prepare the stage lighting"
+"L4D2_Instructor_ability_out_of_range"			"Tiến gần hơn — mục tiêu đang ở ngoài tầm bắn"
+"L4D2_Instructor_explain_stage_lighting"		"Bố trí ánh sáng sân khấu"
+"L4D2_Instructor_explain_stage_finale_start"		"Bắt đầu buổi biểu diễn nhạc rock để phát tín hiệu cho trực thăng"
+"L4D2_Instructor_explain_c3m4_radio1"		        "Gọi giải cứu bằng xuồng"
+"L4D2_Instructor_explain_c3m4_radio2"		        "Trả lời Virgil"
+"L4D2_Instructor_explain_stage_survival_start"		"Bắt đầu buổi biểu diễn nhạc rock..."
+"L4D2_Instructor_explain_gates_are_open"                "Cổng đang mở, hãy chạy đến phòng an toàn!"
+"L4D2_Instructor_explain_c2m4_ticketbooth"              "Nhấn nút để mở cổng"
+"L4D2_Instructor_explain_c3m4_rescue"                   "Xuồng giải cứu đã đến, hãy lên xuồng!"
+"L4D2_Instructor_explain_hotel_elevator_doors"	"Cạy cửa để trốn thoát..."
+"L4D2_Instructor_explain_gun_shop_tanker"		"Whitaker sẽ phá hủy xe bồn này và mở đường"
+"L4D2_Instructor_explain_gun_shop"			"Nói chuyện với chủ cửa hàng súng"
+"L4D2_Instructor_explain_store_alarm"			"Mở cửa cửa hàng..."
+"L4D2_Instructor_explain_store_item"			"Lấy cola bên trong cửa hàng"
+"L4D2_Instructor_explain_gun_shop_item_get"		"Lấy cola"
+"L4D2_Instructor_explain_gun_shop_item"			"Cola"
+"L4D2_Instructor_explain_return_item"			"Giao cola cho chủ cửa hàng súng"
+"L4D2_Instructor_explain_help_return_item"			"Hộ tống giao hàng coca"
+"L4D2_Instructor_save_items"				"Bạn có thể muốn tiết kiệm vài vật phẩm cho chuyến về"
+"L4D2_Instructor_explain_return_to_elevator"		"Quay lại thang máy!"
+"L4D2_Instructor_porch_light"				"Bật đèn ngoài hiên để đánh dấu vị trí có vật phẩm"
+"L4D2_Instructor_explain_acid_spit"			"Cố tránh axít độc!"
+"L4D2_Instructor_notify_entered_spit"			"Tránh axít độc!"
+"L4D2_Instructor_temp_msg_c4m1"				"Đi lấy nhiên liệu và quay lại xuồng"
+"L4D2_Instructor_temp_msg_c4m3"				"Bạn đã có nhiên liệu — Hãy quay lại xuồng"
+"L4D2_Instructor_explain_c1m4_finale1"			"Bạn sẽ cần đổ xăng vào xe."
+"L4D2_Instructor_explain_c1m4_finale2"			"Bước 1: Tìm một can xăng"
+"L4D2_Instructor_explain_c1m4_finale3"			"Bước 2: Mang can xăng đến chỗ chiếc xe"
+"L4D2_Instructor_notify_ridden"				"Tiếp tục di chuyển! Kháng lại ảnh hưởng của Jockey..."
+"L4D2_Instructor_notify_riding_survivor"		"Lái người sống sót vào chỗ nguy hiểm"
+"L4D2_Instructor_explain_magnum_pistol_get"		"Lấy khẩu súng lục Magnum"
+"L4D2_Instructor_explain_magnum_pistol"		"Súng Lục Magnum"
+"L4D2_Instructor_explain_magnum_pistol_get_alt"		"Lấy khẩu Hổ Mang Sa Mạc"
+"L4D2_Instructor_explain_magnum_pistol_alt"		"Súng Lục Hổ Mang Sa Mạc"
+"L4D2_Instructor_explain_trade_melee_for_magnum_pistol"	"Đổi vũ khí cận chiến lấy súng lục Magnum"
+
+"L4D2_UseControllerConf"	"Phát hiện tay cầm"
+"L4D2_UseControllerConfMsg"	"Nhấn OK để bật tự động ngắm cho bộ tay cầm và tắt chuột trong trò chơi"
+}
+}

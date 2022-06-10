@@ -1,0 +1,1645 @@
+"lang" 
+{ 
+"Language" "English" 
+"Tokens" 
+{
+"L4D_DifficultyEasy"				"Easy"
+"L4D_DifficultyNormal"				"Normal"
+"L4D_DifficultyHard"				"Advanced"
+"L4D_DifficultyImpossible"			"Expert"
+
+"L4D_skill_reminder"				"Press %s1 to change your skill."
+"L4D_idle_spectator"				"%s1 is now idle."
+
+
+
+									
+//--------------------------------------------------------------------------------------------------------
+// Scoreboard
+"L4D_Scoreboard_Spectator"			"Spectator: %s1"
+"L4D_Scoreboard_Spectators"			"Spectators (%s1): %s2"
+"L4D_Scoreboard_Dead"				"DEAD"
+"L4D_Scoreboard_Incapacitated"			"DOWN"
+"L4D_Scoreboard_IT"				"IT"
+"L4D_Scoreboard_Spawning"			"SPAWNING"
+"L4D_Scoreboard_Bot"				"Bot"
+"L4D_Scoreboard_s_Loading"			"LOADING"
+"L4D_Scoreboard_pz_Loading"			"%s1 (LOADING)"
+"L4D_Scoreboard_InfectedPlayers"		"Infected Players"
+"L4D_Scoreboard_Status"				"Status"
+"L4D_Scoreboard_Score"				"Score"
+"L4D_Scoreboard_Deaths"				"Deaths"
+"L4D_Scoreboard_Ping"				"Ping"
+"L4D_Scoreboard_SurvivorPlayers"		"Survivors"
+"L4D_Scoreboard_Current_Map"			"Now Playing"
+"L4D_Scoreboard_Rescue_Map"			"Rescue"
+"L4D_Scoreboard_Opponent_Map"			"Infected Progress"
+"L4D_Scoreboard_PZScore"			"SCORE"
+"L4D_Scoreboard_Idle"				"IDLE"
+"L4D_Scoreboard_Select_Player"			"Select Player"
+"L4D_Scoreboard_View_GamerCard"			"View Gamer Card"
+"L4D_Scoreboard_Vote_Kick"			"Vote to Kick Player"
+
+// Realism Scoreboard
+"L4D_Realism"						"Realism"
+
+// Versus Scoreboard
+"L4D_Versus"						"Versus Mode"
+"L4D_VSScoreboard_Title"			"Versus Mode Scores"
+"L4D_VSScoreboard_YourTeam"			"Your Team"
+"L4D_VSScoreboard_EnemyTeam"		"Enemy Team"
+"L4D_VSScoreboard_Unplayed"			"N/A"
+"L4D_VSScoreboard_Distance"			"Average Distance Travelled:"
+"L4D_VSScoreboard_DistanceShort"	"Average Distance:"	
+"L4D_VSScoreboard_Completion"		"Completion Score:"
+"L4D_VSScoreboard_SurvivalBonus"	"Survival Bonus:"
+"L4D_VSScoreboard_Health"			"Health Bonus:"
+"L4D_VSScoreboard_SurvivalMult"		"Survival Multiplier:"
+"L4D_VS_Shutdown_Title"				"SERVER SHUTTING DOWN"
+"L4D_VS_Shutdown"					"Competitive modes require human players on both teams."
+
+// Survival Timer and Scoreboard
+"L4D_Survival"						"Survival Mode"
+"L4D_SurvivalScoreboard_FinalTime"	"Final Time:"
+"L4D_SurvivalScoreboard_BestTime"	"Best Time"
+"L4D_SurvivalScoreboard_Players"		"Players"
+"L4D_SurvivalTimer_YourBest"			"Your Best"
+"L4D_SurvivalTimer_TeamBest"			"Team Best"
+"L4D_SurvivalTimer_DescriptionFmt"	"%s1's Best"
+"L4D_SurvivalTimer_Description_Gold"	"Gold Standard"
+"L4D_SurvivalTimer_Description_Silver"	"Silver Standard"
+"L4D_SurvivalTimer_Description_Bronze"	"Bronze Standard"
+"L4D_SurvivalTimer_Description_TeamRecord"	"Team Record"
+"L4D_SurvivalTimer_Description_WorldRecord"	"World Record"
+"L4D_SurvivalTimer_Description_KeepGoing"	"New Team Record!"
+
+"L4D_BronzeMedalEarned"	"%s1 earned the Bronze Medal!"
+"L4D_SilverMedalEarned"	"%s1 earned the Silver Medal!"
+"L4D_GoldMedalEarned"	"%s1 earned the Gold Medal!"
+
+// Scavenge Timer and Scoreboard
+"L4D_Scavenge"						"Scavenge Mode"
+"L4D_Scavenge_Round_Current"		"Current Round"
+"L4D_Scavenge_RoundLimit"			"Playing Best of %s1"
+"L4D_Scavenge_TeamFlip"				"PREPARE TO CHANGE SIDES"
+"L4D_Scavenge_NextRound"			"PREPARE FOR ROUND %s1"
+"L4D_Scavenge_EnemyFirst"			"Enemy team will play first in Round %s1"
+"L4D_Scavenge_YouFirst"				"You will play first in Round %s1"
+"L4D_Scavenge_Tie"					"TIE GAME"
+"L4D_Scavenge_RoundWon"				"YOU WON THAT ROUND"
+"L4D_Scavenge_RoundLost"			"YOU LOST THAT ROUND"
+"L4D_Scavenge_MatchWon"				"YOU WON THE MATCH!"
+"L4D_Scavenge_MatchLost"			"YOU LOST THE MATCH"
+"L4D_Scavenge_MatchTied"			"THE MATCH ENDED IN A TIE!"
+"L4D_Scavenge_Wins"					"Rounds Won"
+"L4D_Scavenge_YourTeam"				"Your Team:"
+"L4D_Scavenge_Opponent"				"Enemy Team:"
+"L4D_Scavenge_Survivors_Wiped"		"The Survivors were killed!"
+"L4D_Scavenge_Map_Cleared"			"The Survivors cleared the map!"
+"L4D_Scavenge_Time_Expired"			"The timer expired!"
+"L4D_Scavenge_TieBreaker_Title"		"TIE BREAKER"
+"L4D_Scavenge_TieBreaker_Description"	"Time it it took to reach %s1 points:"
+"L4D_Scavenge_TieBreaker_Description_Singular"	"Time it it took to reach 1 point:"
+"L4D_Scavenge_TieBreaker_Description_Zero"	"Time it it took for the round to end:"
+"L4D_Versus_TieBreaker_Description"	"Did the most damage as Infected:"
+
+
+// Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
+// The control characters can be copied and pasted in notepad.
+//  = 0x02 (STX) - Use team color up to the end of the player name.  This only works at the start of the string, and precludes using the other control characters.
+//  = 0x03 (ETX) - Use team color from this point forward
+//  = 0x04 (EOT) - Use location color from this point forward
+//  = 0x05 (ENQ) - Use achievement color from this point forward
+//  = 0x01 (SOH) - Use normal color from this point forward
+
+"medal_0_earned"	"%s1 has earned the Bronze Medal!"
+"medal_1_earned"	"%s1 has earned the Silver Medal!"
+"medal_2_earned"	"%s1 has earned the Gold Medal!"
+
+//--------------------------------------------------------------------------------------------------------
+// Weapons
+"L4D_Weapon_Pistol"				"Pistol"
+"L4D_Weapon_Pistol_CAPS"			"PISTOL"
+"L4D_Weapon_SMG"				"Submachine Gun"
+"L4D_Weapon_SMG_CAPS"				"SUBMACHINE GUN"
+"L4D_Weapon_PumpShotgun"			"Pump Shotgun"
+"L4D_Weapon_PumpShotgun_CAPS"			"PUMP SHOTGUN"
+"L4D_Weapon_AutoShotgun"			"Auto Shotgun"
+"L4D_Weapon_AutoShotgun_CAPS"			"AUTO SHOTGUN"
+"L4D_Weapon_AssaultRifle"			"Assault Rifle"
+"L4D_Weapon_AssaultRifle_CAPS"			"ASSAULT RIFLE"
+"L4D_Weapon_HuntingRifle"			"Hunting Rifle"
+"L4D_Weapon_HuntingRifle_CAPS"			"HUNTING RIFLE"
+"L4D_Weapon_FirstAidKit"			"First Aid Kit"
+"L4D_Weapon_FirstAidKit_CAPS"			"FIRST AID KIT"
+"L4D_Weapon_Molotov"				"Molotov"
+"L4D_Weapon_Molotov_CAPS"			"MOLOTOV"
+"L4D_Weapon_PipeBomb"				"Pipe Bomb"
+"L4D_Weapon_PipeBomb_CAPS"			"PIPE BOMB"
+"L4D_Weapon_PainPills"				"Pain Pills"
+"L4D_Weapon_PainPills_CAPS"			"PAIN PILLS"
+
+// Steam controller font mappings
+"GameUI_Icons_SC_None"					"< not assigned >"
+"GameUI_Icons_SC_A_Button"				"A"
+"GameUI_Icons_SC_B_Button"				"B"
+"GameUI_Icons_SC_X_Button"				"X"
+"GameUI_Icons_SC_Y_Button"				"Y"
+"GameUI_Icons_SC_L_Shoulder"			"2"
+"GameUI_Icons_SC_R_Shoulder"			"3"
+"GameUI_Icons_SC_L_Grip"				"("
+"GameUI_Icons_SC_R_Grip"				")"
+"GameUI_Icons_SC_Start_Button"			"5"
+"GameUI_Icons_SC_Back_Button"			"4"
+"GameUI_Icons_SC_Left_Pad_Touch"		"q"
+"GameUI_Icons_SC_Left_Pad_Swipe"		"w"
+"GameUI_Icons_SC_Left_Pad_Click"		"e"
+"GameUI_Icons_SC_Left_Pad_DPad_N"		"a"
+"GameUI_Icons_SC_Left_Pad_DPad_S"		"s"
+"GameUI_Icons_SC_Left_Pad_DPad_W"		"d"
+"GameUI_Icons_SC_Left_Pad_DPad_E"		"f"
+"GameUI_Icons_SC_Right_Pad_Touch"		"y"
+"GameUI_Icons_SC_Right_Pad_Swipe"		"u"
+"GameUI_Icons_SC_Right_Pad_Click"		"i"
+"GameUI_Icons_SC_Right_Pad_DPad_N"		"h"
+"GameUI_Icons_SC_Right_Pad_DPad_S"		"j"
+"GameUI_Icons_SC_Right_Pad_DPad_W"		"k"
+"GameUI_Icons_SC_Right_Pad_DPad_E"		"l"
+"GameUI_Icons_SC_L_Trigger_Pull"		"z"
+"GameUI_Icons_SC_L_Trigger_Click"		"x"
+"GameUI_Icons_SC_R_Trigger_Pull"		"n"
+"GameUI_Icons_SC_R_Trigger_Click"		"n"
+"GameUI_Icons_SC_L_Stick_Move"			"C"
+"GameUI_Icons_SC_L_Stick_Click"			"V"
+"GameUI_Icons_SC_Gyro_Move"				"6"
+"GameUI_Icons_SC_Gyro_Pitch"			"7"
+"GameUI_Icons_SC_Gyro_Yaw"				"8"
+"GameUI_Icons_SC_Gyro_Roll"				"9"
+
+"GameUI_KeyNames_SC_None"				"< not assigned >"
+"GameUI_KeyNames_SC_A_Button"			"A button"
+"GameUI_KeyNames_SC_B_Button"			"B button"
+"GameUI_KeyNames_SC_X_Button"			"X button"
+"GameUI_KeyNames_SC_Y_Button"			"Y button"
+"GameUI_KeyNames_SC_L_Shoulder"			"left bumper"
+"GameUI_KeyNames_SC_R_Shoulder"			"right bumper"
+"GameUI_KeyNames_SC_L_Grip"				"left grip button"
+"GameUI_KeyNames_SC_R_Grip"				"right grip button"
+"GameUI_KeyNames_SC_Start_Button"		"START button"
+"GameUI_KeyNames_SC_Back_Button"		"BACK button"
+"GameUI_KeyNames_SC_Left_Pad_Touch"		"left pad touch"
+"GameUI_KeyNames_SC_Left_Pad_Swipe"		"left pad move"
+"GameUI_KeyNames_SC_Left_Pad_Click"		"left pad click"
+"GameUI_KeyNames_SC_Left_Pad_DPad_N"	"left D-pad up"
+"GameUI_KeyNames_SC_Left_Pad_DPad_S"	"left D-pad down"
+"GameUI_KeyNames_SC_Left_Pad_DPad_W"	"left D-pad left"
+"GameUI_KeyNames_SC_Left_Pad_DPad_E"	"left D-pad right"
+"GameUI_KeyNames_SC_Right_Pad_Touch"	"right pad touch"
+"GameUI_KeyNames_SC_Right_Pad_Swipe"	"right pad move"
+"GameUI_KeyNames_SC_Right_Pad_Click"	"right pad click"
+"GameUI_KeyNames_SC_Right_Pad_DPad_N"	"right D-pad up"
+"GameUI_KeyNames_SC_Right_Pad_DPad_S"	"right D-pad down"
+"GameUI_KeyNames_SC_Right_Pad_DPad_W"	"right D-pad left"
+"GameUI_KeyNames_SC_Right_Pad_DPad_E"	"right D-pad right"
+"GameUI_KeyNames_SC_L_Trigger_Pull"		"left trigger pull"
+"GameUI_KeyNames_SC_L_Trigger_Click"	"left trigger click"
+"GameUI_KeyNames_SC_R_Trigger_Pull"		"right trigger pull"
+"GameUI_KeyNames_SC_R_Trigger_Pull"		"right trigger click"
+"GameUI_KeyNames_SC_L_Stick_Move"		"stick move"
+"GameUI_KeyNames_SC_L_Stick_Click"		"stick click"
+"GameUI_KeyNames_SC_Gyro_Move"			"gyro move"
+"GameUI_KeyNames_SC_Gyro_Pitch"			"gyro pitch"
+"GameUI_KeyNames_SC_Gyro_Yaw"			"gyro yaw"
+"GameUI_KeyNames_SC_Gyro_Roll"			"gyro roll"
+									
+//--------------------------------------------------------------------------------------------------------
+// Keyboard Options
+"L4D_melee_ability"					"Push Away Enemies" [$X360]
+"L4D_melee_ability"					"Push away enemies" [$WIN32]
+"L4D_zoom"							"Use Hunting/Sniper Rifle Scope" [$X360]
+"L4D_zoom"							"Use hunting/sniper rifle scope" [$WIN32]
+"L4D_give"							"Give Weapon" [$X360]
+"L4D_give"							"Give weapon" [$WIN32]
+"L4D_vote_yes"						"Vote Yes on Active Issue" [$X360]
+"L4D_vote_yes"						"Vote yes on active issue" [$WIN32]
+"L4D_vote_no"						"Vote No on Active Issue" [$X360]
+"L4D_vote_no"						"Vote no on active issue" [$WIN32]
+"L4D_call_vote"						"Call Vote" [$X360]
+"L4D_call_vote"						"Call vote" [$WIN32]
+"L4D_orders"						"Orders"
+"L4D_questions"						"Questions and Answers" [$X360]
+"L4D_questions"						"Questions and answers" [$WIN32]
+"L4D_alerts"						"Alerts"
+"L4D_taunt"							"Taunt"
+"L4D_select_class"					"Select Class" [$X360]
+"L4D_select_class"					"Select class" [$WIN32]
+"L4D_reportscreen"					"Show Report Screen" [$X360]
+"L4D_reportscreen"					"Show report screen" [$WIN32]
+"L4D_reposition"					"Pick New Infected Class" [$X360]
+"L4D_reposition"					"Pick new Infected class" [$WIN32]
+"L4D_hide_messagepanel"				"Hide Message Panel" [$X360]
+"L4D_hide_messagepanel"				"Hide message panel" [$WIN32]
+"L4D_Walk"							"Walk (Move Slowly)" [$X360]
+"L4D_Walk"							"Walk (move slowly)" [$WIN32]
+"L4D_ReportBug"						"Report bug"
+
+//--------------------------------------------------------------------------------------------------------
+// Voting
+"L4D_vote_yes_binding"				"Yes: %s1"
+"L4D_vote_no_binding"				"No: %s1"
+"L4D_vote_yes_tally"				"Yes"
+"L4D_vote_no_tally"					"No"
+"L4D_vote_before_spawn_exit"		"You can only vote on that before people leave the starting spawn area."
+"L4D_vote_server_disabled_issue"	"Server has disabled that issue."
+"L4D_vote_arg_between_1_and_4"		"Needs value between 1 and 4."
+"L4D_vote_arg_between_0_and_4"		"Needs value between 0 and 4."
+"L4D_vote_already_survivor_limit"	"Survivor limit is already %s1."
+"L4D_vote_survivor_limit"			"Vote: Make Survivor limit %s1?"
+"L4D_vote_passed_max_survivors"		"Vote passed: Max %s1 Survivors."
+"L4D_vote_infected_limit"			"Player Infected limit is already %s1."
+"L4D_vote_dis_controlled_infected"	"Vote: Disallow human-controlled Infected."
+"L4D_vote_controlled_infected"		"Vote: Allow human-controlled Infected."
+"L4D_vote_passed_dis_cont_infect"	"Vote passed: Disallow human-controlled Infected."
+"L4D_vote_passed_cont_infect"		"Vote passed: Allow human-controlled Infected."
+"L4D_vote_needs_difficulty"			"Needs value of Easy, Normal, Advanced, or Expert."
+"L4D_vote_difficulty_is"			"Difficulty is already %s1."
+"L4D_vote_needs_on_off"				"Needs value of on or off."
+"L4D_vote_light_already_allow"		"Flashlights are already allowed."
+"L4D_vote_light_already_disallow"	"Flashlights are already disallowed."
+"L4D_vote_allow_lights"				"Vote: Allow flashlights."
+"L4D_vote_stop_lights"				"Vote: Stop using flashlights."
+"L4D_vote_passed_allow_lights"		"Vote passed: Allow flashlights: %s1."
+
+"L4D_vote_friend_pushing_allowed"	"Survivor friend-pushing is already allowed."
+"L4D_vote_no_friend_pushing"		"Survivor friend-pushing is already disallowed."
+"L4D_vote_allow_pushing"			"Vote: Allow friendly pushing."
+"L4D_vote_disallow_pushing"			"Vote: Disallow friendly pushing."
+"L4D_vote_passed_pushing"			"Vote passed: Allow friendly pushing: %s1."
+"L4D_vote_requires_valid"			"Requires valid player."
+"L4D_vote_already_has_grenades"		"That player already has grenade ban %s1."
+"L4D_vote_ban_grenades_from"		"Vote: Ban %s1 from grenade use."
+"L4D_vote_lift_ban_grenades_from"	"Vote: Lift grenade ban from %s1."
+"L4D_vote_grenades_from_to"			"Vote: Grenades %s1 from %s2."
+"L4D_vote_scramble_next_round"		"Teams will already be scrambled next round."
+"L4D_vote_should_scramble_round"	"Vote: Scramble teams next round."
+"L4D_vote_passed_scramble"			"Vote passed: Teams scrambled next round."
+"L4D_vote_not_valid_mission"		"Not a valid campaign."
+"L4D_vote_change_mission_to"		"Vote: Change campaign to %s1."
+"L4D_vote_should_change_mission"	"Vote: Change next campaign to %s1?"
+"L4D_vote_will_change_mission"		"Vote passed: Next campaign is %s1."
+"L4D_vote_call_impossible"			"Vote: Set %s1 to Expert."
+"L4D_vote_call_hard"				"Vote: Set %s1 to Advanced."
+"L4D_vote_call_normal"				"Vote: Set %s1 to Normal."
+"L4D_vote_call_easy"				"Vote: Set %s1 to Easy."
+"L4D_vote_kick_player"				"Vote: Kick %s1."
+"L4D_vote_should_player"			"Vote: Kick %s1?"
+"L4D_vote_defeated"					"Vote defeated."
+
+"L4D_vote_header"					"VOTE:"
+
+"L4D_vote_kick_player"				"Kick player: %s1?"
+"L4D_vote_passed_kick_player"		"Kicking player: %s1..."
+
+"L4D_vote_change_difficulty"		"Change difficulty to %s1?"
+"L4D_vote_passed_change_difficulty"	"Changing difficulty to %s1..."
+
+"L4D_vote_restart_game"				"Restart campaign?"
+"L4D_vote_passed_restart_game"		"Restarting campaign..."
+
+"L4D_vote_mission_change"			"Change campaign to %s1?"
+"L4D_vote_passed_mission_change"	"Changing campaign to %s1..."
+
+"L4D_vote_return_to_lobby"			"Return to Lobby?"
+"L4D_vote_passed_return_to_lobby"	"Returning to Lobby..."
+
+"L4D_vote_chapter_change"			"Change chapter to %s1?"
+"L4D_vote_passed_chapter_change"	"Changing chapter to %s1..."
+
+"L4D_vote_yes_instruction_a"		"Press START"
+"L4D_vote_no_instruction_a"			"Press BACK"
+"L4D_vote_yes_instruction_b"		"to vote YES"
+"L4D_vote_no_instruction_b"			"to vote NO"
+
+"L4D_vote_yes_pc_instruction"		"Press %vote yes% to vote YES"
+"L4D_vote_no_pc_instruction"		"Press %vote no% to vote NO"
+
+"L4D_vote_current_vote_count"		"Current vote count:"
+
+"L4d_vote_vote_passed"				"VOTE PASSED!"
+"L4d_vote_vote_failed"				"VOTE FAILED."
+"L4d_vote_not_enough_votes"			"Yes votes must exceed No votes."
+"L4d_vote_not_enough_votes2"		"Requires more Yes votes than No votes."
+"L4d_vote_not_enough_votes3"		"Yes votes were not a majority."
+
+"L4D_vote_skip_outtro"				"Vote to Skip"
+"L4D_vote_skip_outtro_pc"			"Space Bar - Vote to Skip"
+"L4D_vote_skip_outtro_pc_singleplayer"	"Space Bar - Return to Lobby"
+
+"L4d_vote_no_vote_spam"				"You cannot call a new vote so soon after the last."
+"L4d_vote_no_transition_vote"		"You cannot call a new vote while other players are still loading."
+
+"L4D_vote_endgame_title"		"REMATCH"
+"L4D_vote_endgame_text"			"Play against this team again?"
+"L4D_vote_endgame_vote_again_timer"	"%s1 seconds remaining to vote."
+"L4D_vote_endgame_vote_return_won"	"Both teams did not vote to rematch.\nReturning to lobby."
+"L4D_vote_endgame_vote_again_won"	"Both teams voted to rematch.\nPlaying again!"
+"L4D_vote_endgame_vote_waiting"		"Waiting for other team to finish voting."
+"L4D_vote_endgame_vote_player1"		"Player 1"
+"L4D_vote_endgame_vote_player2"		"Player 2"
+"L4D_vote_endgame_vote_team_again"	"Your team voted to play again."
+"L4D_vote_endgame_vote_team_return"	"Your team voted to return to the lobby."
+
+//--------------------------------------------------------------------------------------------------------
+// Rosetta
+"L4D_rosetta_help"				"Help!"
+"L4D_rosetta_letsgo"				"Let's Go"
+"L4D_rosetta_hurry"				"Hurry!"
+"L4D_rosetta_coverme"				"Cover Me!"
+"L4D_rosetta_lightsout"				"Lights Out!"
+"L4D_rosetta_watchbehind"			"Watch Behind"
+"L4D_rosetta_followme"				"Follow Me"
+"L4D_rosetta_staytogether"			"Stay Together!"
+"L4D_rosetta_youtakelead"			"You Take the Lead"
+"L4D_rosetta_ready"				"Ready?"
+"L4D_rosetta_thankyou"				"Thank You"
+"L4D_rosetta_withyou"				"I'm With You"
+"L4D_rosetta_no"				"No"
+"L4D_rosetta_whereareyou"			"Where Are You?"
+"L4D_rosetta_sorry"				"Sorry"
+"L4D_rosetta_negative"				"Argh!"
+"L4D_rosetta_yes"				"Yes"
+"L4D_rosetta_welcome"				"You're Welcome"
+"L4D_rosetta_look"				"Look!"
+"L4D_rosetta_heartank"				"I Hear a Tank"
+"L4D_rosetta_hearhunter"			"I Hear a Hunter"
+"L4D_rosetta_hearwitch"				"I Hear a Witch"
+"L4D_rosetta_hearboomer"			"I Hear a Boomer"
+"L4D_rosetta_hearsmoker"			"I Hear a Smoker"
+"L4D_rosetta_hearspitter"			"I Hear a Spitter"
+"L4D_rosetta_hearcharger"			"I Hear a Charger"
+"L4D_rosetta_hearjockey"			"I Hear a Jockey"
+"L4D_rosetta_clear"				"Clear"
+"L4D_rosetta_becareful"				"Be Careful"
+"L4D_rosetta_hurrah"				"Hurrah!"
+"L4D_rosetta_grrrr"				"Grrrr"
+"L4D_rosetta_orders"				"ORDERS..."
+"L4D_rosetta_waithere"				"Wait"
+"L4D_rosetta_nicejob"				"Nice Job!"
+"L4D_rosetta_laugh"				"Laugh"
+"L4D_rosetta_taunt"				"Taunt"
+"L4D_rosetta_totherescue"			"I'll save you"
+
+
+//--------------------------------------------------------------------------------------------------------
+// Instructor
+
+// Commentary Lessons
+"L4D_Instructor_commentary_node1"			"Look for in-game lessons! They can teach you valuable information"
+
+// Infected Lessons
+"L4D_Instructor_boomer_claw"				"SECONDARY ATTACK: CLAW"
+"L4D_Instructor_boomer_vomit"				"PRIMARY ATTACK: VOMIT"
+"L4D_Instructor_hunter_claw"				"SECONDARY ATTACK: CLAW"
+"L4D_Instructor_hunter_lunge"				"PRIMARY ATTACK: CROUCH TO POUNCE"
+"L4D_Instructor_smoker_claw"				"SECONDARY ATTACK: CLAW"
+"L4D_Instructor_smoker_tongue"				"PRIMARY ATTACK: TONGUE SNARE"
+"L4D_Instructor_spitter_claw"				"SECONDARY ATTACK: CLAW"
+"L4D_Instructor_spitter_goo"				"PRIMARY ATTACK: SPIT"
+"L4D_Instructor_charger_claw"				"SECONDARY ATTACK: CLAW"
+"L4D_Instructor_charger_charge"				"PRIMARY ATTACK: CHARGE"
+"L4D_Instructor_jockey_claw"				"SECONDARY ATTACK: CLAW"
+"L4D_Instructor_jockey_jump"				"PRIMARY ATTACK: LUNGE"
+"L4D_Instructor_tongue_break_bent"			"Tongue broke! It bent or stretched too far..."
+"L4D_Instructor_tongue_break_shove"			"Tongue broke! Victim was shoved..."
+"L4D_Instructor_tongue_break_shot"			"Tongue broke! It was damaged..."
+"L4D_Instructor_tank_claw"				"SECONDARY ATTACK: THROW"
+"L4D_Instructor_tank_rock"				"PRIMARY ATTACK: PUNCH"
+"L4D_Instructor_break_checkpoint_door"		"YOU CAN'T BREAK DOWN SAFE ROOM DOORS"
+"L4D_Instructor_break_rescue_doors"			"YOU CAN'T BREAK DOWN RESCUE DOORS"
+"L4D_Instructor_prevent_rescue"				"A RESCUE TEAM IS ON ITS WAY. KILL THE SURVIVORS BEFORE IT GETS HERE..."
+"L4D_Instructor_prevent_escape"				"PREVENT THE SURVIVORS FROM ESCAPING"
+
+											
+// Survivor Lessons							
+"L4D_Instructor_board_chopper"				"Rescue has arrived! Get aboard!"
+"L4D_Instructor_survive_rescue"				"Rescue is coming! Defend yourselves!"
+"L4D_Instructor_revive_end"				"Hold to revive %s1"
+
+"L4D_Instructor_saved_by"				"%s1 saved you"
+"L4D_Instructor_saved_other"				"You saved %s1"
+
+"L4D_Instructor_rescued_by"				"%s1 rescued you"
+"L4D_Instructor_rescued_other"				"You rescued %s1"
+										
+"L4D_Instructor_explain_enter_safe_room"		"Get into the safe room"
+"L4D_Instructor_explain_close_safe_room"		"Close the door once everyone is in"
+"L4D_Instructor_explain_wait_to_exit_safe_room"		"Not all of your teammates are ready"
+"L4D_Instructor_explain_wait_to_push_button"		"Wait for everyone to be ready first"
+
+"L4D_Instructor_explain_pre_radio"			"Answer the radio"
+"L4D_Instructor_explain_radio"				"Summon a rescue"
+"L4D_Instructor_explain_gas_truck"			"Activate the fuel pump"
+"L4D_Instructor_explain_radio2"				"Prepare yourself before you respond"
+"L4D_Instructor_explain_panic_disturbance"		"Watch out! Some cars set off alarms..."
+"L4D_Instructor_explain_panic_disturbance_triggered"	"%s1 alerted the horde"
+"L4D_Instructor_explain_panic_disturbance_triggered2"	"Here they come..."
+"L4D_Instructor_explain_witch_spooked"			"%s1 startled the Witch"
+"L4D_Instructor_explain_witch_spooked2"			"You startled the Witch"
+												
+"L4D_Instructor_explain_panic_button"			"Flip the door switch..."
+"L4D_Instructor_explain_panic_button2"			"Be ready to fight the horde"
+"L4D_Instructor_explain_elevator_button"		"Call the elevator..."
+"L4D_Instructor_explain_lift_button"			"Start the lift..."
+"L4D_Instructor_explain_train_lever"			"Hit the bridge with the decoupled train car..."
+"L4D_Instructor_explain_gas_can_panic"			"Destroy the barricade..."
+"L4D_Instructor_explain_van_panic"				"Start the van to clear a path..."
+"L4D_Instructor_explain_crane"				"Use the lever to lower the crane..."
+"L4D_Instructor_explain_emergency_door"			"Open the emergency door..."
+"L4D_Instructor_explain_mainstreet"				"Lower the forklift to make a ramp..."
+"L4D_Instructor_explain_bridge"				"Close the floodgate to make a bridge..."
+"L4D_Instructor_explain_church_door"			"Tell him to let you in the safe room..."
+
+"L4D_Instructor_explain_inventory"			"Select weapon/item"
+"L4D_Instructor_explain_rifle_zoom"			"Hunting/sniper rifle scope"
+"L4D_Instructor_explain_ammo_resupply_get"		"Replenish ammo"
+"L4D_Instructor_explain_ammo_resupply"			"Ammo stash"
+"L4D_Instructor_explain_first_aid_get"			"Get first aid"
+"L4D_Instructor_explain_first_aid"			"First aid"
+"L4D_Instructor_explain_molotov_get"			"Get molotov"
+"L4D_Instructor_explain_molotov"			"Molotov"
+"L4D_Instructor_explain_pipebomb_get"			"Get pipe bomb"
+"L4D_Instructor_explain_pipebomb"			"Pipe Bomb"
+"L4D_Instructor_explain_vomitjar_get"			"Get Boomer Bile"
+"L4D_Instructor_explain_vomitjar"			"Boomer Bile"
+
+"L4D_Instructor_explain_weapon"				"Weapon"
+"L4D_Instructor_explain_melee_get"			"Get melee weapon"
+"L4D_Instructor_explain_melee"				"Melee Weapon"
+"L4D_Instructor_explain_chainsaw_get"			"Get chainsaw"
+"L4D_Instructor_explain_chainsaw"				"Chainsaw"
+"L4D_Instructor_explain_trade_melee_for_pistol"		"Trade melee weapon for pistol"
+"L4D_Instructor_explain_pistol"				"Pistol"
+"L4D_Instructor_explain_2nd_pistol_get"			"Get second pistol"
+"L4D_Instructor_explain_2nd_pistol"			"Second Pistol"
+"L4D_Instructor_explain_rifle_get"			"Get M-16 assault rifle"
+"L4D_Instructor_explain_rifle"				"M-16 Assault Rifle"
+"L4D_Instructor_explain_hunting_rifle_get"		"Get hunting rifle"
+"L4D_Instructor_explain_hunting_rifle"			"Hunting Rifle"
+"L4D_Instructor_explain_pumpshotgun_get"		"Get pump shotgun"
+"L4D_Instructor_explain_pumpshotgun"			"Pump Shotgun"
+"L4D_Instructor_explain_autoshotgun_get"		"Get tactical shotgun"
+"L4D_Instructor_explain_autoshotgun"			"Tactical Shotgun"
+"L4D_Instructor_explain_smg_get"			"Get submachine gun"
+"L4D_Instructor_explain_smg"				"Submachine Gun"
+"L4D_Instructor_explain_smg_silenced_get"	"Get silenced submachine gun"
+"L4D_Instructor_explain_smg_silenced"		"Silenced Submachine Gun"
+"L4D_Instructor_explain_shotgun_chrome_get"	"Get chrome shotgun"
+"L4D_Instructor_explain_shotgun_chrome"		"Chrome Shotgun"
+"L4D_Instructor_explain_shotgun_spas_get"	"Get combat shotgun"
+"L4D_Instructor_explain_shotgun_spas"		"Combat Shotgun"
+"L4D_Instructor_explain_rifle_desert_get"	"Get combat rifle"
+"L4D_Instructor_explain_rifle_desert"		"Combat Rifle"
+"L4D_Instructor_explain_rifle_desert_get_alt"	"Get desert combat rifle"
+"L4D_Instructor_explain_rifle_desert_alt"		"Desert Combat Rifle"
+"L4D_Instructor_explain_rifle_ak47_get"		"Get AK-47"
+"L4D_Instructor_explain_rifle_ak47"			"AK-47"
+"L4D_Instructor_explain_rifle_ak47_get_alt"		"Get soviet rifle"
+"L4D_Instructor_explain_rifle_ak47_alt"			"Soviet Rifle"
+"L4D_Instructor_explain_sniper_military_get"	"Get sniper rifle"
+"L4D_Instructor_explain_sniper_military"	"Sniper Rifle"
+"L4D_Instructor_explain_grenade_launcher_get"		"Get Grenade Launcher"
+"L4D_Instructor_explain_grenade_launcher"			"Grenade Launcher"
+"L4D_Instructor_explain_pills_get"			"Get pain pills"
+"L4D_Instructor_explain_pills"				"Pain Pills"
+"L4D_Instructor_explain_reload"				"Manual reload"
+"L4D_Instructor_explain_pistol_ammo"			"Pistols have unlimited ammo"
+"L4D_Instructor_explain_grenade_limit"			"You can only carry one throwable item"
+"L4D_Instructor_explain_friendly_fire"			"Don't shoot teammates!"
+"L4D_Instructor_explain_friendly_fire_melee"	"Don't attack teammates!"
+"L4D_Instructor_explain_reckless"			"Stay out of the line of fire!"
+"L4D_Instructor_explain_rescue"				"Rescue Survivors"
+"L4D_Instructor_notify_awaiting_rescue"			"You will be rescued soon"
+"L4D_Instructor_notify_last_life"			"First aid needed! Next knockdown means death..."
+"L4D_Instructor_notify_fire_damage"			"Get away from the fire!"
+"L4D_Instructor_notify_stay_together"			"Stay together to survive"
+"L4D_Instructor_notify_crouch_accuracy"			"Crouching improves accuracy"
+"L4D_Instructor_notify_crouch_tactic"			"Crouching helps teammates shoot over you"
+"L4D_Instructor_notify_communicate"			"Communicate with teammates"
+"L4D_Instructor_explain_heal_interrupted"		"Hold %+attack% to heal yourself"
+"L4D_Instructor_notify_shove_infected"			"Shove them back!"
+"L4D_Instructor_notify_infected_behind"			"Face rear enemies"
+"L4D_Instructor_notify_shove_boomer"			"Shove Boomers back before shooting"
+"L4D_Instructor_notify_given_item_pain_pills"		"%s1 gave you pain pills"
+"L4D_Instructor_notify_failed_to_give_duplicate_pills"	"%s1 already has pain pills"
+"L4D_Instructor_notify_failed_to_use_pills"		"You don't need to take pain pills"
+"L4D_Instructor_notify_heal_self"			"Heal yourself with first aid"
+"L4D_Instructor_notify_heal_self_hold"			"Hold %+attack% to heal yourself"
+"L4D_Instructor_notify_pill_self"			"Take pain pills for a temporary health boost"
+"L4D_Instructor_notify_heal_other"			"Heal %s1 with first aid"
+"L4D_Instructor_notify_heal_other_far"			"Move closer to heal %s1"
+"L4D_Instructor_notify_heal_other_near"			"Hold %+attack2% to heal %s1"
+"L4D_Instructor_notify_heal_other_near_select"		"Select first aid kit"
+"L4D_Instructor_explain_heal_other_interrupted"		"Hold %+attack2% to heal %s1"
+
+"L4D_Instructor_explain_defibrillator_get"		"Get defibrillator"
+"L4D_Instructor_explain_defibrillator"			"Defibrillator"
+"L4D_Instructor_notify_failed_to_use_defibrillator"		"%s1 doesn't need to be revived"
+"L4D_Instructor_notify_use_defibrillator"		"Revive %s1 with the defibrillator"
+"L4D_Instructor_notify_use_defibrillator_hold"	"Hold %+attack% or %+attack2% to revive %s1"
+"L4D_Instructor_defibrillator_usage"		"Use the Defibrillator to revive dead players"
+
+"L4D_Instructor_explain_upgradepack_incendiary_get"		"Get Incendiary Ammo Pack"
+"L4D_Instructor_explain_upgradepack_incendiary"			"Incendiary Ammo Pack"
+"L4D_Instructor_notify_failed_to_use_incendiary_ammo_pile"	"You have already used this Incendiary Ammo upgrade"
+
+"L4D_Instructor_explain_upgradepack_explosive_get"		"Get Explosive Ammo Pack"
+"L4D_Instructor_explain_upgradepack_explosive"			"Explosive Ammo Pack"
+"L4D_Instructor_notify_failed_to_use_explosive_ammo_pile"	"You have already used this Explosive Ammo upgrade"
+
+"L4D_Instructor_notify_upgrade_failed_no_primary"	"You must have a primary weapon to use this upgrade"
+
+"L4D_Instructor_upgradepack_usage"		"Deploy Ammo Packs on the ground to share ammo with the team"
+
+"L4D_Instructor_notify_give_pills"			"You can give %s1 pain pills"
+"L4D_Instructor_notify_give_pills_far"			"Move closer to give %s1 pain pills"
+"L4D_Instructor_notify_give_pills_near"			"Give %s1 pain pills"
+"L4D_Instructor_notify_give_pills_near_select"		"Select pain pills"
+
+"L4D_Instructor_explain_pill_temp_health"		"Pain pills give you a temporary health boost"
+
+"L4D_Instructor_explain_use_door"			"Open/close door"
+
+"L4D_Instructor_notify_ledge"				"A teammate must pull you up"
+								
+"L4D_Instructor_help_ledge"				"Pull %s1 up"
+
+"L4D_Instructor_notify_dead"				"You died! Please wait to respawn..."
+"L4D_Instructor_notify_dead_by_witch1"			"The Witch killed you! Don't startle her next time..."
+"L4D_Instructor_notify_dead_by_witch2"			"Witches are startled by flashlights and gunfire"											
+
+"L4D_Instructor_notify_incapacitated"			"Incapacitated! A teammate must help you"
+"L4D_Instructor_notify_incapacitated_by_witch"		"The Witch injured you! Don't startle her next time..."
+
+"L4D_Instructor_help_incapacitated"			"Help %s1 up"
+											
+"L4D_Instructor_notify_it1_vomit"			"A Boomer vomited on you"
+"L4D_Instructor_notify_it1_splatter"			"A Boomer exploded on you"
+"L4D_Instructor_notify_it1_jar"			"A Survivor bile bombed you"
+"L4D_Instructor_notify_it2"				"Watch out! Boomer bile attracts the horde..."
+											
+"L4D_Instructor_notify_pounced"				"Pinned! A teammate must help..."
+
+"L4D_Instructor_notify_choked"				"Constricted! A teammate must help..."
+"L4D_Instructor_notify_choked_miss"			"Missed: No target"
+
+"L4D_Instructor_notify_charger_pummeled"	"Pummeled! A teammate must help..."
+											
+"L4D_Instructor_help_it"				"A Boomer has vomited on %s1"
+"L4D_Instructor_help_choked"				"A Smoker is constricting %s1"
+"L4D_Instructor_help_choked_near"			"Free %s1"
+"L4D_Instructor_help_choked_far"			"Shoot the Smoker"
+"L4D_Instructor_help_pounced"				"A Hunter has pinned %s1"
+"L4D_Instructor_help_pounced_near"			"Shove the Hunter"
+"L4D_Instructor_help_pounced_far"			"Shoot the Hunter"
+"L4D_Instructor_help_jockey_ridden"			"A Jockey is riding %s1"
+"L4D_Instructor_help_jockey_ridden_near"	"Shove the Jockey"
+"L4D_Instructor_help_jockey_ridden_far"		"Shoot the Jockey"
+"L4D_Instructor_help_charger_pummeled"		"A Charger is pummeling %s1"
+"L4D_Instructor_help_charger_pummeled_kill"	"Kill the Charger"
+"L4D_Instructor_explain_tank"				"Tanks can absorb a lot of damage before they die"
+
+"L4D_Instructor_explain_pickup_item"			"Pick up"
+"L4D_Instructor_explain_use_turret"			"Use turret"
+						
+// Survival lessons
+"L4D_Instructor_earned_bronze_medal"		"You earned the bronze medal!"
+"L4D_Instructor_earned_silver_medal"		"You earned the silver medal!"
+"L4D_Instructor_earned_gold_medal"			"You earned the gold medal!"
+"L4D_Instructor_player_record"				"You beat your best time!"
+"L4D_Instructor_team_record"				"You beat your team record!"
+"L4D_Instructor_world_record"				"You beat the world record!"
+
+"L4D_Instructor_explain_adrenaline"					"Adrenaline"
+"L4D_Instructor_explain_adrenaline_get"				"Get adrenaline"
+"L4D_Instructor_notify_adrenaline_self"				"Take adrenaline for a temporary speed boost"
+"L4D_Instructor_notify_given_item_adrenaline"		"%s1 gave you adrenaline"
+"L4D_Instructor_notify_give_adrenaline"				"You can give %s1 your adrenaline"
+"L4D_Instructor_notify_give_adrenaline_far"			"Move closer to give %s1 your adrenaline"
+"L4D_Instructor_notify_give_adrenaline_near"		"Give %s1 your adrenaline"
+"L4D_Instructor_notify_give_adrenaline_near_select"	"Select adrenaline"
+"L4D_Instructor_adrenaline_usage"					"Adrenaline lets you perform many actions faster"
+
+"L4D_Instructor_notify_failed_to_give_duplicate_belt_item"		"%s1 already has a belt slot item"
+
+"L4D_Instructor_explain_ammo_pack"				"Ammo Pack"
+"L4D_Instructor_explain_ammo_pack_get"			"Get ammo pack"
+"L4D_Instructor_notify_give_ammo_other_near"	"Hold %+attack2% to give ammo to %s1"
+"L4D_Instructor_notify_give_ammo_self"			"Refill your ammo with the ammo pack"
+"L4D_Instructor_notify_give_ammo_self_hold"		"Hold %+attack% to refill your ammo"
+
+"L4D_Instructor_notify_failed_to_use_ammo_pack_no_weapon_on_other"	"%s1 doesn't need ammo right now"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_no_weapon_on_self"	"You don't need ammo right now"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_full_on_other"		"%s1 already has full ammo"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_full_on_self"		"You already have full ammo"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_doesnt_use_ammo"		"You don't need ammo right now"
+"L4D_Instructor_notify_failed_to_use_ammo_pack_other_doesnt_use_ammo"	"%s1 doesn't need ammo right now"
+
+"L4D_Instructor_explain_scavenge_goal_survivor"			"Collect gas cans and pour them into the generator..."
+"L4D_Instructor_explain_scavenge_goal_infected"			"Stop the survivors before they collect all of the gas cans"
+"L4D_Instructor_begin_scavenge_overtime_survivor"		"OVERTIME: At least one survivor must be carrying a gas can!"
+"L4D_Instructor_begin_scavenge_overtime_infected"		"OVERTIME: Force all survivors to drop their gas cans!"
+"L4D_Instructor_scavenge_score_tied"					"One more point and the survivors win this round!"
+"L4D_Instructor_exaplin_scavenge_leave_area"			"Leaving this area will start the round"
+"L4D_Instructor_explain_scavenge_vulnerable_cans"		"Dropped gas cans are vulnerable to Spitter goo"
+
+"L4D_Instructor_explain_survivor_glows_disabled"		"Glows around fellow Survivors are disabled!"
+"L4D_Instructor_explain_item_glows_disabled"			"Glows around items are disabled. Search carefully!"
+"L4D_Instructor_explain_rescue_disabled"				"Rescues are disabled. Players can only respawn at safe rooms."
+"L4D_Instructor_explain_bodyshots_reduced"				"Zombies take less damage to the body. Aim for the head!"
+"L4D_Instructor_explain_witch_kills"					"The Witch will kill you instantly. Watch out for her!"
+"L4D_Instructor_notify_grenade_launcher_range"			"Ouch! You are too close to your grenade launcher blasts!"
+
+//--------------------------------------------------------------------------------------------------------
+// Tips
+"L4D_Tip_Revive"					"Revive fallen teammates before they bleed out."
+"L4D_Tip_Heal"						"Heal yourself and your teammates with first aid kits, pain pills, defibrillators and adrenaline shots."
+"L4D_Tip_Shove"						"Shove Infected away if they get too close. Press %+attack2% to shove."
+"L4D_Tip_Items"						"Search for weapons and useful items."
+"L4D_Tip_Boomer"					"Shove Boomers away before you shoot them."
+"L4D_Tip_Witch"						"Sneak around the Witch. She is more dangerous than she looks."
+"L4D_Tip_Smoker"					"Smokers can pull Survivors great distances."
+"L4D_Tip_Tank"						"The whole team will need to gang up to bring the Tank down."
+"L4D_Tip_Hunter"					"Hunters move quickly and can leap great distances. Keep an ear out for their distinctive scream."
+"L4D_Tip_Hunter2"					"The Hunter's pounce attack leaves Survivors completely helpless. Save pounced teammates or they will die!"
+"L4D_Tip_Checkpoint"				"Get to the next safe room. Look for the red steel doors."
+"L4D_Tip_bullets"				"Bullets can pierce through doors, furniture and thin walls. Hunting rifle rounds can pierce almost anything."
+"L4D_Tip_doors"				"Infected cannot open doors. They must break through them."
+"L4D_Tip_pain_pills"				"Pain pills give you a temporary health boost. But be careful—it wears off over time."
+"L4D_Tip_crouch"				"Crouch during horde attacks, so teammates standing behind you can shoot over your head."
+"L4D_Tip_reload_speeds"			"It takes longer to reload a weapon if you empty the magazine entirely."
+"L4D_Tip_shotgun"				"Shotguns can be devastating for close quarters combat. They are less effective at longer range."
+"L4D_Tip_pipe_bomb"				"Pipe bombs will lure Common Infected away from you before exploding."
+"L4D_Tip_safe_room_heal"			"Always heal up and resupply ammunition before leaving a safe room."
+"L4D_Tip_witch_annoyances"			"Witches will attack if they hear loud noises, see flashlights, or are approached."
+"L4D_Tip_Charger"				"Chargers are capable of knocking down an entire team. A Charger will not release a Survivor once they have you pinned."
+"L4D_Tip_Jockey"				"Jockeys can steer you away from your teammates, behind obstacles, or into danger."
+
+"L4D_Tip_grenadelauncher"		"The grenade launcher can kill multiple enemies with one shot."
+"L4D_Tip_explosive_ammo"		"Explosive Ammo stumbles Special Infected."
+"L4D_Tip_incendiary_ammo"		"Incendiary Ammo lights your target on fire."
+"L4D_Tip_spitter"			"Watch out for Spitter goo. The longer you stand in it, the more damage it does to you."
+"L4D_Tip_adrenaline"			"Adrenaline gives you a temporary energy boost, and makes it easier to run through a horde."
+"L4D_Tip_lasersight"			"Laser sights increase your weapon's accuracy."
+"L4D_Tip_melee"				"Knock back attacking Infected for breathing room and a better shot."
+"L4D_Tip_upgradepack"			"Upgrade your weapon to fire specialty incendiary and explosive ammo."
+"L4D_Tip_boomer_bile"			"Throw Bile Bombs at Infected to attract the horde."
+"L4D_Tip_vulnerable_gascan"			"In a Scavenge match, dropped gas cans are vulnerable to Spitter goo."
+
+//--------------------------------------------------------------------------------------------------------
+// Player Zombie Tips
+
+"L4D_Z_Tip_falling"				"Infected don't take damage from falling."
+"L4D_Z_Tip_glows"				"Infected can see the Survivors through walls. The color of their glowing outlines shows how healthy they are."
+"L4D_Z_Tip_break_doors"			"Break through closed doors by repeatedly pressing %+attack2%"
+"L4D_Z_Tip_no_break_saferoom_doors"		"You cannot break down safe room doors. Find a way around."						
+"L4D_Z_Tip_hunter_leap_aim"			"To leap farther as a Hunter, aim upwards before leaping."
+"L4D_Z_Tip_hunter_wallkick"			"Hunters can climb to high places by leaping off of walls in midair. Just as you touch a wall, turn away, aim up, and leap again!"
+"L4D_360_Hint_hunter_wallkick"			"Hunters can climb to high places by leaping off of walls in midair. Just as you touch a wall, press %+lookspin%, then %+jump% to leap again!"
+"L4D_Z_Tip_hunter_pounce_committed"	"As a Hunter, after you have pounced on a victim, you can break off the attack at any time."
+
+"L4D_Z_Tip_hunter_pounce_incaps"		"Hunters can pounce onto incapacitated Survivors."
+									
+"L4D_Z_Tip_boomer_slow"				"Hide and ambush Survivors. Don't run at them in the open."
+"L4D_Z_Tip_boomer_pop"				"As a Boomer, get as close as you can to Survivors before you are shot or burned, so you can shower them with bile."
+"L4D_Z_Tip_boomer_bomb"				"As a Boomer, dive-bombing Survivors from a great height is an excellent way to coat the whole team in bile."
+"L4D_Z_Tip_boomer_it"				"Boomer bile attracts the horde. Large numbers of Infected will single out bile-covered Survivors for attack."
+"L4D_Z_Tip_boomer_recharge"			"A Boomer can projectile vomit more than once. When your stomach is full again, you're ready to spew anew."
+"L4D_Z_Tip_boomer_vomit_no_move"		"Boomers cannot move while vomiting."
+									
+"L4D_Z_Tip_smoker_choke"				"When Smokers attack from rooftops, they can ensnare Survivors without making themselves an easy target."
+"L4D_Z_Tip_smoker_choke_committed"	"As a Smoker, press %+attack% to break off your attack and release a Survivor."
+
+"L4D_Z_Tip_smoker_poison"			"As a Smoker, if you pull a Survivor all the way to you, you can attack them while they are helpless."
+									
+"L4D_Z_Tip_tank_health"				"Don't wait around when playing as a Tank. Keep pressure on the Survivors—rush in and attack!"
+"L4D_Z_Tip_tank_self_control"		"As a Tank, if you don't stay on the attack, control will be taken away and you will lose your turn."
+"L4D_Z_Tip_tank_throw"				"If a Survivor is too far away to punch, throw a chunk of debris at them by pressing %+attack2%."
+"L4D_Z_Tip_tank_attack_incaps"		"Tanks can quickly kill incapacitated Survivors by standing over them and pressing %+attack%."
+"L4D_Z_Tip_tank_break_walls"			"As a Tank, look for walls with glowing outlines. Press %+attack% to punch through them."
+"L4D_Z_Tip_tank_punch_cars"			"As a Tank, keep an eye out for cars with glowing outlines. Press %+attack% to hurl them at Survivors."
+
+
+//--------------------------------------------------------------------------------------------------------
+// Legacy CStrike strings
+
+"Cstrike_Combat_Title"			"COMBAT"
+"Cstrike_Fire"					"Fire"
+"Cstrike_Menu_Title"			"MENU"
+"Cstrike_Menu_Item_0"			"Menu item 0"
+"Cstrike_Menu_Item_1"			"Menu item 1"
+"Cstrike_Menu_Item_2"			"Menu item 2"
+"Cstrike_Menu_Item_3"			"Menu item 3"
+"Cstrike_Menu_Item_4"			"Menu item 4"
+"Cstrike_Menu_Item_5"			"Menu item 5"
+"Cstrike_Menu_Item_6"			"Menu item 6"
+"Cstrike_Menu_Item_7"			"Menu item 7"
+"Cstrike_Menu_Item_8"			"Menu item 8"
+"Cstrike_Menu_Item_9"			"Menu item 9"
+"Cstrike_Select_Team"			"Select team"
+								
+
+// Titles.txt strings
+"Cstrike_TitlesTXT_CT_Forces"				"Infected"
+"Cstrike_TitlesTXT_CTs_Full"				"The Infected team is full"
+"Cstrike_TitlesTXT_CTs_Win"					"Infected win!"
+"Cstrike_TitlesTXT_Game_join_ct"				"%s1 is joining the Infected"
+"Cstrike_TitlesTXT_Game_join_ct_auto"			"%s1 is joining the Infected (auto)"
+"Cstrike_TitlesTXT_Game_join_terrorist"			"%s1 is joining the Survivors"
+"Cstrike_TitlesTXT_Game_join_terrorist_auto"	"%s1 is joining the Survivors (auto)"
+"Cstrike_TitlesTXT_Game_timelimit"				"Time Remaining:  %s1:%s2. Next campaign is %s3."
+"Cstrike_TitlesTXT_Terrorist_Forces"			"Survivors"
+"Cstrike_TitlesTXT_Terrorists_Full"				"The Survivor team is full"
+"Cstrike_TitlesTXT_Terrorists_Win"				"Survivors win!"
+"Cstrike_TitlesTXT_Game_connected"				"%s1 connected"
+"Cstrike_TitlesTXT_Game_disconnected"			"%s1 has left the game"
+"Cstrike_TitlesTXT_Game_idle_kick"				"%s1 has been idle for too long and has been kicked"
+												
+// Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
+// The control characters can be copied and pasted in notepad.
+//  = 0x02 (STX) - Use team color up to the end of the player name.  This only works at the start of the string, and precludes using the other control characters.
+//  = 0x03 (ETX) - Use team color from this point forward
+//  = 0x04 (EOT) - Use location color from this point forward
+//  = 0x01 (SOH) - Use normal color from this point forward
+
+"L4D_Chat_Infected"				"(Infected) %s1 :  %s2"
+"L4D_Chat_Survivor"				"(Survivor) %s1 :  %s2"
+"L4D_Chat_Infected_Dead"		"*DEAD*(Infected) %s1 :  %s2"
+"L4D_Chat_Survivor_Dead"		"*DEAD*(Survivor) %s1 :  %s2"
+"L4D_Chat_Spec"					"(Spectator) %s1 :  %s2"
+"L4D_Chat_All"					"%s1 :  %s2"
+"L4D_Chat_AllDead"				"*DEAD* %s1 :  %s2"
+"L4D_Chat_AllSpec"				"*SPEC* %s1 :  %s2"
+
+"L4D_Chat_Prompt_Team_General"		"Say (TEAM):"
+"L4D_Chat_Prompt_Team_Infected"		"Say (Infected):"
+"L4D_Chat_Prompt_Team_Survivor"		"Say (Survivor):"
+								
+"Cstrike_Name_Change"				"* %s1 changed name to %s2"
+"Cstrike_Nextlevel_Quit"			"Server is shutting down next round"
+"Cstrike_Nextlevel_Set"				"Server is changing to %s1 next round"
+"Cstrike_Nextlevel_Unset"			"Campaign change has been cancelled"
+"Cstrike_Nextlevel_Blank"			"Server is not changing campaigns"
+"Cstrike_Nextlevel_Unset2"			"Chapter change has been cancelled"
+"Cstrike_Nextlevel_Blank2"			"Server is not changing chapters"
+"Cstrike_game_join_terrorist"		"%s1 is joining the Survivors\n"
+"Cstrike_game_join_ct"				"%s1 is joining the Infected\n"
+"L4D_Teammate_Attack"				"%s1 attacked %s2"
+"L4D_Teammate_Attack_Involved"		"%s1 attacked %s2"
+"Cstrike_game_join_spectators"		"%s1 is joining the Spectators"
+								
+//--------------------------------------------------------------------------------------------------------
+// TargetID (mouseover) strings
+"L4D_TargetID_Player"			"%s1"
+"L4D_TargetID_Player_Health"	"%s1 (%s2)"
+"L4D_Use_Revive"				"PRESS '%s1' TO REVIVE TEAMMATE"
+"L4D_Use_LedgeHang"			"PRESS '%s1' TO HELP TEAMMATE CLIMB UP"
+"L4D_Use_Minigun"				"PRESS '%s1' TO USE MINIGUN"
+"L4D_Use_Radio"				"PRESS '%s1' TO SIGNAL FOR A RESCUE"
+"L4D_Heal_Other"				"PRESS '%s1' TO HEAL TEAMMATE"
+								
+//--------------------------------------------------------------------------------------------------------
+// Tank UI
+"L4D_tank_attack_survivors"		"ATTACK THE SURVIVORS"
+"L4D_tank_lose_control"			"You must attack or you will"
+"L4D_tank_lose_control_1"		"lose control of the Tank"
+"L4D_tank_control"				"CONTROL"
+
+"L4D_tank_take_control"			"YOU WILL BECOME THE TANK"
+"L4D_tank_take_control_tip"		"Get ready to attack the survivors"
+"L4D_tank_awoken"               "A TANK IS APPROACHING"
+"L4D_tank_is_becoming"          "%s1 is becoming the tank"
+								
+//--------------------------------------------------------------------------------------------------------
+// Infected Spectator UI
+"L4D_pz_spectator_title"		"YOU ARE DEAD"
+"L4D_pz_tank_battle"			"Waiting for Tank battle conclusion..."
+"L4D_pz_finale_setup"			"Waiting for the finale to begin..."
+"L4D_pz_finale_wave"			"Waiting for the next swarm of Infected..."
+"L4D_pz_survivors_escaped"		"The Survivors have escaped..."
+"L4D_pz_waiting_for_survivors"	"Waiting for Survivors..."
+"L4D_pz_scrimmage_wait"			"Waiting for a Survivor to cross the line of scrimmage... %s1"
+"L4D_pz_spawn_countdown"		"You will enter Spawn Mode in %s1 seconds"
+"L4D_pz_spawn_countdown_single"	"You will enter Spawn Mode in 1 second"
+"L4D_pz_spawn_spawning"			"Entering Spawn Mode..."
+
+//--------------------------------------------------------------------------------------------------------
+// Infected "just joined Infected team" menu
+"L4D_pz_now_infected_title"		"YOU ARE NOW INFECTED"
+"L4D_pz_now_infected_subtitle"	"You will need to wait for the Survivors to leave the starting area before you can spawn."
+"L4D_pz_spawn_btn_overview"		"OVERVIEW"
+"L4D_pz_spawn_overview"			"The class you spawn as may change each time you spawn, depending on the other classes currently in play.\n\nYou will start in 'Spawn Select Mode.' Move around to select an optimal location to spawn in."
+"L4D_pz_spawn_btn_hunter"		"HUNTER"
+"L4D_pz_spawn_hunter"			""
+"L4D_pz_spawn_btn_boomer"		"BOOMER"
+"L4D_pz_spawn_boomer"			""
+"L4D_pz_spawn_btn_smoker"		"SMOKER"
+"L4D_pz_spawn_smoker"			""
+"L4D_pz_spawn_btn_tank"			"TANK"
+"L4D_pz_spawn_tank"				""
+"L4D_pz_spawn_btn_zombie"		"ZOMBIE"
+"L4D_pz_spawn_zombie"			""								
+
+//--------------------------------------------------------------------------------------------------------
+// Infected Stats panels		
+"L4D_pz_AsAHunter"	"AS A HUNTER"
+"L4D_pz_AsASmoker"	"AS A SMOKER"
+"L4D_pz_AsABoomer"	"AS A BOOMER"
+"L4D_pz_AsATank"	"AS A TANK"
+"L4D_pz_ThatLife"			"THAT LIFE:"
+"L4D_pz_Rank"				"TOTAL POINTS:"
+"L4D_pz_TankTickets"		"TICKETS"
+"L4D_pz_TotalPointsEarned"	"Total points earned:"
+"L4D_pz_DamageDealt"		"Damage to Survivors:"
+"L4D_pz_SurvivorIncapCount" "Survivors incapacitated:"
+"L4D_pz_SurvivorKillCount"	"Survivors killed:"
+"L4D_pz_VomitCount"			"Survivors tagged with Boomer bile:"
+"L4D_pz_BoomerBombCount"	"Boomer Bombs:"
+"L4D_pz_PounceCount"		"Survivors pounced:"
+"L4D_pz_LungeCount"			"Survivors pushed:"
+"L4D_pz_HangCount"			"Survivors constricted:"
+"L4D_pz_PullCount"			"Survivors dragged:"
+"L4D_pz_TankPunchCount"		"Survivors knocked down:"
+"L4D_pz_TankThrowCount"		"Successful throws:"
+							
+//--------------------------------------------------------------------------------------------------------
+// Survivor Stats panels
+"L4D_Loading_Map"			"Loading..."
+"L4D_Checkpoint_Cleared"	"CHECKPOINT CLEARED"
+"L4D_Event_History"			"EVENT HISTORY"
+"L4D_s_current_status"		"CURRENT SURVIVOR STATUS"
+"L4D_s_Kills"				"KILLS"
+"L4D_s_Damage_Taken"		"DAMAGE\nTAKEN"
+"L4D_s_pzs_killed"			"Special Infected killed:"
+"L4D_s_others_revived"		"Survivors revived:"
+"L4D_s_first_aid_shared"	"First aid kits shared:"
+"L4D_s_mission_difficulty"	"%s1, %s2"
+
+//--------------------------------------------------------------------------------------------------------
+// Transition stats screen
+"L4D_s_loading"	"Loading: \"%s1\" - %s2"
+
+//--------------------------------------------------------------------------------------------------------
+//Spawn Select Mode
+"L4D_spawn_select_mode_title"				"Choose Spawn Location"
+"L4D_spawn_select_mode_class_HUNTER"		"HUNTER"
+"L4D_spawn_select_mode_class_CHARGER"		"CHARGER"
+"L4D_spawn_select_mode_class_SPITTER"		"SPITTER"
+"L4D_spawn_select_mode_class_JOCKEY"		"JOCKEY"
+"L4D_spawn_select_mode_class_SMOKER"		"SMOKER"
+"L4D_spawn_select_mode_class_BOOMER"		"BOOMER"
+"L4D_spawn_select_mode_text_1" 				"Get away from the Survivors, find a good place to hide, then spawn into the world."
+"L4D_spawn_select_mode_text_2" 				"You don't need to spawn right away. Wait until you find the perfect place to attack."
+"L4D_spawn_select_mode_text_3" 				"You move faster in Spawn Mode. Look for hiding spots that would take you too long to get to otherwise."
+"L4D_spawn_select_mode_boomer_secondary"	"Vomit"
+"L4D_spawn_select_mode_boomer_1_title"		"Primary: VOMIT"
+"L4D_spawn_select_mode_boomer_1_text"		"Attack at medium range"
+"L4D_spawn_select_mode_boomer_2_title"		"Secondary: CLAW"
+"L4D_spawn_select_mode_boomer_2_text"		"Attack at short range"
+"L4D_spawn_select_mode_hunter_title"		"YOU WILL SPAWN AS A HUNTER"
+"L4D_spawn_select_mode_hunter_text"			"You will spawn as a Hunter"
+"L4D_spawn_select_mode_hunter_secondary"	"Pounce"
+"L4D_spawn_select_mode_hunter_1_title"		"Primary: POUNCE"
+"L4D_spawn_select_mode_hunter_1_text"		"Crouch, then press to attack"
+"L4D_spawn_select_mode_hunter_2_title"		"Secondary: CLAW"
+"L4D_spawn_select_mode_hunter_2_text"		"Attack at short range"
+"L4D_spawn_select_mode_smoker_title"		"YOU WILL SPAWN AS A SMOKER"
+"L4D_spawn_select_mode_smoker_text"			"You will spawn as a Smoker"
+"L4D_spawn_select_mode_smoker_secondary"	"Tongue Snare"
+"L4D_spawn_select_mode_smoker_1_title"		"Primary: TONGUE SNARE"
+"L4D_spawn_select_mode_smoker_1_text"		"Attack at long range"
+"L4D_spawn_select_mode_smoker_2_title"		"Secondary: CLAW"
+"L4D_spawn_select_mode_smoker_2_text"		"Attack at short range"
+"L4D_spawn_select_mode_boomer_title"		"YOU WILL SPAWN AS A BOOMER"
+"L4D_spawn_select_mode_boomer_text"			"You will spawn as a Boomer"
+"L4D_spawn_select_mode_primary"				"Claw Attack"
+"L4D_spawn_select_mode_cant_spawn"			"You can't spawn here"
+"L4D_spawn_select_mode_in_sight"			"You can be seen by the Survivors"
+"L4D_spawn_select_mode_too_close"			"You are too close to the Survivors"
+"L4D_spawn_select_mode_restricted_area"		"This is a restricted area"
+"L4D_spawn_select_mode_inside_entity"		"Something is blocking this spot"
+
+"L4D_spawn_select_mode_spitter_title"		"YOU WILL SPAWN AS A SPITTER"
+"L4D_spawn_select_mode_spitter_text"			"You will spawn as a Spitter"
+"L4D_spawn_select_mode_spitter_1_title"		"Primary: SPIT"
+"L4D_spawn_select_mode_spitter_1_text"		"Attack at medium to long range"
+"L4D_spawn_select_mode_spitter_2_title"		"Secondary: CLAW"
+"L4D_spawn_select_mode_spitter_2_text"		"Attack at short range"
+
+"L4D_spawn_select_mode_jockey_title"		"YOU WILL SPAWN AS A JOCKEY"
+"L4D_spawn_select_mode_jockey_text"			"You will spawn as a Jockey"
+"L4D_spawn_select_mode_jockey_1_title"		"Primary: LEAP"
+"L4D_spawn_select_mode_jockey_1_text"		"Jump on Survivors and steer them into danger"
+"L4D_spawn_select_mode_jockey_2_title"		"Secondary: CLAW"
+"L4D_spawn_select_mode_jockey_2_text"		"Attack at short range"
+
+"L4D_spawn_select_mode_charger_title"		"YOU WILL SPAWN AS A CHARGER"
+"L4D_spawn_select_mode_charger_text"		"You will spawn as a Charger"
+"L4D_spawn_select_mode_charger_1_title"		"Primary: CHARGE"
+"L4D_spawn_select_mode_charger_1_text"		"Charge into Survivors and pummel them"
+"L4D_spawn_select_mode_charger_2_title"		"Secondary: CLAW"
+"L4D_spawn_select_mode_charger_2_text"		"Attack at short range"
+											
+											
+//--------------------------------------------------------------------------------------------------------
+//Infected Team/class Menu
+"L4D_pz_team_join_title"	"PLAY AS INFECTED"
+"L4D_pz_team_join_subtitle" "Select the class you prefer to play. The class you choose may not always be available when you are ready to spawn."
+"L4D_pz_class_select_title" "INFECTED CLASS SELECT"
+							
+//--------------------------------------------------------------------------------------------------------
+//Survivor Team/class Menu	
+"L4D_s_team_join_title"				"JOINING THE SURVIVOR TEAM"
+"L4D_s_team_join_takeover_title"	"CURRENTLY SPECTATING"
+"L4D_s_team_join_subtitle"			"Select an available Survivor"
+"L4D_s_team_join_state_inactive"	"(inactive)"
+"L4D_s_team_join_state_bot"			"%s1 (BOT)"
+"L4D_s_team_join_state_loading"		"%s1 (LOADING)"
+"L4D_s_team_join_hour_played"		"1 hour played"
+"L4D_s_team_join_hours_played"		"%s1 hours played"
+"L4D_s_class_select_title"			"SURVIVOR CHARACTER SELECT"
+
+//--------------------------------------------------------------------------------------------------------
+// Team Full Menu
+"L4D_s_team_full_title"			"SURVIVOR TEAM IS FULL"
+"L4D_s_team_full_subtitle"		"The Survivor team already has four players"
+"L4D_pz_team_full_title"		"INFECTED TEAM IS FULL"
+"L4D_pz_team_full_subtitle"		"The Infected team already has four players"
+"L4D_both_team_full_title"		"BOTH TEAMS ARE FULL"
+"L4D_both_team_full_subtitle"	"There are already four players on both teams"
+"L4D_team_menu_full"			"FULL"		// The team is full, all player slots are used
+
+//--------------------------------------------------------------------------------------------------------
+// Lobby Menu
+"L4D_Lobby_Title"			"CAMPAIGN LOBBY"
+"L4D_Lobby_Subtitle"			"Gather your team to fight the Infected horde"
+"L4D_Lobby_Status_Waiting"		"Waiting for four players to join"
+"L4D_Lobby_PlayerSlotAvailable"		"Player slot available"
+"L4D_Lobby_Button_StartGame"		"START THE GAME"
+"L4D_Lobby_PlayerDropDown"		"Mute, send a message to, or view the Steam ID page of the player.\nAs a Lobby Leader you may kick the player from the lobby."
+
+//--------------------------------------------------------------------------------------------------------
+//Class Descriptions
+"L4D_class_special_ability_title"	"SPECIAL ABILITY:"
+"L4D_class_primary_attack_title"	"PRIMARY ATTACK:"
+"L4D_class_hunter_name"				"Hunter"
+"L4D_class_hunter_ability_text"		"SPECIAL ABILITY: Pounce\nLeap great distances and pounce Survivors to damage."
+"L4D_class_boomer_name"				"Boomer"
+"L4D_class_boomer_ability_text"		"SPECIAL ABILITY: Vomit\nVomit bile on Survivors to attract the horde. Death results in an explosive shower of bile."
+"L4D_class_smoker_name"				"Smoker"
+"L4D_class_smoker_ability_text"		"SPECIAL ABILITY: Tongue Snare\nConstrict Survivors with your tongue. Use elevation or obstacles to ensnare unsuspecting Survivors."
+"L4D_class_spitter_name"				"Spitter"
+"L4D_class_spitter_ability_text"		"SPECIAL ABILITY: Spit\nSpew noxious waste to separate Survivors from one another."
+"L4D_class_charger_name"				"Charger"
+"L4D_class_charger_ability_text"		"SPECIAL ABILITY: Charge\nGrab Survivors and carry them away from their team."
+"L4D_class_jockey_name"				"Jockey"
+"L4D_class_jockey_ability_text"		"SPECIAL ABILITY: Leap\nJump on Survivors and steer them into obstacles."
+"L4D_class_random_name"				"Random"
+"L4D_class_random_ability_text"		"Randomly selects a class each time you spawn."
+"L4D_class_tank_name"				"Tank"
+"L4D_class_witch_name"				"Witch"
+"L4D_class_infected_name"			"Infected"
+"L4D_class_hunter_player_name"		"%s1 (Hunter)"
+"L4D_class_boomer_player_name"		"%s1 (Boomer)"
+"L4D_class_smoker_player_name"		"%s1 (Smoker)"
+"L4D_class_spitter_player_name"		"%s1 (Spitter)"
+"L4D_class_charger_player_name"		"%s1 (Charger)"
+"L4D_class_jokcey_player_name"		"%s1 (Jockey)"
+"L4D_class_tank_player_name"		"%s1 (Tank)"
+									
+//--------------------------------------------------------------------------------------------------------
+//Spectator UI
+"L4D_spectator_select_side" "SELECT A SIDE TO JOIN"
+"L4D_spectator_cant_change_teams" "UNABLE TO CHANGE TEAMS"
+"L4D_spectator_team_change_limit" "You have reached the maximum number of team changes allowed for this map."
+"L4D_spectator_waiting_for_players" "You must wait until all players have loaded."
+"L4D_spectator_team_on_team_game" "You cannot change teams in a team vs. team game."
+
+//--------------------------------------------------------------------------------------------------------
+// Taking over a survivor bot
+"L4D_s_bot_control_subtitle"	"Press to play as %s1"
+
+//--------------------------------------------------------------------------------------------------------
+// Waiting for the Survivor team to be ready
+"L4D_s_team_ready_title"		"WAITING FOR ROUND TO START"
+"L4D_s_team_ready_subtitle"		"Gear up for the dangerous journey ahead"
+"L4D_s_team_ready_seconds_1"	"SECONDS UNTIL"
+"L4D_s_team_ready_seconds_2"	"ROUND BEGINS"
+"L4D_s_team_ready_please_wait"	"PLEASE WAIT FOR YOUR TEAMMATES"
+"L4D_s_team_ready_playtest"		"PLEASE WAIT FOR ALL PLAYERS TO JOIN"
+
+//--------------------------------------------------------------------------------------------------------
+// Teammate in peril notification
+"L4D_teammate_is_in_peril"			"A TEAMMATE IS IN TROUBLE"
+"L4D_teammate_is_in_peril_use"		"PRESS THE %s1 BUTTON TO SEE THEM"
+"L4D_teammate_is_in_peril_use_word"	"USE"
+
+//--------------------------------------------------------------------------------------------------------
+// Healing progress bar
+"L4D_progress_reviving_friend"		"REVIVING TEAMMATE"
+"L4D_progress_being_revived"		"BEING REVIVED"
+"L4D_progress_helping_friend_up"	"HELPING YOUR FRIEND UP"
+"L4D_progress_being_helped_up"		"BEING HELPED UP"
+"L4D_progress_heal"					"HEALING YOURSELF"
+"L4D_progress_heal_friend"			"HEALING TEAMMATE"
+"L4D_progress_being_healed"			"BEING HEALED"
+"L4D_progress_reviving_player"		"Your savior: %s1"
+"L4D_progress_healing_player"		"Your healer: %s1"
+"L4D_progress_healing_target"		"Your target: %s1"
+"L4D_progress_giving_ammo"			"GIVING AMMO"
+"L4D_progress_giving_ammo_to_self"	"OPENING AMMO PACK"
+"L4D_progress_being_given_ammo"		"GETTING AMMO"
+"L4D_progress_giving_ammo_target"	"Your target: %s1"
+"L4D_progress_defibrillator"		"USING DEFIBRILLATOR"
+"L4D_progress_defibrillator_target"	"Your target: %s1"
+"L4D_progress_open_upgrade_pack_incendiary"	"DEPLOYING INCENDIARY AMMO"
+"L4D_progress_open_upgrade_pack_explosive"	"DEPLOYING EXPLOSIVE AMMO"
+"L4D_progress_using_gas_can"		"POURING FUEL"
+"L4D_progress_open_upgrade_pack_explosive"	"DEPLOYING EXPLOSIVE AMMO"
+"L4D_progress_using_cola_bottles"	"ATTACHING COLA BOTTLES"
+"L4D_progress_using_cola_bottles_alt1"	"DELIVERING COLA BOTTLES"
+"L4D_progress_using_cola_bottles_alt2"	"SUPPLYING COLA BOTTLES"
+
+//--------------------------------------------------------------------------------------------------------
+//Button Text
+"L4D_btn_ok"						"OK"
+"L4D_btn_select"					"SELECT"
+"L4D_btn_cancel"					"CANCEL"
+"L4D_btn_spectate"					"SPECTATE"
+"L4D_btn_continue"					"CONTINUE"
+"L4D_btn_dont_show_again"			"Don't show me this again"
+"L4D_btn_dont_show_hunter_again"	"Don't show me Hunter info again"
+"L4D_btn_dont_show_smoker_again"	"Don't show me Smoker info again"
+"L4D_btn_dont_show_boomer_again"	"Don't show me Boomer info again"
+"L4D_btn_dont_show_spitter_again"	"Don't show me Spitter info again"
+"L4D_btn_dont_show_charger_again"	"Don't show me Charger info again"
+"L4D_btn_dont_show_jockey_again"	"Don't show me Jockey info again"
+"L4D_btn_play_survivor"				"PLAY AS A SURVIVOR"
+"L4D_btn_play_infected"				"PLAY AS AN INFECTED"
+
+//--------------------------------------------------------------------------------------------------------
+// HitAnnouncements
+"L4D_HIT_ASSIST_ATTACK"						"%s1 hit %s2, assisted by %s3"
+"L4D_HIT_ATTACK"							"%s1 hit %s2"
+"L4D_HIT_ASSIST"							"%s1 assisted against %s2"
+"L4D_HIT_PUSH_ASSIST_ATTACK"				"%s1 pushed %s2, assisted by %s3"
+"L4D_HIT_PUSH_ATTACK"						"%s1 pushed %s2"
+"L4D_HIT_POUNCE_ATTACK"						"%s1 pounced %s2 for %s3 damage"
+"L4D_INCAPACITATE"							"%s1 incapacitated %s2"
+"L4D_INCAPACITATE_ASSIST"					"%s1 assisted incapacitating %s2"
+"L4D_KILLED"								"%s1 killed %s2"
+"L4D_KILLED_HUNTER"							"%s1 killed a Hunter"
+"L4D_KILLED_BOOMER"							"%s1 killed a Boomer"
+"L4D_KILLED_SMOKER"							"%s1 killed a Smoker"
+"L4D_KILLED_SPITTER"							"%s1 killed a Spitter"
+"L4D_KILLED_CHARGER"							"%s1 killed a Charger"
+"L4D_KILLED_JOCKEY"							"%s1 killed a Jockey"
+"L4D_DEFIBRILLATOR_USED"					"%s1 brought %s2 back from the dead"
+"L4D_SCAVENGE_DESTROY_GASCAN"					"%s1 destroyed a gas can"
+"L4D_VS_REACHED_MARKER"						"The Survivors have made it %s1% of the way!"
+
+//--------------------------------------------------------------------------------------------------------
+// Hints
+"L4D_Z_Tip_TANK_FRUSTRATED"							"A Tank cannot wait—it must attack!\nYou have lost control of this Tank."
+"L4D_Z_Tip_RELOCATED_CLOSER_TO_SURVIVORS"			"The Director has moved you closer to the Survivors"
+
+//--------------------------------------------------------------------------------------------------------
+// EndScenario strings
+"L4D_Scenario_Restart"						"Restarting the scenario..."
+"L4D_Scenario_Survivors_Dead"				"The Survivors have been overwhelmed"
+"L4D_Scenario_Finale_Death_Message"			"...but your teammates can still escape"
+"L4D_Scenario_Radio_Destroyed"				"The radio has been destroyed"
+"L4D_Scenario_Finale_Won"					"The Survivors have escaped!"
+
+//--------------------------------------------------------------------------------------------------------
+// OnAward strings
+"L4D_OnAwardSaved"							"%s1 saved %s2"
+"L4D_OnAwardSharing"						"%s1 gave health to %s2"
+"L4D_OnAwardSharingAdrenaline"				"%s1 gave adrenaline to %s2"
+"L4D_OnAwardProtector"						"%s1 protected %s2"
+"L4D_OnAwardRescuer"						"%s1 rescued %s2"
+"L4D_OnAwardMedic"							"%s1 healed %s2"
+
+//--------------------------------------------------------------------------------------------------------
+// Infected specific Hints
+"L4D_TankRangeCull"							"All of the Survivors\nare too far away.\nGet close or be killed soon..."
+"L4D_ZombieRangeCull"						"All of the Survivors\nare too far away.\nGet close or be moved closer..."
+"L4D_ZombieFinaleStart"						"Kill the Survivors before they are rescued"
+"L4D_ZombieGoal"							"Prevent the Survivors from reaching safety"
+"L4D_ZombieCheckPointDoor"					"You can't break down safe room doors. Find a way around."
+
+//--------------------------------------------------------------------------------------------------------
+// Infected UI and notifications
+"L4D_Zombie_UI_Press"						"Press "
+"L4D_Zombie_UI_Not_Bound"					"< not bound >"
+"L4D_Zombie_UI_Become"						" to become the "
+"L4D_Zombie_UI_Tank"						"TANK"
+"L4D_Zombie_UI_Will_Become"					"You will become a "
+"L4D_Zombie_UI_One_Second"					" in 1 second"
+"L4D_Zombie_UI_Are_Become"					"You are becoming "
+"L4D_Zombie_UI_In"							" in"
+"L4D_Zombie_UI_Seconds"						"seconds"
+"L4D_Zombie_UI_Become_This"					" to become this "
+"L4D_Zombie_UI_Too_Far"			            "TOO FAR FROM THE SURVIVORS"
+"L4D_Zombie_UI_Being_Moved_Closer"			"You are being moved closer to the Survivors..."
+"L4D_Zombie_UI_To_Be_Moved"					"Move closer to the Survivors"
+"L4D_Zombie_UI_BadPlace"					"Can't spawn here"
+"L4D_Zombie_UI_Wait_For_Tank"				"Waiting for Tank battle conclusion..."
+"L4D_Zombie_UI_Spawn_Disabled"				"Spawning has been disabled..."
+"L4D_Zombie_UI_Wait_For_Finale"				"Waiting for the finale to begin..."
+"L4D_Zombie_UI_Wait_For_Stampede"			"Waiting for the next stampede of Infected..."
+"L4D_Zombie_UI_Survivor_Escaped"			"The Survivors have escaped..."
+"L4D_Zombie_UI_Wait_For_Survivors"			"Waiting for Survivors..."
+"L4D_Zombie_UI_Wait_For_Scrimmage"			"Waiting for a Survivor to cross the line of scrimmage..."
+"L4D_Zombie_UI_Enter_Spawn_Mode"			"You will enter Spawn Mode in"
+"L4D_Zombie_UI_Spawn_In_Second"				"You will enter Spawn Mode in 1 second"
+"L4D_Zombie_UI_Entering_Spawn"				"Entering Spawn Mode..."
+"L4D_Zombie_UI_Director_TimeOut"			"The Director has called a time-out..."
+"L4D_Zombie_UI_Wait_For_Safe_Area"			"Waiting for the Survivors to leave the safe area..."
+"L4D_Zombie_UI_Get_Ready_For_Spawn"			"Get ready..."
+"L4D_Zombie_UI_Invalid"						"[INVALID]"
+"L4D_Zombie_UI_Press_Fire_To_Play"			"Press to play"
+"L4D_Zombie_UI_Action"						"Ready to spawn"
+
+//--------------------------------------------------------------------------------------------------------
+// Report Screen
+"L4D_ReportScreen_Performance"              "Team Performance:"
+"L4D_ReportScreen_Title_Safe"               "We're safe... for now."
+
+//--------------------------------------------------------------------------------------------------------
+// Outtro Stats
+"L4D_Hour"									"hour"
+"L4D_Hours"									"hours"
+"L4D_Minute"								"minute"
+"L4D_Minutes"								"minutes"
+"L4D_MissionTime_Format_Hours"				"%s1 hours, %s2 minutes"
+"L4D_Gameplay_Stats"						"Gameplay Stats"
+"L4D_Stat_Mission_Time"						"Total campaign time"
+"L4D_Stat_Time_Played"						"Total time played"
+"L4D_Stat_Favorite_Mission"					"Favorite campaign"
+"L4D_Stat_Favorite_Weapon"					"Favorite weapon"
+"L4D_Stat_Achievements_Earned"				"Achievements earned" [$WIN32]
+"L4D_Stat_Achievements_Earned"				"Achievements earned" [$X360]
+"L4D_Stat_Restarts"							"Number of times restarted"
+"L4D_Stat_Tagline"							"%s1 zombies were harmed in the making of this film."
+
+//--------------------------------------------------------------------------------------------------------
+// Highlights
+"L4D_Highlight_LeastFriendlyFire"			"MOST CAREFUL TEAMMATE:"
+"L4D_Highlight_MostSpecialsKilled"			"SPECIAL KILLER:"
+"L4D_Highlight_MostHeals"					"TEAM MEDIC:"
+"L4D_Highlight_MostSaves"					"GREATEST SAVIOR:"
+"L4D_Highlight_LeastDamageTaken"			"LEAST DAMAGE TAKEN:"
+"L4D_Highlight_LeastIncaps"					"FEWEST INCAPS:"
+"L4D_Highlight_MostDamageToTank"			"TANK SLAYER:"
+"L4D_Highlight_MostDamageToWitch"			"WITCH HUNTER:"
+"L4D_Highlight_MostAccurate"				"SHARPSHOOTER:"
+"L4D_Highlight_MostHeadshots"				"HEADHUNTER:"
+"L4D_Highlight_MostInfectedKilled"			"GENERAL DEFENSE:"
+"L4D_HIghlight_MostProtects"				"PROTECTOR:"
+"L4D_Highlight_MostMeleeKills"				"MELEE FIGHTER:"
+
+"L4D_Highlight_LeastFriendlyFire_Desc"			"Fewest friendly fire incidents"
+"L4D_Highlight_MostSpecialsKilled_Desc"			"Killed the most Special Infected"
+"L4D_Highlight_MostHeals_Desc"				"Healed the most teammates"
+"L4D_Highlight_MostSaves_Desc"				"Revived the most teammates"
+"L4D_Highlight_LeastDamageTaken_Desc"			"Took the least amount of damage"
+"L4D_Highlight_LeastIncaps_Desc"			"Was incapacitated the least number of times"
+"L4D_Highlight_MostDamageToTank_Desc"			"Did the most damage to the Tank"
+"L4D_Highlight_MostDamageToWitch_Desc"			"Did the most damage to the Witch"
+"L4D_Highlight_MostAccurate_Desc"			"Highest level of accuracy"
+"L4D_Highlight_MostHeadshots_Desc"			"Most headshots"
+"L4D_Highlight_MostInfectedKilled_Desc"			"Killed the most Infected"
+"L4D_Highlight_MostProtects_Desc"			"Protected the most teammates"
+"L4D_Highlight_MostMeleeKills_Desc"			"Most kills with a melee weapon"
+
+"L4D_Highlight_MostDeaths_Desc"			"Deaths"
+"L4D_Highlight_Incaps_Desc"			"Number of times incapacitated"
+"L4D_Highlight_MedkitsUsed_Desc"			"First aid kits used"
+"L4D_Highlight_PillsUsed_Desc"			"Pain pills used"
+"L4D_Highlight_PipebombsUsed_Desc"			"Pipe bombs used"
+"L4D_Highlight_MolotovsUsed_Desc"			"Molotovs used"
+"L4D_Highlight_BoomerBilesUsed_Desc"			"Bile jars used"
+"L4D_Highlight_AdrenalinesUsed_Desc"			"Adrenaline shots used"
+"L4D_Highlight_DefibrillatorsUsed_Desc"			"Defibrillators used"
+"L4D_Highlight_MeleeKills_Desc"			"Melee kills"
+"L4D_Highlight_HuntersKilled_Desc"			"Hunters killed"
+"L4D_Highlight_BoomersKilled_Desc"			"Boomers killed"
+"L4D_Highlight_SmokersKilled_Desc"			"Smokers killed"
+"L4D_Highlight_ChargersKilled_Desc"			"Chargers killed"
+"L4D_Highlight_JockeysKilled_Desc"			"Jockeys killed"
+"L4D_Highlight_SpittersKilled_Desc"			"Spitters killed"
+"L4D_Highlight_TanksKilled_Desc"			"Tanks killed"
+"L4D_Highlight_WitchesKilled_Desc"			"Witches killed"
+"L4D_Highlight_MostCommonInfectedKilled_Desc"			"Common Infected killed"
+"L4D_Highlight_WitchDisturbances_Desc"			"Disturbed the Witch the most"
+"L4D_Highlight_GavePills_Desc"				"Shared the most pain pills"
+"L4D_Highlight_Accuracy_Desc"				"Overall accuracy"
+"L4D_Highlight_MostHeadshots_Desc"			"Total Headshots"
+"L4D_Highlight_HeadshotPercent_Desc"		"Headshots (percentage of all hits)"
+"L4D_Highlight_KillsPerMinute_Desc"			"Average number of Infected killed per minute"
+
+//--------------------------------------------------------------------------------------------------------
+// Infected Highlights
+"L4D_Highlight_MostDamage"					"TOTAL DAMAGE:"
+"L4D_Highlight_MostIncaps"					"MOST INCAPS:"
+"L4D_Highlight_MostTankDamage"				"TANK DAMAGE:"
+"L4D_Highlight_MostHunterDamage"				"HUNTER DAMAGE:"
+"L4D_Highlight_MostSmokerDamage"				"SMOKER DAMAGE:"
+"L4D_Highlight_MostBoomerDamage"				"BOOMER DAMAGE:"
+"L4D_Highlight_MostSpitterDamage"				"SPITTER DAMAGE:"
+"L4D_Highlight_MostChargerDamage"				"CHARGER DAMAGE:"
+"L4D_Highlight_MostJockeyDamage"				"JOCKEY DAMAGE:"
+"L4D_Highlight_MostKills"					"PLAYER KILLER:"
+"L4D_Highlight_MostPounces"					"HUNTER POUNCES:"
+"L4D_Highlight_MostPushes"					"HUNTER PUSHES:"
+"L4D_Highlight_MostTankPunches"				"TANK PUNCHES:"
+"L4D_Highlight_MostTankThrows"				"TANK THROWS:"
+"L4D_Highlight_MostHung"					"SURVIVORS CONSTRICTED:"
+"L4D_Highlight_MostPulled"					"SURVIVORS DRAGGED:"
+"L4D_Highlight_MostBombed"					"BOOMER BOMBS:"
+"L4D_Highlight_MostVomited"					"MOST VOMIT:"
+
+"L4D_Highlight_MostDamage_Desc"				"Did the most damage to the Survivors"
+"L4D_Highlight_MostIncaps_Desc"				"Incapacitated the most Survivors"
+"L4D_Highlight_MostTankDamage_Desc"			"Did the most damage as a Tank"
+"L4D_Highlight_MostHunterDamage_Desc"		"Did the most damage as a Hunter"
+"L4D_Highlight_MostSmokerDamage_Desc"		"Did the most damage as a Smoker"
+"L4D_Highlight_MostBoomerDamage_Desc"		"Did the most damage as a Boomer"
+"L4D_Highlight_MostSpitterDamage_Desc"		"Did the most damage as a Spitter"
+"L4D_Highlight_MostChargerDamage_Desc"		"Did the most damage as a Charger"
+"L4D_Highlight_MostJockeyDamage_Desc"		"Did the most damage as a Jockey"
+"L4D_Highlight_MostKills_Desc"				"Killed the most Survivors"
+"L4D_Highlight_MostPounces_Desc"			"Pounced the most Survivors"
+"L4D_Highlight_MostPushes_Desc"				"Pushed the most Survivors"
+"L4D_Highlight_MostTankPunches_Desc"		"Punched the most Survivors as a Tank"
+"L4D_Highlight_MostTankThrows_Desc"			"Hit the most Survivors with thrown objects"
+"L4D_Highlight_MostHung_Desc"				"Constricted the most Survivors"
+"L4D_Highlight_MostPulled_Desc"				"Dragged the most Survivors"
+"L4D_Highlight_MostBombed_Desc"				"Exploded on the most Survivors"
+"L4D_Highlight_MostVomited_Desc"			"Vomited on the most Survivors"
+
+"L4D_Highlight_Best_Hunter_Pounce"			"MOST DAMAGING POUNCE:"
+"L4D_Highlight_Best_Smoker_Pull"			"LONGEST SMOKER PULL:"
+"L4D_Highlight_Most_Boomer_Victims"			"MOST VOMIT VICTIMS:"
+"L4D_Highlight_Most_Jockey_Rides"			"LONGEST JOCKEY RIDE:"
+"L4D_Highlight_Most_Charges"				"MOST SURVIVORS CHARGED:"
+
+"L4D_Highlight_Best_Hunter_Pounce_Desc"		"Most damage on a single Hunter pounce"
+"L4D_Highlight_Best_Smoker_Pull_Desc"		"Longest single Smoker pull"
+"L4D_Highlight_Most_Boomer_Victims_Desc"	"Hit the most Survivors with Vomit"
+"L4D_Highlight_Most_Jockey_Rides_Desc"		"Longest single Jockey ride"
+"L4D_Highlight_Most_Charges_Desc"			"Charged the most Survivors"
+
+// Genders
+"L4D_Gender_CEDA"						"CEDA Agent"
+"L4D_Gender_Crawler"						"Mudman"
+"L4D_Gender_Undistractable"					"Construction Worker"
+"L4D_Gender_Fallen"						"Fallen Survivor"
+"L4D_Gender_Riot_Control"					"Riot Officer"
+"L4D_Gender_Clown"						"Clown"
+
+// Weapons
+"L4D_Melee_Baseball_Bat"					"Baseball Bat"
+"L4D_Melee_Cricket_Bat"						"Cricket Bat"
+"L4D_Melee_Crowbar"						"Crowbar"
+"L4D_Melee_Electric_Guitar"					"Electric Guitar"
+"L4D_Melee_FireAxe"						"Fireaxe"
+"L4D_Melee_Frying_Pan"						"Frying Pan"
+"L4D_Melee_Katana"						"Katana"
+"L4D_Melee_Machete"						"Machete"
+"L4D_Melee_Tonfa"						"Tonfa"
+
+// Campaign Completion Achievements
+"ACH_SURVIVE_MALL_NAME"				"PRICE CHOPPER"
+"ACH_SURVIVE_MALL_DESC"				"Survive the Dead Center campaign."
+"ACH_SURVIVE_ROAD_NAME"				"MIDNIGHT RIDER"
+"ACH_SURVIVE_ROAD_DESC"				"Survive the Dark Carnival campaign."
+"ACH_SURVIVE_SWAMP_NAME"			"RAGIN' CAJUN"
+"ACH_SURVIVE_SWAMP_DESC"			"Survive the Swamp Fever campaign."
+"ACH_SURVIVE_TOWN_NAME"				"WEATHERMAN"
+"ACH_SURVIVE_TOWN_DESC"				"Survive the Hard Rain campaign."
+"ACH_SURVIVE_BRIDGE_NAME"			"BRIDGE BURNER"
+"ACH_SURVIVE_BRIDGE_DESC"			"Survive the Parish campaign."
+"ACH_BEAT_CAMPAIGNS_EXPERT_MODE_NAME"		"STILL SOMETHING TO PROVE"
+"ACH_BEAT_CAMPAIGNS_EXPERT_MODE_DESC"		"Survive all campaigns on Expert."
+"ACH_SURVIVE_EXPERT_REALISM_NAME"		"THE REAL DEAL"
+"ACH_SURVIVE_EXPERT_REALISM_DESC"		"Survive a campaign on Expert skill with Realism mode enabled."
+
+// Melee Achievements
+"ACH_FINISH_CAMPAIGN_MELEE_ONLY_NAME"		"CONFEDERACY OF CRUNCHES"
+"ACH_FINISH_CAMPAIGN_MELEE_ONLY_DESC"		"Finish a campaign using only melee weapons."
+"ACH_CUT_OFF_HEADS_MELEE_NAME"			"HEAD HONCHO"
+"ACH_CUT_OFF_HEADS_MELEE_DESC"			"Decapitate 200 Infected with a melee weapon."
+"ACH_KILL_WITH_EVERY_MELEE_NAME"		"CLUB DEAD"
+"ACH_KILL_WITH_EVERY_MELEE_DESC"		"Use every melee weapon to kill Common Infected."
+"ACH_KILL_INFECTED_WITH_CHAINSAW_NAME"		"CHAIN OF COMMAND"
+"ACH_KILL_INFECTED_WITH_CHAINSAW_DESC"		"Kill 100 Common Infected with the chainsaw."
+"ACH_KILL_TANK_MELEE_ONLY_NAME"			"TANK BURGER"
+"ACH_KILL_TANK_MELEE_ONLY_DESC"			"Kill a Tank with melee weapons."
+
+// Rescue/Coop Achievements
+"ACH_RES_SURVIVORS_WITH_DEFIB_NAME"		"SHOCK JOCK"
+"ACH_RES_SURVIVORS_WITH_DEFIB_DESC"		"Revive 10 dead Survivors with the defibrillator."
+"ACH_SPEED_REVIVE_WITH_ADRENALINE_NAME"		"THE QUICK AND THE DEAD"
+"ACH_SPEED_REVIVE_WITH_ADRENALINE_DESC"		"Revive 10 incapacitated Survivors while under the speed-boosting effects of adrenaline."
+
+// New Weapons Achievements
+"ACH_DEPLOY_AMMO_UPGRADE_NAME"			"ARMORY OF ONE"
+"ACH_DEPLOY_AMMO_UPGRADE_DESC"			"Deploy an ammo upgrade and have your team use it."
+"ACH_IGNITE_INFECTED_FIRE_AMMO_NAME"		"BURNING SENSATION"
+"ACH_IGNITE_INFECTED_FIRE_AMMO_DESC"		"Ignite 50 Common Infected with incendiary ammo."
+"ACH_KILL_ZOMBIES_GRENADE_BLAST_NAME"		"DISMEMBERMENT PLAN"
+"ACH_KILL_ZOMBIES_GRENADE_BLAST_DESC"		"Kill 15 Infected with a single grenade launcher blast."
+"ACH_BILE_A_TANK_NAME"				"SEPTIC TANK"
+"ACH_BILE_A_TANK_DESC"				"Use a bile bomb on a Tank."
+
+// Uncommon Infected Achievements
+"ACH_KILL_EVERY_UNCOMMON_INFECTED_NAME"		"CRASS MENAGERIE"
+"ACH_KILL_EVERY_UNCOMMON_INFECTED_DESC"		"Kill one of each Uncommon Infected."
+"ACH_KILL_SUBMERGED_MUDMEN_NAME"		"DEAD IN THE WATER"
+"ACH_KILL_SUBMERGED_MUDMEN_DESC"		"Kill 10 swampy Mudmen while they are in the water."
+"ACH_COLLECT_CEDA_VIALS_NAME"			"ROBBED ZOMBIE"
+"ACH_COLLECT_CEDA_VIALS_DESC"			"Collect 10 vials of Boomer vomit from infected CEDA agents you have killed."
+"ACH_HONK_A_CLOWNS_NOSE_NAME"			"CL0WND"
+"ACH_HONK_A_CLOWNS_NOSE_DESC"			"Honk the noses of 10 Clowns."
+"ACH_INCENDIARY_CLOWN_POSSE_NAME"		"FRIED PIPER"
+"ACH_INCENDIARY_CLOWN_POSSE_DESC"		"Using a Molotov, burn a Clown leading at least 10 Common Infected. "
+
+// Speical Infected Achievements
+"ACH_KILL_SPITTER_FAST_NAME"			"ACID REFLEX"
+"ACH_KILL_SPITTER_FAST_DESC"			"Kill a Spitter before she is able to spit."
+"ACH_SAVE_PLAYER_FROM_JOCKEY_FAST_NAME"		"A RIDE DENIED"
+"ACH_SAVE_PLAYER_FROM_JOCKEY_FAST_DESC"		"Kill a Jockey within 2 seconds of it jumping on a Survivor."
+"ACH_MELEE_A_CHARGER_NAME"			"LEVEL A CHARGE"
+"ACH_MELEE_A_CHARGER_DESC"			"Kill a Charger with a melee weapon while they are charging."
+
+// Campaign Special Achievements
+"ACH_STASH_WHACKER_NAME"			"STACHE WHACKER"
+"ACH_STASH_WHACKER_DESC"			"Prove you are faster than Moustachio."
+"ACH_STRONGMAN_GAME_NAME"			"GONG SHOW"
+"ACH_STRONGMAN_GAME_DESC"			"Prove you are stronger than Moustachio."
+"ACH_GNOME_RESCUE_NAME"				"GUARDIN' GNOME"
+"ACH_GNOME_RESCUE_DESC"				"Rescue Gnome Chompski from the Carnival."
+"ACH_WITCH_TOWN_NO_WITCH_KILLS_NAME"		"SOB STORY"
+"ACH_WITCH_TOWN_NO_WITCH_KILLS_DESC"		"Navigate the sugar mill and reach the safe room without killing any Witches."
+"ACH_AIRLINE_FINALE_NO_DAMAGE_NAME"		"WING AND A PRAYER"
+"ACH_AIRLINE_FINALE_NO_DAMAGE_DESC"		"Defend yourself at the crashed airliner without taking damage."
+"ACH_IMPOUND_LOT_NO_ALARMS_NAME"		"VIOLENCE IN SILENCE"
+"ACH_IMPOUND_LOT_NO_ALARMS_DESC"		"Navigate the impound lot and reach the cemetery safe room without tripping any alarms."
+"ACH_BRIDGE_TIMED_RUN_NAME"			"BRIDGE OVER TREBLED SLAUGHTER"
+"ACH_BRIDGE_TIMED_RUN_DESC"			"Cross the bridge finale in less than three minutes."
+
+// Versus Achievements
+"ACH_VS_LEAVE_SAFE_ROOM_DEFIB_TEAMMATE_NAME"	"HEARTWARMER"
+"ACH_VS_LEAVE_SAFE_ROOM_DEFIB_TEAMMATE_DESC"	"In a Versus round, leave the saferoom to defibrillate a dead teammate."
+"ACH_VS_FORM_PARTY_AND_WIN_4V4_NAME"		"STRENGTH IN NUMBERS"
+"ACH_VS_FORM_PARTY_AND_WIN_4V4_DESC"		"Form a team and beat an enemy team in 4v4 Versus or Scavenge."
+"ACH_VS_JOCKEY_LONG_RIDE_NAME"			"QUALIFIED RIDE"
+"ACH_VS_JOCKEY_LONG_RIDE_DESC"			"As the Jockey, ride a Survivor for more than 12 seconds."
+"ACH_VS_JOCKEY_TWO_PLAYERS_NAME"		"BACK IN THE SADDLE"
+"ACH_VS_JOCKEY_TWO_PLAYERS_DESC"		"As the Jockey, ride the Survivors twice in a single life."
+"ACH_VS_JOCKEY_INTO_ACID_NAME"			"RODE HARD, PUT AWAY WET"
+"ACH_VS_JOCKEY_INTO_ACID_DESC"			"As the Jockey, ride a Survivor and steer them into a Spitter's acid patch."
+"ACH_VS_SPIT_ON_ENEMY_TEAM_NAME"		"GREAT EXPECTORATIONS"
+"ACH_VS_SPIT_ON_ENEMY_TEAM_DESC"		"As the Spitter, hit every Survivor with a single acid patch."
+"ACH_VS_SPIT_ON_SMOKERED_PLAYER_NAME"		"A SPITTLE HELP FROM MY FRIENDS"
+"ACH_VS_SPIT_ON_SMOKERED_PLAYER_DESC"		"As the Spitter, spit on a Survivor being choked by a Smoker."
+"ACH_VS_BOWL_ENEMY_TEAM_NAME"			"SCATTERING RAM"
+"ACH_VS_BOWL_ENEMY_TEAM_DESC"			"As the Charger, bowl through the entire enemy team in a single charge."
+"ACH_VS_CHARGER_GROUND_SMASH_NAME"		"MEAT TENDERIZER"
+"ACH_VS_CHARGER_GROUND_SMASH_DESC"		"As the Charger, grab a Survivor and smash them into the ground for a solid 15 seconds."
+"ACH_VS_CHARGER_LONG_CARRY_NAME"		"LONG DISTANCE CARRIER"
+"ACH_VS_CHARGER_LONG_CARRY_DESC"		"As the Charger, grab a Survivor and carry them over 80 feet."
+
+// Survival Achievements
+"ACH_SURVIVAL_GET_MEDAL_MELEE_ONLY_NAME"	"BEAT THE RUSH"
+"ACH_SURVIVAL_GET_MEDAL_MELEE_ONLY_DESC"	"In a Survival round, get a medal only using melee weapons."
+
+// Scavenge Achievements
+"ACH_SCAVENGE_WIN_A_GAME_NAME"			"HUNTING PARTY"
+"ACH_SCAVENGE_WIN_A_GAME_DESC"			"Win a game of Scavenge."
+"ACH_SCAVENGE_COLLECT_CAN_GRIND_NAME"		"GAS GUZZLER"
+"ACH_SCAVENGE_COLLECT_CAN_GRIND_DESC"		"Collect 100 gas cans in Scavenge."
+"ACH_SCAVENGE_COLLECT_ALL_CANS_NAME"		"CACHE AND CARRY"
+"ACH_SCAVENGE_COLLECT_ALL_CANS_DESC"		"Collect 15 gas cans in a single Scavenge round."
+"ACH_SCAVENGE_SHUT_OUT_NAME"			"SCAVENGE HUNT"
+"ACH_SCAVENGE_SHUT_OUT_DESC"			"Stop the enemy team from collecting any gas cans during a Scavenge round."
+"ACH_SCAVENGE_MAKE_SURVIVOR_DROP_CAN_NAME"	"FUEL CRISIS"
+"ACH_SCAVENGE_MAKE_SURVIVOR_DROP_CAN_DESC"	"Make a Survivor drop a gas can during overtime."
+"ACH_SCAVENGE_CAN_DROP_GRIND_NAME"		"GAS SHORTAGE"
+"ACH_SCAVENGE_CAN_DROP_GRIND_DESC"		"Cause 25 gas can drops as a Special Infected."
+
+// Holiday promo 2011
+"ACH_COLLECT_HOLIDAY_GIFTS_NAME"	"Valve Gift Grab 2011 – L4D2"
+"ACH_COLLECT_HOLIDAY_GIFTS_DESC"	"Collect three gifts dropped by Special Infected in Versus Mode."
+
+// Avatar Awards - In Game
+"ASSET_MED_KIT_NAME"				"MED KIT"
+"ASSET_MED_KIT_DESC"				"Unlock the Med Kit by beating all five campaigns on any skill level."
+"ASSET_FRYING_PAN_NAME"				"FRYING PAN"
+"ASSET_FRYING_PAN_DESC"				"Unlock the Frying Pan by killing 10,000 Infected."
+"ASSET_GNOME_NAME"				"GARDEN GNOME"
+"ASSET_GNOME_DESC" 				"Unlock the Garden Gnome by rescuing Gnome Chompski."
+"ASSET_BULL_SHIFTERS_SHIRT_NAME"		"BULL SHIFTERS SHIRT"
+"ASSET_BULL_SHIFTERS_SHIRT_DESC"		"Unlock the Bull Shifters shirt by winning 10 games of Versus."
+"ASSET_LEFT_4_DEAD_2_SHIRT_NAME"		"LEFT 4 DEAD 2 SHIRT"
+"ASSET_LEFT_4_DEAD_2_SHIRT_DESC"		"Unlock the Left 4 Dead 2 shirt by winning 10 games of Scavenge."
+"ASSET_ZOMBIE_HAND_SHIRT_NAME"			"ZOMBIE HAND SHIRT"
+"ASSET_ZOMBIE_HAND_SHIRT_DESC"			"Unlock the Zombie Hand shirt by killing 10,000 Infected."
+"ASSET_DEPECHE_MODE_SHIRT_NAME"			"DEPECHE MODE SHIRT"
+"ASSET_DEPECHE_MODE_SHIRT_DESC"			"Unlock the Depeche Mode shirt by rescuing Gnome Chompski."
+
+// Avatar Awards - XLAST
+"AVATARITEM_MEDKIT_DSP"				"Med Kit"
+"AVATARITEM_MEDKIT_DSC"				"A Med Kit earned by beating all five campaigns."
+"AVATARITEM_MEDKIT_HOW"				"Unlock the Med Kit by beating all five campaigns."
+"AVATARITEM_BULLSHIFTERSSHIRT_DSP"		"Bull Shifters Shirt"
+"AVATARITEM_BULLSHIFTERSSHIRT_DSC"		"A Bull Shifters shirt earned by winning 10 games of Versus."
+"AVATARITEM_BULLSHIFTERSSHIRT_HOW"		"Unlock the Bull Shifters shirt by winning 10 games of Versus."
+"AVATARITEM_LEFT4DEAD2SHIRT_DSP"		"Left 4 Dead 2 Shirt"
+"AVATARITEM_LEFT4DEAD2SHIRT_DSC"		"A Left 4 Dead 2 shirt earned by winning 10 games of Scavenge."
+"AVATARITEM_LEFT4DEAD2SHIRT_HOW"		"Unlock the Left 4 Dead 2 shirt by winning 10 games of Scavenge."
+"AVATARITEM_ZOMBIEHANDSHIRT_DSP"		"Zombie Hand Shirt"
+"AVATARITEM_ZOMBIEHANDSHIRT_DSC"		"A scary zombie shirt earned by killing 10,000 Infected."
+"AVATARITEM_ZOMBIEHANDSHIRT_HOW"		"Unlock the Zombie Hand shirt by killing 10,000 Infected."
+"AVATARITEM_DEPECHEMODESHIRT_DSP"		"Depeche Mode Shirt"
+"AVATARITEM_DEPECHEMODESHIRT_DSC"		"A sweet Depeche Mode shirt earned by rescuing Gnome Chompski from the Dark Carnival."
+"AVATARITEM_DEPECHEMODESHIRT_HOW"		"Unlock the Depeche Mode shirt by rescuing Gnome Chompski from the Dark Carnival."
+
+
+
+"L4D_infection_announcement"		"%s1 has spread the infection to %s2!"
+
+"L4D_vs_YourTeamWon"          "Your team won!"
+"L4D_vs_EnemyTeamWon"      "Enemy team won!"
+"L4D_vs_YourTeamIsWinning"     "Your team is winning!"
+"L4D_vs_EnemyTeamIsWinning"         "Enemy team is winning!"
+"L4D_vs_CampaignScores"          "Versus Mode Campaign Scores"
+"L4D_vs_MapDifficultyModifier"         "Map Difficulty Modifier:"
+"L4D_vs_MapLengthModifier"         "Map Length Modifier:"
+"L4D_vs_TotalScore"				"Chapter Score:"
+"L4D_vs_IncapBonus"				"Incapacitate Score:"
+"L4D_vs_CampaignScore_Short"	"Campaign Total:"
+"L4D_vs_RoundScore"				"Round Score:"
+"L4D_vs_TotalScore_Embedded"	"Total Score:"
+
+"L4D_vs_Survivors_First"	"You will play as Survivors first in the next chapter."	// you, as in the user, will play the role of the survivors
+"L4D_vs_Infected_First"		"You will play as Infected first in the next chapter."	// you, as in the user, will play the role of the infected
+"L4D_vs_TeamsTied"			"Teams are Tied"
+
+//--------------------------------------------------------------------------------------------------------
+// MOTD
+"L4D_MOTD"					"MESSAGE OF THE DAY"
+"L4D_motd_key_string"		"Press %s1 to re-open this window"
+"L4D_ThirdPartyTitle"		"This third-party server provided by:"
+"L4D_Server_Rank"			"Worldwide server rank:"
+"L4D_Server_Player_Count"	"Total players served:"
+"L4D_Server_Player_Average" "Average player session:"
+"L4D_Default_Hostname"		"Left 4 Dead 2"
+"L4D_JoinSteamGroup"		"Join this server's Steam Group..."
+
+"Voice"			"Voice"		// prepend on a chat line when it is a subtitle to a voice command
+"Cancel"		"Cancel"
+
+"L4D360UI_Lobby_Survival"							"Survival"
+"L4D360UI_MainMenu_PlaySurvivalCoopWithAnyone_Tip"		"Find a Survival game online that matches your preferences."
+
+"L4D_vote_restart_chapter"			"Restart round?"
+"L4D_vote_passed_restart_chapter"	"Restarting round..."
+
+"L4D360UI_MainMenu_SurvivalPackLoaded"					"Survival Pack loaded"
+"L4D360UI_MsgBx_SurvivalJoinInProgress"					"You have joined a Survival round that is already in progress.\nYour times will not be recorded until the next round."
+
+"L4D360UI_MsgBx_ConfirmDLCRestrictedSelection"			"One or more players in this lobby do not have the downloadable content required\nto play this campaign. Those players will be kicked if you continue.\nWould you like to continue?"
+
+"L4D_SurvivalScoreboard_InfectedKilled"	"Infected Killed"
+"L4D_SurvivalScoreboard_Common"			"Common Infected:"
+"L4D_SurvivalScoreboard_Hunters"		"Hunters:"
+"L4D_SurvivalScoreboard_Boomers"		"Boomers:"
+"L4D_SurvivalScoreboard_Smokers"		"Smokers:"
+"L4D_SurvivalScoreboard_Chargers"		"Chargers:"
+"L4D_SurvivalScoreboard_Jockeys"		"Jockeys:"
+"L4D_SurvivalScoreboard_Spitters"		"Spitters:"
+"L4D_SurvivalScoreboard_Tanks"			"Tanks:"
+
+
+"L4D_ServerShuttingDownIdle"	"The server is shutting down because all players are idle."
+
+//--------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+//		LEFT 4 DEAD 2 Strings
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+"L4D2_Instructor_explain_pre_drawbridge"		"Use the radio to call for help"
+"L4D2_Instructor_explain_drawbridge"			"Press the button to lower the drawbridge"
+
+"L4D2_Instructor_explain_c4m4_finale_no_gas"		"You should bring the gas can here before you flip the switch"
+"L4D2_Instructor_explain_c4m4_finale_start"		"Signal the boat with the Burger Tank sign"
+
+"L4D2_Survive_Gauntlet"					"Make your way to the helicopter on the other side"
+
+"L4D2_Instructor_explain_perimeter1"			"Alarm will sound when perimeter is breached"
+"L4D2_Instructor_explain_perimeter2"			"Run to the security tower to deactivate the alarm"
+"L4D2_Instructor_explain_deactivate_alarm"		"Deactivate the alarm to open the exit doors"
+
+"L4D2_Instructor_explain_decon_wait"			"Close the door when everyone is in the trailer"
+"L4D2_Instructor_explain_decon"				"Release door to exit the trailer"
+
+"L4D2_Instructor_explain_impound_lot"			"Watch your fire! Car alarms everywhere!"
+
+"L4D2_Instructor_explain_float"				"Move the float"
+"L4D2_Instructor_explain_ferry"				"Call the ferry"
+"L4D2_Instructor_explain_hatch"				"Open the hatch"
+"L4D2_Instructor_explain_shack"				"Lower the bridge"
+"L4D2_Instructor_explain_coaster"			"Power up the coaster to start the ride"
+"L4D2_Instructor_explain_mall_window"			"Shoot out the store window"
+
+"L4D2_Instructor_explain_coaster_stop"			"Deactivate the ride to stop the alarm"
+"L4D2_Instructor_explain_mall_alarm"			"Deactivate the alarm on the third floor"
+
+"L4D_Instructor_explain_gascan_pour_blocked"	"Wait! someone else is still pouring..."
+
+"L4D2_Instructor_explain_ammo_pile_failure"		"You cannot refill the ammo of this weapon."
+
+//------------------------------------
+// survival
+//------------------------------------
+"L4D2_Instructor_explain_survival_help_button"		"Press the button..."
+"L4D2_Instructor_explain_survival_help_alarm"		"Activate the alarm..."
+"L4D2_Instructor_explain_survival_help_radio"		"Use the radio..."
+
+//------------------------------------
+// ammo
+//------------------------------------
+"L4D2_Instructor_explain_incendiary_ammo_received"			"You picked up Incendiary Ammunition"
+"L4D2_Instructor_explain_explosive_ammo_received"			"You picked up Explosive Ammunition"
+"L4D2_Instructor_explain_laser_sight_received"				"The Laser Sight upgrade makes your weapon more accurate"
+"L4D2_Instructor_explain_upgrade"							"Upgrade Item Available"
+
+"L4D2_Instructor_explain_incendiary_ammo_available"			"Incendiary Ammo Available"
+"L4D2_Instructor_explain_explosive_ammo_available"			"Explosive Ammo Available"
+"L4D2_Instructor_explain_laser_sight_available"				"Laser Sight Upgrade Available"
+
+"L4D2_Instructor_explain_replace_ammo_get"		"Replace your low-ammo weapon"
+"L4D2_Instructor_explain_replace_ammo"			"Fully-Loaded %s1"
+
+"L4D2_Instructor_explain_vehicle_arrival"		"Hurry to the rescue vehicle!"
+"L4D2_Instructor_explain_use_mounted_gun"		"Heavy Machine Gun"
+"L4D2_Instructor_explain_mounted_gun_overheated"	"The gun has temporarily overheated and is unusable!"
+"L4D2_Instructor_explain_carousel_start"		"Turn on the power to open the gate"
+"L4D2_Instructor_explain_carousel_start2"		"Run to the control booth to shut down the carousel"
+"L4D2_Instructor_explain_carousel_destination"		"Shut down the carousel"
+"L4D2_Instructor_explain_stage_lighting"		"Prepare the stage lighting"
+"L4D2_Instructor_ability_out_of_range"			"Get closer — that target is out of range"
+"L4D2_Instructor_explain_stage_lighting"		"Set the stage lighting"
+"L4D2_Instructor_explain_stage_finale_start"		"Begin the rock concert to signal the chopper"
+"L4D2_Instructor_explain_c3m4_radio1"		        "Call for a boat rescue"
+"L4D2_Instructor_explain_c3m4_radio2"		        "Respond to Virgil"
+"L4D2_Instructor_explain_stage_survival_start"		"Begin the rock concert..."
+"L4D2_Instructor_explain_gates_are_open"                "The gates are open, run for the safe room!"
+"L4D2_Instructor_explain_c2m4_ticketbooth"              "Press the button to open the gates"
+"L4D2_Instructor_explain_c3m4_rescue"                   "The rescue boat has arrived, get on board!"
+"L4D2_Instructor_explain_hotel_elevator_doors"	"Pry open the doors to escape..."
+"L4D2_Instructor_explain_gun_shop_tanker"		"Whitaker will destroy this tanker and clear the path"
+"L4D2_Instructor_explain_gun_shop"			"Talk to the gun shop owner"
+"L4D2_Instructor_explain_store_alarm"			"Open the store door..."
+"L4D2_Instructor_explain_store_item"			"Retrieve the cola inside the store"
+"L4D2_Instructor_explain_gun_shop_item_get"		"Get the cola"
+"L4D2_Instructor_explain_gun_shop_item"			"Cola"
+"L4D2_Instructor_explain_return_item"			"Deliver the cola to the gun shop owner"
+"L4D2_Instructor_explain_help_return_item"			"Escort the cola delivery"
+"L4D2_Instructor_save_items"				"You may want to save some items for the return trip"
+"L4D2_Instructor_explain_return_to_elevator"		"Return to the elevator!"
+"L4D2_Instructor_porch_light"				"Turn on porch lights to mark locations with items"
+"L4D2_Instructor_explain_acid_spit"			"Try to avoid the noxious acid!"
+"L4D2_Instructor_notify_entered_spit"			"Avoid the noxious acid!"
+"L4D2_Instructor_temp_msg_c4m1"				"Go get fuel and return to the boat"
+"L4D2_Instructor_temp_msg_c4m3"				"You got the fuel — Return to the boat"
+"L4D2_Instructor_explain_c1m4_finale1"			"You'll need to fill the car with gas"
+"L4D2_Instructor_explain_c1m4_finale2"			"Step 1: Find a gas can"
+"L4D2_Instructor_explain_c1m4_finale3"			"Step 2: Bring the gas can to the car"
+"L4D2_Instructor_notify_ridden"				"Keep moving! Resist the Jockey's influence..."
+"L4D2_Instructor_notify_riding_survivor"		"Steer the Survivor into danger"
+"L4D2_Instructor_explain_magnum_pistol_get"		"Get magnum pistol"
+"L4D2_Instructor_explain_magnum_pistol"		"Magnum Pistol"
+"L4D2_Instructor_explain_magnum_pistol_get_alt"		"Get Desert Cobra"
+"L4D2_Instructor_explain_magnum_pistol_alt"		"Desert Cobra Pistol"
+"L4D2_Instructor_explain_trade_melee_for_magnum_pistol"	"Trade melee weapon for magnum pistol"
+
+"L4D2_UseControllerConf"	"Controller Detected"
+"L4D2_UseControllerConfMsg"	"Press OK to enable auto-aim for controllers and disable mouse in-game"
+}
+}
