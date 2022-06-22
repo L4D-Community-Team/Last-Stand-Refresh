@@ -17,9 +17,10 @@ This changelog comprehensively summarizes all differences from the live game to 
 ### Accessibility:
 
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/d9ca80411de6ccf1a89fa28f1f48ee6ae0b79f02) Fixed Audio and Keyboard / Mouse menus in the Options flyout having broken navigation keys when trying to use the arrow keys or a controller. `[keyboardmouse & video.res]`<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Tank Claw" hint had incorrect binding "+attack2". `[instructor_lessons.txt]`<br/>
-&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Tank Rock" hint had incorrect binding "+attack". `[instructor_lessons.txt]`<br/>
 &emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Jockey Leap" hint had the incorrect ability_use of "ability_spit", and now uses the correct "ability_leap". `[instructor_lessons.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/73c86249adce75a54e52540c75595d38b36fa183) "Tank Claw" and "Tank Rock" hints had incorrect bindings, where the former was using "+attack2" and the latter using "+attack". `[instructor_lessons.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/1c2a909d36611bcdab93b9258269c9e1e70ae3c4) Fixed localisations for the "Tank Claw" and "Tank Rock" hints being reversed; previously the "Tank Claw" hint would've show *"SECONDARY ATTACK: THROW"* and vice versa. `[left4dead2_*.txt]`<br/>
+&emsp;[+](https://github.com/l4d2-community-update/High-Priority-Fixes/commit/2c73755e0a139549937041f6f4d2eb276978d138) Moved the TLS-added "left4dead2_latam.txt" in the "left4dead2" folder to the "update" folder after doing a QA pass. `[left4dead2_latam.txt]`<br/>
 
 # Map Fixes
 
