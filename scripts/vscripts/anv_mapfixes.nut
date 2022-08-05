@@ -1280,7 +1280,7 @@ make_clip( "_rubble_smoother3", "Everyone", 1, "-58 -90 0", "61 45 13", "2055 -4
 make_clip( "_rubble_smoother4", "Everyone", 1, "-138 -26 0", "79 16 11", "1966 -5174 99", "0 15 30" );
 make_clip( "_elevator_softlock_topclip", "Survivors", 1, "-77 -63 -817", "77 63 817", "-1477 -9551 1712" );
 make_clip( "_elevator_softlock_sideclip", "Survivors", 1, "-3 -46 -383", "3 46 383", "-1548 -9551 512" );
-make_clip( "_elevator_softlock_sideclip", "Survivors", 1, "-171 -103 -694", "171 103 694", "-1504 -13160 1835" );
+make_clip( "_elevator_softlock_signclip", "Survivors", 1, "-171 -103 -694", "171 103 694", "-1504 -13160 1835" );
 
 // All-mode QoL clip for a Valve ladder and move it 2 units so players don't get caught on critpath anymore.
 
