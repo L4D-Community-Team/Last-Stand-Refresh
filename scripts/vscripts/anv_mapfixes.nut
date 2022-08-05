@@ -1237,6 +1237,8 @@ make_clip( "_survivalbig_skyboxcap", "Survivors", 1, "-1742 -907 0", "1706 1757 
 
 			// FIXES_ALL
 
+EntFire( "worldspawn", "RunScriptFile", "c4m2_elevatorfix" );
+
 make_clip(	"_commonhop_roadclosed",	"Survivors",	1,	"-132 -132 -21",	"132 132 2222",		"3231 -3009 257" );
 make_clip(	"_vent_roofa",			"Survivors",	1,	"-118 -4 -84",		"118 4 0",		"3699 -3727 476" );
 make_clip(	"_vent_roofb",			"Survivors",	1,	"-14 -216 -270",	"14 216 2000",		"3127 -3635 502" );
@@ -1276,12 +1278,9 @@ make_clip( "_rubble_smoother1", "Everyone", 1, "-1 -93 0", "1 106 4", "2239 -509
 make_clip( "_rubble_smoother2", "Everyone", 1, "-66 -6 0", "58 0 6", "2176 -4926 98", "0 -15 0" );
 make_clip( "_rubble_smoother3", "Everyone", 1, "-58 -90 0", "61 45 13", "2055 -4931 97", "0 21 0" );
 make_clip( "_rubble_smoother4", "Everyone", 1, "-138 -26 0", "79 16 11", "1966 -5174 99", "0 15 30" );
-
-con_comment( "KILL:\tInsta-kill triggers to prevent elevator skip deleted on inner-button press." );
-
-make_trighurt( "_instakill_elevatora", "Survivor", "-196 -691 0", "1460 61 8", "-1204 -9549 394" );
-make_trighurt( "_instakill_elevatorb", "Survivor", "-372 -691 0", "644 -65 8", "-2044 -9549 394" );
-EntFire( "button_inelevator", "AddOutput", "OnPressed anv_mapfixes_instakill_elevator*:Kill::0:-1" );
+make_clip( "_elevator_softlock_topclip", "Survivors", 1, "-77 -63 -817", "77 63 817", "-1477 -9551 1712" );
+make_clip( "_elevator_softlock_sideclip", "Survivors", 1, "-3 -46 -383", "3 46 383", "-1548 -9551 512" );
+make_clip( "_elevator_softlock_sideclip", "Survivors", 1, "-171 -103 -694", "171 103 694", "-1504 -13160 1835" );
 
 // All-mode QoL clip for a Valve ladder and move it 2 units so players don't get caught on critpath anymore.
 
