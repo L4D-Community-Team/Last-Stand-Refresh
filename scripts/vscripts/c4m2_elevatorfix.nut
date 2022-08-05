@@ -52,7 +52,10 @@ function c4m2_CheckSurvivors()
 	{
 		if ( developer() > 0 ) { printl( "All survivors have passed validation, activating elevator" ); }
 
-		// Force press button_inelevator to run its OnPressed events.
+		// Remove the elevator button denial director hint to avoid confusion.
+		EntFire( "event_elevator_deny", "Kill" );
+
+		// Simulate button press on button_inelevator to run its OnPressed events.
 		// Button has to be unlocked for the Press input to work.
 		EntFire( "button_inelevator", "Unlock" );
 		EntFire( "button_inelevator", "Press" );
