@@ -40,14 +40,17 @@ function c4m2_CheckSurvivors()
 	while ( ( hndSurvivor = Entities.FindByClassname( hndSurvivor, "player" ) ) != null )
 	{
 		// Emulate standard behaviour by ignoring dead, incapped, and hanging survivors.
-		if ( hndSurvivor.IsSurvivor() && ! hndSurvivor.IsDead() && ! hndSurvivor.IsIncapacitated() && ! hndSurvivor.IsHangingFromLedge() && checkPassed == true )
+		if ( hndSurvivor.IsSurvivor() && ! hndSurvivor.IsDead() && ! hndSurvivor.IsIncapacitated() && ! hndSurvivor.IsHangingFromLedge() )
 		{
 			// Validate position of this survivor.
 			checkPassed = c4m2_ValidatePosition( hndSurvivor.GetOrigin() );
+
+			// A survivor failed the check, end the function early and do not activate the elevator.
+			if ( checkPassed == false ) { return false; }
 		}
 	}
 
-	// All survivors passed checks, proceed to activate elevator.
+	// Successfully validated all survivors, so activate the elevator.
 	if ( checkPassed == true )
 	{
 		if ( developer() > 0 ) { printl( "All survivors have passed validation, activating elevator" ); }
