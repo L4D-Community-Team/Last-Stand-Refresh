@@ -2824,6 +2824,7 @@ make_clip( "_meticulous_funcinfclip19", "SI Players", 1, "-300 -17 -216", "1173 
 make_clip( "_meticulous_funcinfclip20", "SI Players", 1, "-300 -21 -216", "1173 17 1408", "4998 -11810 321", "0 25 0" );
 make_clip( "_meticulous_funcinfclip21", "SI Players", 1, "-711 -17 -216", "1717 17 1408", "3060 -12382 321", "0 15 0" );
 make_clip( "_tunneltophill_wrongway_clip", "SI Players", 1, "-2 -128 -110", "100 290 1070", "3320 -12528 658" );
+make_clip( "_startsaferoom_permstuck", "SI Players", 1, "-16 -24 -18", "16 24 18", "-1088 -10479 -46" );
 make_ladder( "_ladder_backtrains_cloned_midmound", "2438 -9808 60", "15702 -5728 -39", "0 -58.35 0", "0.53 -0.85 0" );
 make_ladder( "_ladder_barnhousefront_cloned_treetrunkcliff", "982 -10596 116", "11972 -7767 -89", "0 -59.54 0", "-0.5 0.87 0" );
 make_ladder( "_ladder_generatorhouse_cloned_doublerbottom", "-179.799 -10591.8 4", "14106 -5707 -673", "3.5 -45 -3.5", "1 0 0" );
