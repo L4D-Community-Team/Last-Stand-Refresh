@@ -2650,6 +2650,14 @@ make_clip( "_ladderqol_orangebags", "SI Players and AI", 1, "-29 -23 27", "24 32
 make_clip( "_genroomrail_smoother1", "Everyone", 1, "-1 -33 0", "0 34 40", "7285 3633 248" );
 make_clip( "_genroomrail_smoother2", "Everyone", 1, "-1 -65 0", "0 66 40", "7285 2878 248" );
 make_clip( "_nav_tankjukepipes", "Survivors", 1, "-37 -168 0", "28 168 95", "8276 3656 140" );
+local rail01_model = "models/props_unique/handrail_subway01.mdl";
+local rail02_model = "models/props_unique/handrail_subway02.mdl";
+local rail_name = "_invisible_railing";
+make_prop("dynamic", rail_name, rail01_model, "3151.3601 3738.76 -256", "0 270 0", "shadow_no", "solid_no", "255 255 255", 800, 1000);
+make_prop("dynamic", rail_name, rail02_model, "3150.73 4389.2002 -256", "0 270 0", "shadow_no", "solid_no", "255 255 255", 800, 1000);
+make_prop("dynamic", rail_name, rail02_model, "4525.2598 3738.79 -256", "0 90 0", "shadow_no", "solid_no", "255 255 255", 1024, 1536);
+EntFire(g_UpdateName + rail_name, "AddOutput", "mincpulevel 1");
+EntFire(g_UpdateName + rail_name, "AddOutput", "maxcpulevel 1");
 
 con_comment( "FIX:\tGenerator Room has 13 hanging lights and 9 need to be made non-solid." );
 
