@@ -6,11 +6,12 @@ DirectorOptions <-
 	MobSpawnSize = 5
 	MobMaxPending = 8
 	IntensityRelaxThreshold = 0.99
-	RelaxMinInterval = 1
-	RelaxMaxInterval = 1
-	RelaxMaxFlowTravel = 1
+	RelaxMinInterval = 2
+	RelaxMaxInterval = 4
+	SustainPeakMinTime = 25
+	SustainPeakMaxTime = 30
 	SpecialRespawnInterval = 30
-	LockTempo = true
+	LockTempo = false
 	PreferredMobDirection = SPAWN_ANYWHERE
 	PanicForever = true
 }
