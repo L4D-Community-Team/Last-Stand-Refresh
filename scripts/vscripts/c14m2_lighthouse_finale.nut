@@ -170,46 +170,33 @@ switch( difficulty )
 	case 0:
 	{
 		NumCansNeeded = 6;
-		if ( Director.IsSinglePlayerGame() )
-		{
-			NumCansNeeded <- 4
-		}
 		EntFire( "relay_outro_easy", "Enable" );
 		break;
 	}
 	case 1:
 	{
 		NumCansNeeded = 8;
-		if ( Director.IsSinglePlayerGame() )
-		{
-			NumCansNeeded <- 6
-		}
 		EntFire( "relay_outro_normal", "Enable" );
 		break;
 	}
 	case 2:
 	{
 		NumCansNeeded = 10;
-		if ( Director.IsSinglePlayerGame() )
-		{
-			NumCansNeeded <- 8
-		}
 		EntFire( "relay_outro_advanced", "Enable" );
 		break;
 	}
 	case 3:
 	{
 		NumCansNeeded = 12;
-		if ( Director.IsSinglePlayerGame() )
-		{
-			NumCansNeeded <- 10
-		}
 		EntFire( "relay_outro_expert", "Enable" );
 		break;
 	}
 	default:
 		break;
 }
+
+if ( Director.IsSinglePlayerGame() )
+	NumCansNeeded -= 2;
 
 EntFire( "progress_display", "SetTotalItems", NumCansNeeded );
 EntFire( "radio", "AddOutput", "FinaleEscapeStarted director:RunScriptCode:DirectorScript.MapScript.LocalScript.DirectorOptions.TankLimit <- 3:0:-1" );
