@@ -27,6 +27,8 @@ MeleeWeaponData
 	// RUMBLE_CROWBAR_SWING = 9
 	// RUMBLE_L4D_PLAYER_MELEE_HIT = 42
 	"rumble_effect"	"42"
+	
+	"decapitates" "1"
 
 	// Third person animations
 	"activity_idle"					"ACT_IDLE_FRYINGPAN"
