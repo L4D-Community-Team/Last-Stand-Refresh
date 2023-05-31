@@ -10094,7 +10094,7 @@
 
 		"binding"			"+attack"
 		"onscreen_icon"		"use_binding"
-		"caption"			"#L4D_Instructor_tank_claw"
+		"caption"			"#L4D_Instructor_tank_rock" // these are flipped in localization
 
 		"instance_type"		"2"
 
@@ -10133,7 +10133,7 @@
 
 		"binding"			"+attack2"
 		"onscreen_icon"		"use_binding"
-		"caption"			"#L4D_Instructor_tank_rock"
+		"caption"			"#L4D_Instructor_tank_claw" // these are flipped in localization
 
 		"instance_type"		"2"
 
