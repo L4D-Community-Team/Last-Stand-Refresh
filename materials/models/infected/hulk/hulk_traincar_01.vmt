@@ -1,7 +1,7 @@
 VertexLitGeneric
 {
 $baseTexture "models\infected\hulk/Hulk_Traincar_01"
-$bumpmap "models\infected\hulk\Hulk_01_normal"
+$bumpmap "models\infected\hulk\Hulk_traincar_01_normal"
 $phong 1
 
 $phongfresnelrange_0 ".01"
