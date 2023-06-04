@@ -42,7 +42,7 @@ switch( g_MapName )
 
 con_comment( "LOGIC:\tAnti-doorbreak trighurt will be deleted 4 seconds after elevator starts." );
 
-make_trighurt( "_elevator_exploit_bean", "Ghost", "-55 -2 0", "55 2 111", "2169 5713 2352" );
+make_trighurt( "_elevator_exploit_bean", "Ghost", "-55 -2 0", "55 2 111", "2169 5713 2344" );
 EntFire( "elevator_button", "AddOutput", "OnPressed anv_mapfixes_elevator_exploit_bean:Kill::4:-1" );
 
 con_comment( "QOL:\tThe 2nd fire door is open immediately for Versus-only QoL." );
@@ -552,6 +552,7 @@ make_clip( "_ladder_askewhedgeshared_clip", "SI Players and AI", 1, "-3 -279 -7"
 make_clip( "_ladder_barnoverhang_clip", "Survivors", 1, "-24 -4 -10", "24 4 188", "-731 56 -86" );
 make_clip( "_ladder_barnsarearight_clip", "Everyone", 1, "1 -232 0", "2 16 85", "263 2288 -192" );
 make_clip( "_ladder_startroof_clip", "Everyone", 1, "-16 -17 -5", "16 20 175", "3362.5 3216 -187" );
+make_clip( "_ladder_startfoodcart_clip", "Everyone", 1, "-2 -8 0", "2 8 124", "2450 3348 -192", "0 -45 0" );
 make_ladder( "_ladder_askewhedgebotr1_cloned_askewhedgebotl", "610 1209.88 -123.984", "0 26 0" );
 make_ladder( "_ladder_askewhedgebotr2_cloned_askewhedgebotl", "610 1209.88 -123.984", "0 52 0" );
 make_ladder( "_ladder_askewhedgetopl1_cloned_askewhedgetopr", "594 1262 -24", "0 -26 0" );
@@ -574,7 +575,7 @@ make_ladder( "_ladder_lightticketsbackT_cloned_lightapplesback", "-208 856 -120"
 make_ladder( "_ladder_lightticketsfrontB_cloned_lightapplesback", "-208 856 -120", "-1307 1127 0", "0 90 0", "0 1 0" );
 make_ladder( "_ladder_lightticketsfrontT_cloned_lightapplesback", "-208 856 -120", "-1307 1127 128", "0 90 0", "0 1 0" );
 make_ladder( "_ladder_redtentmid_cloned_redtentstart", "2848 2074 -140", "-3787.5 -1225.5 1" );
-make_ladder( "_ladder_startfoodcart_cloned_colddrinkfence", "1710 2272 -124", "741 1088 -13" );
+make_ladder( "_ladder_startfoodcart_cloned_bumpsidemid", "1462 2296 -124", "992 1073 -13" );
 make_ladder( "_ladder_starthedge_cloned_startfence", "2384 2462 -124", "-295 84 -7" );
 make_ladder( "_ladder_startroof_cloned_elecbox", "1907 894 -64", "1455.5 2307 -68" );
 make_prop( "dynamic", "_barn_overhang_floor", "models/props_update/c2m4_barn_overhang.mdl", "-608 162 28", "0 90 0", "shadow_no" );
@@ -805,7 +806,11 @@ make_clip( "_ladder_longtiltedlog_clipbot", "SI Players", 1, "-19 -16 0", "19 10
 make_clip( "_ladder_longtiltedlog_cliptop", "SI Players", 1, "-19 -16 0", "19 10 17", "-4103 -835 268", "0 64 -60" );
 make_clip( "_ladder_plankhomeroof_clipleft", "Everyone", 1, "-8 5 -124", "13 6 105", "59 -4103 109", "0 45 0" );
 make_clip( "_ladder_plankhomeroof_clipright", "Everyone", 1, "-8 5 -1", "13 6 105", "33 -4099 109", "0 -45 0" );
-make_clip( "_ladder_startsafehouse_solidify", "SI Players", 1, "-87 -50 0", "78 35 16", "-5948 1913 244" );
+make_clip( "_ladder_startsafehouse_solidify_a", "SI Players", 1, "-86 -5 -3", "86 5 3", "-5950 1872 244", "0 8 0" );
+make_clip( "_ladder_startsafehouse_solidify_b", "SI Players", 1, "-3 -54 -3", "3 54 3", "-5983 1922 257", "0 0 6" );
+make_clip( "_ladder_startsafehouse_solidify_c", "SI Players", 1, "-2 -54 -3", "2 54 3", "-5953 1922 257", "0 2 6" );
+make_clip( "_ladder_startsafehouse_solidify_d", "SI Players", 1, "-2 -54 -3", "2 54 3", "-5926 1922 257", "0 -2 6" );
+make_clip( "_ladder_startsafehouse_solidify_e", "SI Players", 1, "-2 -54 -3", "2 54 3", "-5897 1922 257", "0 -2 6" );
 make_ladder( "_ladder_afterplankfront_cloned_afterplankback", "795 -4272 104", "1185 -8350 -10", "0 -180 0", "-1 0 0" );
 make_ladder( "_ladder_boatpanel_cloned_metalfence", "-4411 1178 136", "64 -1898 -85" );
 make_ladder( "_ladder_bridgehouseB_cloned_logfencefirst", "-4256 132 69", "-6200 -577.1 -58", "0 -180 0", "0 -1 0" );
@@ -827,7 +832,7 @@ make_ladder( "_ladder_smalltrailerlogs_cloned_startsmalltrailer", "-5813.92 1030
 make_ladder( "_ladder_startbehindrooftop_cloned_startshantyshop", "-4900 1510 229", "277 -1 0" );
 make_ladder( "_ladder_startnodrawfence_cloned_shantyshop", "-4900 1510 229", "-487.218 532.125 0" );
 make_ladder( "_ladder_startpicketqol_cloned_startpicketroof", "-4660 643 205.5", "-3999 4832 -43", "0 90 0", "-1 0 0" );
-make_ladder( "_ladder_startsafehouse_cloned_highgenerator", "-4504 -2644 41", "-9209 5970 128", "0 97.7 0", "0.13 -1 0" );
+make_ladder( "_ladder_startsafehouse_cloned_shantyshop", "-4900 1094 229", "-1107 763 -85" );
 make_ladder( "_ladder_tarptrailerwood_cloned_startouthouse", "-5121 306 229", "200 -1056 -175" );
 make_prop( "dynamic", "_permstuck_cratebot", "models/props_crates/static_crate_40.mdl", "-3749.85 -183.67 -3.164", "0 0 0" );
 make_prop( "dynamic", "_permstuck_cratetop", "models/props_crates/static_crate_40.mdl", "-3749.85 -182.67 36.837", "0 -30 0" );

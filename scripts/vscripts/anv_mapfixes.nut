@@ -278,6 +278,7 @@ make_clip( "_cliprework_skylightb", "Survivors", 1, "-541 -189 -1", "547 195 32"
 make_clip( "_cliprework_skylightc", "Survivors", 1, "-194 -544 -1", "190 544 32", "2274 -672 793" );
 make_clip( "_cliprework_skylightd", "Survivors", 1, "-1017 -167 0", "1018 149 32", "1465 -3418 794", "0 45 0" );
 make_clip( "_permstuck_colddrinks", "Everyone", 1, "-1 -1 -1", "1 1 1", "736 -548 363" );
+make_trigduck( "_duckqol_shopliftscanners", "-2 -88 0", "2 64 77", "5247 -2685 280" );
 
 con_comment( "FIX:\tMoved an exposed stairwell hurt trigger down inside a vending machine." );
 
@@ -350,6 +351,12 @@ make_clip( "_booster_highbalcony", "Survivors", 1, "-260 -162 0", "260 162 520",
 make_clip( "_booster_glassbalcony", "Survivors", 1, "-128 -82 0", "128 0 1", "-3688 -4334 791" );
 make_clip( "_nav_ladyshoes", "Survivors", 1, "-103 -3 0", "70 3 56", "-4971 -4461 432" );
 make_clip( "_collision_atrium", "All and Physics", 1, "-2400 -3200 -2", "2400 3200 0", "-4452 -3208 0" );
+make_clip( "_kiosk_qol_1", "Everyone", 1, "-44 -44 -1", "44 44 0", "-3208 -3864 94" );
+make_clip( "_kiosk_qol_2a", "Everyone", 1, "-44 -44 -1", "44 44 0", "-4080 -4005 94" );
+make_clip( "_kiosk_qol_2b", "Everyone", 1, "-100 -1 -1", "100 1 0", "-4081 -3949 94" );
+make_clip( "_kiosk_qol_3a", "Everyone", 1, "-44 -44 -1", "44 44 0", "-4848 -3935 94" );
+make_clip( "_kiosk_qol_3b", "Everyone", 1, "-1 -100 -1", "1 100 0", "-4796 -3936 94" );
+make_trigduck( "_duckqol_informationbooth", "-96 -8 0", "96 8 64", "-4448 -3865 44" );
 
 			if ( g_BaseMode == "coop" || g_BaseMode == "realism" )
 			{
@@ -900,7 +907,12 @@ make_clip( "_chargerassist_commonhop2", "Survivors", 1, "-49 -170 0", "63 134 86
 make_clip( "_booster_powerpole", "Survivors", 1, "-9 -8 0", "9 10 582", "-7630 6718 444" );
 patch_ladder( "-6084.5 6272 90", "6 0 0" );
 
-make_prop( "dynamic", "_keepcalmgator", "models/props_fairgrounds/alligator.mdl", "-5274 7386 -19", "0 150 0", "shadow_no", "solid_no" );
+// Tsuey's note: Special thanks to the person who originally complained
+// on the Steam Forums that there weren't any gators -- I'm unable to
+// re-find your thread. Special thanks to Rise for naming him Fred; we
+// can't spell Friend without it. Left4Facts Discord btw. :fred:
+
+make_prop( "dynamic", "_fred", "models/props_fairgrounds/alligator.mdl", "-5274 7386 -19", "0 150 0", "shadow_no", "solid_no" );
 
 			if ( g_BaseMode == "coop" || g_BaseMode == "realism" )
 			{
@@ -2651,6 +2663,14 @@ make_clip( "_ladderqol_orangebags", "SI Players and AI", 1, "-29 -23 27", "24 32
 make_clip( "_genroomrail_smoother1", "Everyone", 1, "-1 -33 0", "0 34 40", "7285 3633 248" );
 make_clip( "_genroomrail_smoother2", "Everyone", 1, "-1 -65 0", "0 66 40", "7285 2878 248" );
 make_clip( "_nav_tankjukepipes", "Survivors", 1, "-37 -168 0", "28 168 95", "8276 3656 140" );
+local rail01_model = "models/props_unique/handrail_subway01.mdl";
+local rail02_model = "models/props_unique/handrail_subway02.mdl";
+local rail_name = "_invisible_railing";
+make_prop( "dynamic", rail_name, rail01_model, "3151.3601 3738.76 -256", "0 270 0", "shadow_no", "solid_no", "255 255 255", 800, 1000 );
+make_prop( "dynamic", rail_name, rail02_model, "3150.73 4389.2002 -256", "0 270 0", "shadow_no", "solid_no", "255 255 255", 800, 1000 );
+make_prop( "dynamic", rail_name, rail02_model, "4525.2598 3738.79 -256", "0 90 0", "shadow_no", "solid_no", "255 255 255", 1024, 1536 );
+EntFire( g_UpdateName + rail_name, "AddOutput", "mincpulevel 1" );
+EntFire( g_UpdateName + rail_name, "AddOutput", "maxcpulevel 1" );
 
 con_comment( "FIX:\tGenerator Room has 13 hanging lights and 9 need to be made non-solid." );
 
@@ -3078,6 +3098,7 @@ make_clip( "_booster_ventpipe", "Survivors", 1, "-13 -14 -80", "17 14 657", "753
 make_clip( "_nav_jump_semitrailer", "Survivors", 1, "-4 -94 0", "4 188 288", "5756 1062 -32" );
 make_clip( "_nav_jump_cargowindow", "Survivors", 1, "-5 -85 0", "4 89 86", "2044 3030 49" );
 make_clip( "_booster_armoredtop", "Survivors", 1, "-158 -65 0", "172 59 63", "7838 6366 449" );
+make_clip( "_collisionqol_finalebuses", "All and Physics", 1, "-236 -32 0", "236 32 108", "6675 6470 65" );
 make_trigmove( "_duckqol_finalevent", "Duck", "0 -32 0", "8 32 1", "7568 7392 447" );
 
 con_comment( "LOGIC:\tFinale switch will re-Lock when all Survivors aren't inside trigger." );
@@ -3720,6 +3741,7 @@ make_clip(	"_cliprework_startarea02",	"Survivors",	1,	"-8 -360 0",		"8 360 1122"
 make_clip(	"_cliprework_startarea01",	"Survivors",	1,	"-8 -469 0",		"8 469 1313",		"-4232 -3186 548" );
 make_clip( "_nav_constructwin", "Survivors", 1, "-64 -8 0", "64 8 128", "-5776 -1304 216" );
 make_clip( "_permstuck_watertank", "Everyone", 1, "-16 -16 0", "16 16 111", "-4044 2880 16" );
+make_clip( "_lmpedit18_brushid1738_endhall", "Survivors", 1, "-516 -1476 -790", "375 1476 790", "-1044 4924 1066" );
 
 make_prop( "dynamic", "_nav_constructwin_propper", "models/props_update/plywood_128.mdl", "-5776 -1302 280", "0 0 90", "shadow_no" );
 

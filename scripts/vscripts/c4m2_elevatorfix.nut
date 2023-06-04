@@ -33,14 +33,13 @@ function c4m2_CheckSurvivors()
 {
 	if ( developer() > 0 ) { printl( "Ran c4m2_CheckSurvivors" ); }
 
-	local hndSurvivor = null;
 	local checkPassed = true;
 
 	// Loop through all living survivors.
-	while ( ( hndSurvivor = Entities.FindByClassname( hndSurvivor, "player" ) ) != null )
+	for ( local hndSurvivor; ( hndSurvivor = Entities.FindByClassname( hndSurvivor, "player" ) ) != null; )
 	{
 		// Emulate standard behaviour by ignoring dead, incapped, and hanging survivors.
-		if ( hndSurvivor.IsSurvivor() && ! hndSurvivor.IsDead() && ! hndSurvivor.IsIncapacitated() && ! hndSurvivor.IsHangingFromLedge() )
+		if ( hndSurvivor.IsSurvivor() && ! hndSurvivor.IsDead() && ! hndSurvivor.IsDying() && ! hndSurvivor.IsIncapacitated() && ! hndSurvivor.IsHangingFromLedge() )
 		{
 			// Validate position of this survivor.
 			checkPassed = c4m2_ValidatePosition( hndSurvivor.GetOrigin() );
@@ -51,18 +50,15 @@ function c4m2_CheckSurvivors()
 	}
 
 	// Successfully validated all survivors, so activate the elevator.
-	if ( checkPassed == true )
-	{
-		if ( developer() > 0 ) { printl( "All survivors have passed validation, activating elevator" ); }
+	if ( developer() > 0 ) { printl( "All survivors have passed validation, activating elevator" ); }
 
-		// Remove the elevator button denial director hint to avoid confusion.
-		EntFire( "event_elevator_deny", "Kill" );
+	// Remove the elevator button denial director hint to avoid confusion.
+	EntFire( "event_elevator_deny", "Kill" );
 
-		// Simulate button press on button_inelevator to run its OnPressed events.
-		// Button has to be unlocked for the Press input to work.
-		EntFire( "button_inelevator", "Unlock" );
-		EntFire( "button_inelevator", "Press" );
-	}
+	// Simulate button press on button_inelevator to run its OnPressed events.
+	// Button has to be unlocked for the Press input to work.
+	EntFire( "button_inelevator", "Unlock" );
+	EntFire( "button_inelevator", "Press" );
 }
 
 // Check if the passed survivor position is between the min and max vectors of the defined areas.

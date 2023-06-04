@@ -2,7 +2,7 @@
 
 This changelog comprehensively summarizes all differences from the live game to the current Github state.
 
-![Guide](https://raw.githubusercontent.com/l4d2-community-update/High-Priority-Fixes/main/changelogs/Guide.png?token=GHSAT0AAAAAABVAFMQN73ZQ3QSRIZ6ESQ2MYUQYVVQ)
+![Guide](https://raw.githubusercontent.com/L4D-Community-Team/Last-Stand-Refresh/main/changelogs/Guide.png)
 
 --------------------------------
 --------------------------------
