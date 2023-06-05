@@ -1,14 +1,21 @@
-# High-Priority-Fixes
-Minimalist legacy branch of public repo with gamebreaker and other high priority fixes
+# Last-Stand-Refresh
 
-# Goal
-Files Kerry can diff in under 5 minutes, ~~and implement on a monthly basis~~ probably as a one-time deal since we really don't produce that many high priority fixes.
+Minimalist follow-up patch for [The Last Stand](https://www.l4d.com/laststand/) update.
+
+See the [Changelog](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/changelogs/Hotfix_Update_01.md) for details about which files are updated.
+
+# Scope
+
+Given the additional risk and lengthier verification of model recompiles, this update includes none. This is a patch made in 2 weeks with a strong focus on text-based fixes that Valve can quickly diff. We do not have C++ access so this limits our fixes mostly to scripts.
+
+We certainly hope to get another shot at this in the future to do more -- just please keep in mind that it is very deliberate that this patch is a small one. A year ago the scope was [much, much smaller](https://github.com/L4D-Community-Team/Last-Stand-Refresh/tree/v01) than you see here.
 
 # Content
-See [Hotfix_Update_01.md](https://github.com/L4D2-Community-Update/High-Priority-Fixes/blob/main/changelogs/Hotfix_Update_01.md).
 
-Major gamebreaking bugs such as Last Stand 1's intro death, Dead Center 1's Tank spawn, No Mercy 1's ladder shortcut, and unteleportable permanent stuck spots are the extremely finite focus here.
+Unteleportable permanent stuck spots, the long-awaited knife revert, low shader skyboxes, map QoL and exploit fixes, and a re-balance to The Last Stand single-player are examples of what we address. The bugged Versus Tank spawn on Dead Center 1 has finally been fixed. All Special Infected are now recolorable.
 
-We also don't want to betray player expectations, so the long-awaited Knife revert is also included. Everything else in this area, such as recolorable SI, is subject to discussion, **but every additional file will further jeopardize our goal**.
+# Archived
 
-We should strive to avoid lump files as they're not as quick to diff, and Valve requires a lengthier verification process for fixes that require source files.
+See [our public repo](https://github.com/Tsuey/L4D2-Community-Update) and its [CODE_OF_CONDUCT.md](https://github.com/Tsuey/L4D2-Community-Update/blob/master/CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](https://github.com/Tsuey/L4D2-Community-Update/blob/master/CONTRIBUTING.md) for Issue and Pull Request submissions.
+
+This Last Stand Refresh update repo is archive-only.
