@@ -905,7 +905,7 @@ make_clip( "_fallenlog_shrub_infected", "SI Players and AI", 1, "-182 -383 -99",
 make_clip( "_chargerassist_commonhop1", "Survivors", 1, "-155 -16 0", "117 5 864", "-7093 6280 160" );
 make_clip( "_chargerassist_commonhop2", "Survivors", 1, "-49 -170 0", "63 134 864", "-7093 6452 160", "0 -3 0" );
 make_clip( "_booster_powerpole", "Survivors", 1, "-9 -8 0", "9 10 582", "-7630 6718 444" );
-patch_ladder( "-6084.5 6272 90", "6 0 0" );
+patch_ladder( "-6084.5 6272 90", "7 0 0" );
 
 // Tsuey's note: Special thanks to the person who originally complained
 // on the Steam Forums that there weren't any gators -- I'm unable to
