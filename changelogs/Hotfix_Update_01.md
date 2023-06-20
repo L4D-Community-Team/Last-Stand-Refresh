@@ -177,7 +177,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 #### Map 3:
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3361) Blocked a permstuck spot at the top of a rockcliff cluster just after the church bus.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3360) Blocked a permstuck spot between the cliff rocks and the right side of the mandatory house.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3368) Blocked a permstuck spot between the cliff rocks and the right side of the mandatory house.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L2178) <ins>Versus</ins>: Fixed an SI permstuck spot on the barricade by the church.<br/>
 
 ### Dead Air
