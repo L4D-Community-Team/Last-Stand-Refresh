@@ -151,8 +151,6 @@ __CollectEventCallbacks( this, "OnGameEvent_", "GameEventCallbacks", RegisterScr
 
 			// FIXES_ALL
 
-make_clip(	"_cliphang_window",		"Survivors",	1,	"-72 -123 -12",		"127 14 44",		"2335 6420 2804" );
-make_clip(	"_cliphang_ledge",		"Survivors",	1,	"-450 -8 0",		"1130 8 216",		"1222 6232 2912" );
 make_clip(	"_barricadefire_bypass",	"Survivors",	1,	"-17 -96 -64",		"17 96 64",		"1326 5624 2528" );
 
 			if ( g_BaseMode == "coop" || g_BaseMode == "realism" )
@@ -168,6 +166,9 @@ make_clip(	"_barricadefire_bypass",	"Survivors",	1,	"-17 -96 -64",		"17 96 64",	
 				devchap( "BASE VERSUS" );
 
 				// FIXES
+
+make_clip(	"_cliphang_window",		"Survivors",	1,	"-72 -123 -12",		"127 14 44",		"2335 6420 2804" );
+make_clip(	"_cliphang_ledge",		"Survivors",	1,	"-450 -8 0",		"1130 8 216",		"1222 6232 2912" );
 
 				break;
 			}
@@ -278,7 +279,13 @@ make_clip( "_cliprework_skylightb", "Survivors", 1, "-541 -189 -1", "547 195 32"
 make_clip( "_cliprework_skylightc", "Survivors", 1, "-194 -544 -1", "190 544 32", "2274 -672 793" );
 make_clip( "_cliprework_skylightd", "Survivors", 1, "-1017 -167 0", "1018 149 32", "1465 -3418 794", "0 45 0" );
 make_clip( "_permstuck_colddrinks", "Everyone", 1, "-1 -1 -1", "1 1 1", "736 -548 363" );
-make_trigduck( "_duckqol_shopliftscanners", "-2 -88 0", "2 64 77", "5247 -2685 280" );
+make_clip( "_duckqol_shopliftscanners_clipleft", "Everyone", 1, "-17 -4 -34", "18 5 33", "5264 -2748 314" );
+make_clip( "_duckqol_shopliftscanners_clipright", "Everyone", 1, "-17 -4 -34", "18 5 33", "5264 -2620 314" );
+make_trigduck( "_duckqol_shopliftscanners", "-2 -67 0", "2 64 77", "5247 -2685 280" );
+
+// Remove "_permstuck_colddrinks" when the stairwell path is open.
+
+EntFire( "relay_hallway_close", "AddOutput", "OnTrigger anv_mapfixes_permstuck_colddrinks:Kill::0:-1" );
 
 con_comment( "FIX:\tMoved an exposed stairwell hurt trigger down inside a vending machine." );
 
@@ -3350,7 +3357,8 @@ make_clip( "_cliprework_church12", "Survivors", 1, "-226 -284 -80", "222 420 704
 make_clip( "_cliprework_corner1", "Survivors", 1, "-487 -60 39", "86 4 784", "-13282 -3756 240", "0 43 0" );
 make_clip( "_cliprework_corner2", "Survivors", 1, "-550 -60 -17", "711 4 784", "-12651 -3566 400", "0 14 0" );
 make_clip( "_tankpunch_booster", "Survivors", 1, "-8 -302 -110", "158 960 1322", "-8838 -4633 124", "0 51 0" );
-make_clip( "_permstuck_triplerock", "Everyone", 1, "-78 -86 -80", "88 96 32", "-9539 -4313 16", "0 41 0" );
+make_clip( "_permstuck_triplerocka", "Everyone", 1, "-78 -86 -80", "88 96 32", "-9539 -4313 16", "0 41 0" );
+make_clip( "_permstuck_triplerockb", "Everyone", 1, "-14 -6 -187", "14 6 187", "-10147 -2993 -27" );
 make_clip( "_cliprework_vulnerable", "Survivors", 1, "-1085 -16 -90", "1048 16 1192", "-8709 -3352 269", "0 34 0" );
 make_clip( "_cliprework_churchwindows", "Survivors", 1, "-4 -120 0", "4 120 100", "-2372 192 194" );
 make_clip( "_clipextend_padlockgate", "Survivors", 1, "-14 -311 0", "14 405 1102", "-8594 -5033 344" );
@@ -3741,7 +3749,8 @@ make_clip(	"_cliprework_startarea02",	"Survivors",	1,	"-8 -360 0",		"8 360 1122"
 make_clip(	"_cliprework_startarea01",	"Survivors",	1,	"-8 -469 0",		"8 469 1313",		"-4232 -3186 548" );
 make_clip( "_nav_constructwin", "Survivors", 1, "-64 -8 0", "64 8 128", "-5776 -1304 216" );
 make_clip( "_permstuck_watertank", "Everyone", 1, "-16 -16 0", "16 16 111", "-4044 2880 16" );
-make_clip( "_lmpedit18_brushid1738_endhall", "Survivors", 1, "-516 -1476 -790", "375 1476 790", "-1044 4924 1066" );
+make_clip( "_lmpedit18_brushid1738_endhalla", "Survivors", 1, "-516 -1476 -790", "375 1476 790", "-1044 4924 1066" );
+make_clip( "_lmpedit18_brushid1738_endhallb", "Survivors", 1, "0 -1476 -640", "157 1476 790", "-669 4924 1066" );
 
 make_prop( "dynamic", "_nav_constructwin_propper", "models/props_update/plywood_128.mdl", "-5776 -1302 280", "0 0 90", "shadow_no" );
 
@@ -4074,7 +4083,7 @@ make_clip( "_nav_bridgecollapsea", "Survivors", 1, "-9 -10 0", "19 19 310", "585
 make_clip( "_nav_bridgecollapseb", "Survivors", 1, "-9 -10 0", "19 19 310", "6000 -12656 -41.3", "-5 0 0" );
 make_clip( "_stuckwarp_endtunnel", "Everyone", 1, "-18 -60 0", "48 68 84", "968 -12932 20" );
 make_clip( "_permstuck_terribadcliff", "Everyone", 1, "-68 -1 0", "68 46 148", "7317 -11487 451" );
-make_clip( "_permstuck_shedtree", "Everyone", 1, "-14 -14 -164", "14 14 1640", "3085 -14120 88" );
+make_clip( "_permstuck_shedtree", "Everyone", 1, "-14 -14 -164", "14 14 58", "3085 -14120 88" );
 
 con_comment( "MOVER:\tClip \"_bridge_dynamic_clip\" simulated to move when bridge collapses." );
 
@@ -4603,6 +4612,11 @@ Convars.SetValue( "director_convert_pills", 0 );
 // enough to get stuck and also pauses, in extremely rare cases this may fire late.
 
 EntityOutputs.AddOutput( Entities.FindByName( null, "relay_intro_finished" ), "OnTrigger", "surv_p8", "AddOutput", "origin -4058 -10540 -303.64", 1.0, -1 );
+
+// Similar for Zoey briefly spawning stuck in the truck, but it's only a mild annoyance
+// instead of ever resulting in her death.
+
+EntityOutputs.AddOutput( Entities.FindByName( null, "relay_intro_finished" ), "OnTrigger", "surv_p5", "AddOutput", "origin -4207 -10491 -309.53", 1.0, -1 );
 
 			// FIXES_ALL_EXCEPT_VERSUS
 
