@@ -7,6 +7,22 @@ This changelog comprehensively summarizes all differences from the live game to 
 --------------------------------
 --------------------------------
 
+# Valve (C++)
+
+### VScript CDirector:
+
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `AreAllSurvivorsInBattlefield()` returns true if all Survivors are in the battlefield.<br/>
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `GetClosestCharacterWhoIsIT( CBaseCombatCharacter character )` returns the closest character who is "IT" to the passed character.<br/>
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `GetClosestSurvivor( Vector pos, bool bIncludeIncap, bool bIncludeOnRescueVehicle )` returns the closest Survivor from the passed origin, if incapped Survivors are included in search, or on rescue vehicle.<br/>
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `GetHighestFlowSurvivor()` returns the Survivor with the highest flow.<br/>
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `GetLowestFlowSurvivor()` returns the Survivor with the lowest flow.<br/>
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `GetRandomSurvivor()` returns a random alive Survivor.<br/>
+
+### Response Criteria Commands:
+
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `"TankActive"` where 0 means no Tank aggro, 1 means Tank is aggro.<br/>
+&emsp;[+](https://store.steampowered.com/news/app/550?updates=true) `"Chapter"` where 0 is first map of mission, 4 is 5th map, etc.<br/>
+
 # Assets
 
 ### Weapons:
@@ -45,24 +61,25 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 1:
 
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L170) Restored window clip-hang bugs that were patched with TLS to re-allow access to the rooftop in Coop mode.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/missions/campaign1.txt#L96-L97) <ins>Versus</ins>: Tank will now only spawn after Survivors have exited the elevator, and no later than leaving the kitchen.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L45) <ins>Versus</ins>: Move Ghost SI exploit kill trigger down a lot to solve a rare issue.<br/>
 
 #### Map 3:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L280) Blocked a permstuck spot at vending machine alternative path.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L281) <ins>QoL</ins>: Auto-crouch trigger for starting gate at shoplift scanners.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L281) Blocked a permstuck spot at vending machine alternative path.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L282) <ins>QoL</ins>: Added auto-crouch trigger and clips to smooth out movement through the shoplift scanners.<br/>
 
 #### Map 4:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L354) <ins>QoL</ins>: Clips for kiosks to assist jumping and booth auto-crouch.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L361) <ins>QoL</ins>: Clips for kiosks to assist jumping and booth auto-crouch.<br/>
 
 ### Dark Carnival
 
 #### Map 1:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L420) Patched a rarer permstuck spot at the swamp's cargo container.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L450) Patched an elaborate SI out of bounds exploit.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L427) Patched a rarer permstuck spot at the swamp's cargo container.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L457) Patched an elaborate SI out of bounds exploit.<br/>
 
 #### Map 4:
 
@@ -77,20 +94,20 @@ This changelog comprehensively summarizes all differences from the live game to 
 #### Map 1:
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/833dbfe9c30833aa15431477f8ff4494bb03133f) While scriptedmode is active an additional 3rd wave would occur and director_debug 1 would say something like wave 1 of -1; fixed by adding a delay of 1 second on the second stage. `[See Crash Course 1]`<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L908) Patched janky ladder near the ferry event.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L910) By popular community request the TLS Swamp gator is now canonically named Fred.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L915) Patched janky ladder near the ferry event.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L917) By popular community request the TLS Swamp gator is now canonically named Fred.<br/>
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L976) Blocked a permstuck spot behind some rocks at the start near the parachutist.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L977) Blocked a permstuck spot on a cypress knee near the parachutist area dock.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L983) Blocked a permstuck spot behind some rocks at the start near the parachutist.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L984) Blocked a permstuck spot on a cypress knee near the parachutist area dock.<br/>
 
 #### Map 3:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L1039) Blocked a permstuck spot on a cypress knee near the event start.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L1046-L1047) Blocked permstuck spots at two sets of cypress knees around the event start area.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L799) <ins>Versus</ins>: Blocked a permstuck spot for SI behind a bush to the left of the first bridge upon entering the water.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L800) <ins>Versus</ins>: Blocked a permstuck spot for SI in the bush near the lantern/event start.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L809) <ins>Versus</ins>: Improve SI clipping of first ladder outside saferoom to allow drop through a large gap.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L809-L813) <ins>Versus</ins>: Improve SI clipping of first ladder outside saferoom to allow drop through a large gap.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L835) <ins>Versus</ins>: Moved a TLS Infected ladder out of the Survivor's way at the start.<br/>
 
 #### Map 4:
@@ -107,7 +124,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L1704) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L1217) Eliminate a permstuck spot that a previous ladder patch created.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L1711) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L1217) Eliminate a permstuck spot that a previous ladder patch created.<br/>
 
 #### Map 3:
 
@@ -121,11 +138,11 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 1:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2026) Blocked a permstuck spot in a corner behind a floodlight in the top floor after the alarm cars.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2033) Blocked a permstuck spot in a corner behind a floodlight in the top floor after the alarm cars.<br/>
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2156-L2157) Fixed collision issue with clips on the stairs by the saferoom that caused noticeable teleporting when not on a local server.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2163-L2164) Fixed collision issue with clips on the stairs by the saferoom that caused noticeable teleporting when not on a local server.<br/>
 
 ### The Sacrifice
 
@@ -137,28 +154,29 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 1:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2583) Lift anti-grief kill trigger off the ground to prevent an incap glitch.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2590) Lift anti-grief kill trigger off the ground to prevent an incap glitch.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L1643) <ins>Versus</ins>: Add clip to patch a ladder shortcut at the start.<br/>
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2666-L2673) All sets of railings will now appear for all players regardless of graphics settings.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L2673-L2680) All sets of railings will now appear for all players regardless of graphics settings.<br/>
 
 ### Crash Course
 
 #### Map 1:
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/833dbfe9c30833aa15431477f8ff4494bb03133f) While scriptedmode is active an additional 3rd wave would occur and director_debug 1 would say something like wave 1 of -1; fixed by adding a delay of 1 second on the second stage. `[See Swamp Fever 1]`<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3019) Block rare permstuck spot between the boxwreck and traffic light.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3026) Block rare permstuck spot between the boxwreck and traffic light.<br/>
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3101) <ins>QoL</ins>: Clip to prevent gascans from falling between finale buses.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3108) <ins>QoL</ins>: Clip to prevent gascans from falling between finale buses.<br/>
 
 ### Death Toll
 
 #### Map 3:
 
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3361) Blocked a permstuck spot at the top of a rockcliff cluster just after the church bus.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3360) Blocked a permstuck spot between the cliff rocks and the right side of the mandatory house.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L2178) <ins>Versus</ins>: Fixed an SI permstuck spot on the barricade by the church.<br/>
 
@@ -166,11 +184,11 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 3:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/6b399a8c0c873021ffd93418f47bf342d500a5bb) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3744) Updated clip brushes and navmesh to allow Survivors into the hallway next to the end saferoom, and Special Infected players onto a previously blocked pipe that has a ladder leading up to it; it is now consistent with L4D1.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/6b399a8c0c873021ffd93418f47bf342d500a5bb) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3752-L3753) Updated clip brushes and navmesh to allow Survivors into the hallway next to the end saferoom, and Special Infected players onto a previously blocked pipe that has a ladder leading up to it; it is now consistent with L4D1.<br/>
 
 #### Map 4:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3817) Fix SI player and AI permstuck spot inside the end rubble.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3826) Fix SI player and AI permstuck spot inside the end rubble.<br/>
 
 ### Blood Harvest
 
@@ -181,7 +199,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 #### Map 3:
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L2832) Fix rare permstuck spot in starting saferoom for SI only.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4077) Permstuck in tree near shed (for SI / RocketDude).<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4086) Permstuck in tree near shed (for SI / RocketDude).<br/>
 
 #### Map 4:
 
@@ -195,19 +213,20 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4381) Fix permstuck next to military truck leading to barricade.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4366-L4367) Fix two permstuck spots behind the long hedges on the right of after the military truck leading to barricade.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4375) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4382)[*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L3046) Fix a regression with easy event skip clip and a permstuck clip nearby.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4390) Fix permstuck next to military truck leading to barricade.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4375-L4376) Fix two permstuck spots behind the long hedges on the right of after the military truck leading to barricade.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4384) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4391)[*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L3046) Fix a regression with easy event skip clip and a permstuck clip nearby.<br/>
 
 #### Map 3:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4440) Enlargened a permstuck clip to fully fix it.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4449) Enlargened a permstuck clip to fully fix it.<br/>
 
 ### The Last Stand
 
 #### Map 1:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4599-L4605) When the intro finishes, adjust Francis' spawn to be further away from the plywood to prevent him from getting stuck and dying on solo Mutations.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4608-L4614) When the intro finishes, adjust Francis' spawn to be further away from the plywood to prevent him from getting stuck and dying on solo Mutations.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4616-L4619) When the intro finishes, adjust Zoey's spawn to be further away from the truck to prevent her from briefly getting stuck.<br/>
 
 #### Map 2:
 
@@ -215,12 +234,13 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/c9c2a2475fb734141a2dfaf17911cfebec3c40ed) Reduced number of gascans by 2 required on single-player for each difficulty (i.e. Easy's 6 is now down to 4, and Expert's 12 down to 10) to compensate for only having bot teammates.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/c9c2a2475fb734141a2dfaf17911cfebec3c40ed) Adjusted LockTempo, RelaxIntervals, and SustainPeakTimes to allow Survivors a bit more time to recover and heal.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L3147) <ins>Versus</ins>: Fixed an out of bounds exploit to get under a cliffside.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4710) <ins>Versus</ins>: Fixed an SI permstuck spot between a fence and tree cluster at the cliff overlooking the beach.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4724) <ins>Versus</ins>: Fixed an SI permstuck spot between a fence and tree cluster at the cliff overlooking the beach.<br/>
 
 # Mutations
 
 ### Tank Run:
 
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Added cm_TankRun key to fix not being able to open the train car door on Sacrifice 1.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) The first map of a Campaign will now spawn two Tier 1 weapons near the start area if no other Tier 1's are nearby.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Made it so Survivors are auto-revived instantly when incapacitated or hanging from a ledge.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Car alarms will now spawn a Tank if triggered.<br/>
@@ -242,10 +262,14 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 ### VS Survival (mutation15.nut):
 
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e4309d4938a8a5f50397ca1421281f81e49116e2) Thickened 24 clips across 10 maps to dramatically reduce stuck spawns.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e4309d4938a8a5f50397ca1421281f81e49116e2) Map-specific fixes for stuck or confusing spawns on c1m2, c3m1, c5m4, c8m2, c9m2, c10m2, c10m4, c11m2, and c12m3.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/258fa24a1103ce9be159ce789f25d00ffa145c99) Made it auto-trigger any outputs on the entity used to start Survival if the pre-round timer expires.<br/>
 
 ### Taaannnk!! (mutation19.nut):
 
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e4309d4938a8a5f50397ca1421281f81e49116e2) Thickened 24 clips across 10 maps to dramatically reduce stuck Tank spawns.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e4309d4938a8a5f50397ca1421281f81e49116e2) Map-specific fixes for stuck spawns on c1m2, c2m2, c3m1, c5m2, c5m4, c6m1, c8m1-3, c9m2, c10m1-4, c11m1-3, and c12m1-4.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15) Players no longer need to wait for incapped Survivors in order to progress at areas like elevators.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15) Fixed Director variable typo from "BehindSurvivorsSpawnDistance" to "SpawnBehindSurvivorsDistance".<br/>
 
