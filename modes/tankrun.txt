@@ -22,8 +22,8 @@
 		hud_deathnotice_threats 1
 		pipe_bomb_initial_beep_interval 0.2
 		pipe_bomb_timer_duration 1
-		survivor_allow_crawling 1
-		survivor_revive_duration 3
+		survivor_allow_crawling 0
+		survivor_revive_duration 5
 		survivor_revive_health 50
 		tank_burn_duration 20
 		tank_burn_duration_expert 30

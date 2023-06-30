@@ -63,6 +63,19 @@ MutationOptions <-
 		}
 		return 0;
 	}
+
+	function EndScriptedMode()
+	{
+		for ( local player; player = Entities.FindByClassname( player, "player" ); )
+		{
+			if ( NetProps.GetPropInt( player, "m_iTeamNum" ) != 2 )
+				continue;
+
+			if ( !IsPlayerABot( player ) && player.IsIncapacitated() )
+				return -1;
+		}
+		return 1; // SCENARIO_SURVIVORS_DEAD
+	}
 }
 
 MutationState <-
@@ -176,6 +189,15 @@ function AllowTakeDamage( damageTable )
 		{
 			if ( damageTable.Inflictor.GetClassname() == "pipe_bomb_projectile" )
 				damageTable.DamageDone = 500;
+
+			if ( damageTable.Weapon )
+			{
+				local weaponClass = damageTable.Weapon.GetClassname();
+				if ( weaponClass == "weapon_pistol" )
+					damageTable.DamageDone = (damageTable.DamageDone * 1.25);
+				else if ( weaponClass == "weapon_melee" )
+					damageTable.DamageDone = (damageTable.DamageDone * 1.334);
+			}
 		}
 	}
 
@@ -350,22 +372,34 @@ function OnGameEvent_player_left_safe_area( params )
 		SessionState.SpawnTankThink = true;
 }
 
+function AutoRevive( userid )
+{
+	local player = GetPlayerFromUserID( userid );
+	if ( (!player) || (!player.IsSurvivor()) || (!player.IsIncapacitated() && !player.IsHangingFromLedge()) )
+		return;
+
+	if ( NetProps.GetPropFloat( player, "m_flProgressBarDuration" ) == 0.0 )
+	{
+		NetProps.SetPropEntity( player, "m_reviveOwner", player );
+		NetProps.SetPropFloat( player, "m_flProgressBarStartTime", Time() );
+		NetProps.SetPropFloat( player, "m_flProgressBarDuration", Convars.GetFloat( "survivor_revive_duration" ) );
+	}
+
+	if ( Time() - NetProps.GetPropFloat( player, "m_flProgressBarStartTime" ) >= NetProps.GetPropFloat( player, "m_flProgressBarDuration" ) )
+	{
+		player.ReviveFromIncap();
+		return;
+	}
+	EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.AutoRevive(" + userid + ")", 0.1 );
+}
+
 function OnGameEvent_player_incapacitated( params )
 {
 	local player = GetPlayerFromUserID( params["userid"] );
 	if ( (!player) || (!player.IsSurvivor()) )
 		return;
 
-	player.ReviveFromIncap();
-}
-
-function ReviveFromLedgeHang( userid )
-{
-	local player = GetPlayerFromUserID( userid );
-	if ( (!player) || (!player.IsSurvivor()) )
-		return;
-
-	player.ReviveFromIncap();
+	EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.AutoRevive(" + params["userid"] + ")" );
 }
 
 function OnGameEvent_player_ledge_grab( params )
@@ -374,7 +408,7 @@ function OnGameEvent_player_ledge_grab( params )
 	if ( (!player) || (!player.IsSurvivor()) )
 		return;
 
-	EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.ReviveFromLedgeHang(" + params["userid"] + ")", 0.1 );
+	EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.AutoRevive(" + params["userid"] + ")" );
 }
 
 function OnGameEvent_mission_lost( params )
