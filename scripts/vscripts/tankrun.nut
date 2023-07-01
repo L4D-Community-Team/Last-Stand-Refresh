@@ -68,10 +68,10 @@ MutationOptions <-
 	{
 		for ( local player; player = Entities.FindByClassname( player, "player" ); )
 		{
-			if ( NetProps.GetPropInt( player, "m_iTeamNum" ) != 2 )
+			if ( NetProps.GetPropInt( player, "m_iTeamNum" ) != 2 || IsPlayerABot( player ) )
 				continue;
 
-			if ( !IsPlayerABot( player ) && player.IsIncapacitated() )
+			if ( SessionState.IsAutoReviving.find( player ) != null )
 				return -1;
 		}
 		return 1; // SCENARIO_SURVIVORS_DEAD
@@ -101,13 +101,29 @@ MutationState <-
 	LeftSafeAreaThink = false
 	CheckPrimaryWeaponThink = false
 	FinaleType = -1
+	AutoRevive = true
+	IsAutoReviving = []
 }
 
 if ( IsMissionFinalMap() )
 {
 	local triggerFinale = Entities.FindByClassname( null, "trigger_finale" );
 	if ( triggerFinale )
+	{
 		MutationState.FinaleType = NetProps.GetPropInt( triggerFinale, "m_type" );
+		if ( NetProps.GetPropInt( triggerFinale, "m_bIsSacrificeFinale" ) )
+		{
+			triggerFinale.ValidateScriptScope();
+			local finaleScope = triggerFinale.GetScriptScope();
+			finaleScope.InputSacrificeEscapeFailed <- function()
+			{
+				if ( SessionState.IsAutoReviving.len() > 0 )
+					return false;
+
+				return true;
+			}
+		}
+	}
 
 	TankRunHUD <- {};
 	function SetupModeHUD()
@@ -175,6 +191,7 @@ if ( IsMissionFinalMap() )
 	function OnGameEvent_finale_vehicle_leaving( params )
 	{
 		SessionState.SpawnTankThink = false;
+		SessionState.AutoRevive = false;
 	}
 }
 
@@ -380,6 +397,9 @@ function AutoRevive( userid )
 
 	if ( NetProps.GetPropFloat( player, "m_flProgressBarDuration" ) == 0.0 )
 	{
+		if ( SessionState.IsAutoReviving.find( player ) == null )
+			SessionState.IsAutoReviving.append( player );
+
 		NetProps.SetPropEntity( player, "m_reviveOwner", player );
 		NetProps.SetPropFloat( player, "m_flProgressBarStartTime", Time() );
 		NetProps.SetPropFloat( player, "m_flProgressBarDuration", Convars.GetFloat( "survivor_revive_duration" ) );
@@ -388,6 +408,10 @@ function AutoRevive( userid )
 	if ( Time() - NetProps.GetPropFloat( player, "m_flProgressBarStartTime" ) >= NetProps.GetPropFloat( player, "m_flProgressBarDuration" ) )
 	{
 		player.ReviveFromIncap();
+		local foundReviving = SessionState.IsAutoReviving.find( player );
+		if ( foundReviving != null )
+			SessionState.IsAutoReviving.remove( foundReviving );
+
 		return;
 	}
 	EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.AutoRevive(" + userid + ")", 0.1 );
@@ -395,6 +419,9 @@ function AutoRevive( userid )
 
 function OnGameEvent_player_incapacitated( params )
 {
+	if ( !SessionState.AutoRevive )
+		return;
+
 	local player = GetPlayerFromUserID( params["userid"] );
 	if ( (!player) || (!player.IsSurvivor()) )
 		return;
@@ -404,6 +431,9 @@ function OnGameEvent_player_incapacitated( params )
 
 function OnGameEvent_player_ledge_grab( params )
 {
+	if ( !SessionState.AutoRevive )
+		return;
+
 	local player = GetPlayerFromUserID( params["userid"] );
 	if ( (!player) || (!player.IsSurvivor()) )
 		return;
@@ -411,9 +441,21 @@ function OnGameEvent_player_ledge_grab( params )
 	EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.AutoRevive(" + params["userid"] + ")" );
 }
 
+function OnGameEvent_player_death( params )
+{
+	local player = GetPlayerFromUserID( params["userid"] );
+	if ( (!player) || (!player.IsSurvivor()) )
+		return;
+
+	local foundReviving = SessionState.IsAutoReviving.find( player );
+	if ( foundReviving != null )
+		SessionState.IsAutoReviving.remove( foundReviving );
+}
+
 function OnGameEvent_mission_lost( params )
 {
 	SessionState.SpawnTankThink = false;
+	SessionState.AutoRevive = false;
 }
 
 function OnGameEvent_player_now_it( params )
