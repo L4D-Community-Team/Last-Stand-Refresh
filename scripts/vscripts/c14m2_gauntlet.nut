@@ -2,17 +2,17 @@ Msg("Beginning Lighthouse Scavenge.\n")
 
 DirectorOptions <-
 {
-	CommonLimit = 15
+	CommonLimit = 7
 	MobSpawnMinTime = 8
-	MobSpawnMaxTime = 12
-	MobSpawnSize = 7
-	MobMaxPending = 12
+	MobSpawnMaxTime = 16
+	MobSpawnSize = 4
+	MobMaxPending = 10
 	IntensityRelaxThreshold = 0.99
-	RelaxMinInterval = 2
-	RelaxMaxInterval = 4
-	SustainPeakMinTime = 25
-	SustainPeakMaxTime = 30
-	SpecialRespawnInterval = 30
+	RelaxMinInterval = 3
+	RelaxMaxInterval = 5
+	SustainPeakMinTime = 8
+	SustainPeakMaxTime = 16
+	SpecialRespawnInterval = 40
 	LockTempo = false
 	PreferredMobDirection = SPAWN_ANYWHERE
 	PanicForever = true
@@ -20,12 +20,7 @@ DirectorOptions <-
 
 if ( Director.IsSinglePlayerGame() )
 {
-	DirectorOptions.CommonLimit = 10;
-	DirectorOptions.MobSpawnSize = 5;
-	DirectorOptions.MobMaxPending = 8;
+    DirectorOptions.IntensityRelaxThreshold <- 0.94
 }
-
-if ( Director.GetGameModeBase() == "versus" )
-	DirectorOptions.MobSpawnSize = 4;
 
 Director.ResetMobTimer();
