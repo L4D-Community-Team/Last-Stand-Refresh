@@ -230,9 +230,12 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 2:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/c9c2a2475fb734141a2dfaf17911cfebec3c40ed) Reduced CommonLimit from 30 to 25.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/c9c2a2475fb734141a2dfaf17911cfebec3c40ed) Reduced number of gascans by 2 required on single-player for each difficulty (i.e. Easy's 6 is now down to 4, and Expert's 12 down to 10) to compensate for only having bot teammates.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/c9c2a2475fb734141a2dfaf17911cfebec3c40ed) Adjusted LockTempo, RelaxIntervals, and SustainPeakTimes to allow Survivors a bit more time to recover and heal.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Simplified finale difficulty scaling so it is now only increased on Advanced and Expert difficulties rather than scaling each difficulty differently; the intention is to curb player fatigue and confusion in addition to bringing it more in line with expectations from other finales.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Lowered the number of required gascans in Single Player by 25% to help compensate for only having bot teammates; Easy/Normal difficulty now require 6, and Advanced/Expert difficulty now require 9.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) The gascan requirement in Multiplayer modes now increases by 1.5x per difficulty; Easy/Normal difficulty now require 8, and Advanced/Expert difficulty now require 12.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Changed LockTempo from TRUE to FALSE during the Scavenge phase; this allows the game director to tone down the horde when Survivor intensity gets too high (e.g. Survivors getting downed).<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Changed the start of the Scavenge phase to spawn less horde until players start picking up the gascans.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Added the Final Nail music before the last horde phase on Advanced/Expert difficulties.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L3147) <ins>Versus</ins>: Fixed an out of bounds exploit to get under a cliffside.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4724) <ins>Versus</ins>: Fixed an SI permstuck spot between a fence and tree cluster at the cliff overlooking the beach.<br/>
 
