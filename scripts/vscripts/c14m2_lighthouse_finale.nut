@@ -203,13 +203,12 @@ switch( difficulty )
 		break;
 }
 
-if ( Director.IsSinglePlayerGame() && difficulty < 2 )
+if ( Director.IsSinglePlayerGame() )
 {
-	NumCansNeeded -= 2;
-}
-else if ( Director.IsSinglePlayerGame() && difficulty > 1 )
-{
-	NumCansNeeded -= 3;
+	if ( difficulty < 2 )
+		NumCansNeeded -= 2;
+	else if ( difficulty > 1 )
+		NumCansNeeded -= 3;
 }
 
 
