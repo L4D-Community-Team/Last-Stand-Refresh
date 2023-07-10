@@ -53,14 +53,14 @@ function OnGameEvent_round_start( params )
 
 	for ( local player; player = Entities.FindByClassname( player, "player" ); ) // will only work in restarts, which is desired
 	{
-		if ( player.IsSurvivor() )
+		if ( player.IsSurvivor() && !IsPlayerABot( player ) )
 			player.GetScriptScope().HeartbeatOn = false;
 	}
 }
 
 function OnGameEvent_player_left_safe_area( params )
 {
-	DirectorOptions.TempHealthDecayRate = 0.27;
+	SessionOptions.TempHealthDecayRate = 0.27;
 }
 
 function OnGameEvent_player_hurt_concise( params )
@@ -71,13 +71,16 @@ function OnGameEvent_player_hurt_concise( params )
 
 	if ( NetProps.GetPropInt( player, "m_bIsOnThirdStrike" ) == 0 )
 	{
-		local scope = player.GetScriptScope();
 		local health = player.GetHealth();
 
-		if ( !scope.HeartbeatOn && health < player.GetMaxHealth() / 4 )
+		if ( !IsPlayerABot( player ) )
 		{
-			EmitSoundOnClient( "Player.Heartbeat", player );
-			scope.HeartbeatOn = true;
+			local scope = player.GetScriptScope();
+			if ( !scope.HeartbeatOn && health < player.GetMaxHealth() / 4 )
+			{
+				EmitSoundOnClient( "Player.Heartbeat", player );
+				scope.HeartbeatOn = true;
+			}
 		}
 		if ( health == 1 )
 		{
@@ -95,8 +98,12 @@ function OnGameEvent_defibrillator_used( params )
 
 	player.SetHealth( 1 );
 	player.SetHealthBuffer( 99 );
-	EmitSoundOnClient( "Player.Heartbeat", player );
-	player.GetScriptScope().HeartbeatOn = true;
+
+	if ( !IsPlayerABot( player ) )
+	{
+		EmitSoundOnClient( "Player.Heartbeat", player );
+		player.GetScriptScope().HeartbeatOn = true;
+	}
 	NetProps.SetPropInt( player, "m_bIsOnThirdStrike", 1 );
 	NetProps.SetPropInt( player, "m_isGoingToDie", 1 );
 }
@@ -104,14 +111,17 @@ function OnGameEvent_defibrillator_used( params )
 function OnGameEvent_heal_success( params )
 {
 	local player = GetPlayerFromUserID( params["subject"] );
-	if ( !player || NetProps.GetPropInt( player, "m_iTeamNum" ) != 2 )
+	if ( !player )
 		return;
 
-	local scope = player.GetScriptScope();
-	if ( scope.HeartbeatOn && player.GetHealth() >= player.GetMaxHealth() / 4 )
+	if ( !IsPlayerABot( player ) )
 	{
-		StopSoundOn( "Player.Heartbeat", player );
-		scope.HeartbeatOn = false;
+		local scope = player.GetScriptScope();
+		if ( scope.HeartbeatOn && player.GetHealth() >= player.GetMaxHealth() / 4 )
+		{
+			StopSoundOn( "Player.Heartbeat", player );
+			scope.HeartbeatOn = false;
+		}
 	}
 }
 
@@ -121,13 +131,16 @@ function CheckHealthAfterLedgeHang( userid )
 	if ( !player )
 		return;
 
-	local scope = player.GetScriptScope();
 	local health = player.GetHealth();
 
-	if ( !scope.HeartbeatOn && health < player.GetMaxHealth() / 4 )
+	if ( !IsPlayerABot( player ) )
 	{
-		EmitSoundOnClient( "Player.Heartbeat", player );
-		scope.HeartbeatOn = true;
+		local scope = player.GetScriptScope();
+		if ( !scope.HeartbeatOn && health < player.GetMaxHealth() / 4 )
+		{
+			EmitSoundOnClient( "Player.Heartbeat", player );
+			scope.HeartbeatOn = true;
+		}
 	}
 	if ( health == 1 )
 	{
@@ -139,7 +152,7 @@ function CheckHealthAfterLedgeHang( userid )
 function OnGameEvent_revive_success( params )
 {
 	local player = GetPlayerFromUserID( params["subject"] );
-	if ( !params["ledge_hang"] || !player || NetProps.GetPropInt( player, "m_iTeamNum" ) != 2 )
+	if ( !params["ledge_hang"] || !player )
 		return;
 
 	if ( NetProps.GetPropInt( player, "m_bIsOnThirdStrike" ) == 0 )
@@ -149,13 +162,16 @@ function OnGameEvent_revive_success( params )
 function OnGameEvent_player_spawn( params )
 {
 	local player = GetPlayerFromUserID( params["userid"] );
-	if ( !player || NetProps.GetPropInt( player, "m_iTeamNum" ) != 2 )
+	if ( !player || !player.IsSurvivor() )
 		return;
 
-	player.ValidateScriptScope();
-	local scope = player.GetScriptScope();
-	if ( !("HeartbeatOn" in scope) )
-		scope.HeartbeatOn <- false;
+	if ( !IsPlayerABot( player ) )
+	{
+		player.ValidateScriptScope();
+		local scope = player.GetScriptScope();
+		if ( !("HeartbeatOn" in scope) )
+			scope.HeartbeatOn <- false;
+	}
 }
 
 function OnGameEvent_player_death( params )
@@ -167,11 +183,14 @@ function OnGameEvent_player_death( params )
 	if ( !player || !player.IsSurvivor() )
 		return;
 
-	local scope = player.GetScriptScope();
-	if ( scope.HeartbeatOn )
+	if ( !IsPlayerABot( player ) )
 	{
-		StopSoundOn( "Player.Heartbeat", player );
-		scope.HeartbeatOn = false;
+		local scope = player.GetScriptScope();
+		if ( scope.HeartbeatOn )
+		{
+			StopSoundOn( "Player.Heartbeat", player );
+			scope.HeartbeatOn = false;
+		}
 	}
 }
 
@@ -221,8 +240,12 @@ if ( !Director.IsSessionStartMap() )
 
 		player.SetHealth( 24 );
 		player.SetHealthBuffer( 26 );
-		EmitSoundOnClient( "Player.Heartbeat", player );
-		player.GetScriptScope().HeartbeatOn = true;
+
+		if ( !IsPlayerABot( player ) )
+		{
+			EmitSoundOnClient( "Player.Heartbeat", player );
+			player.GetScriptScope().HeartbeatOn = true;
+		}
 	}
 
 	function PlayerSpawnAliveAfterTransition( userid )
