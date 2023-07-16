@@ -287,7 +287,7 @@ function OnGameEvent_player_death( params )
 	if ( ( !victim ) || ( !victim.IsSurvivor() ) )
 		return;
 
-	local prevRagdoll = NetProps.GetPropEntity(victim, "m_hRagdoll");
+	local prevRagdoll = NetProps.GetPropEntity( victim, "m_hRagdoll" );
 	if ( prevRagdoll != null )
 		return;
 
@@ -296,31 +296,33 @@ function OnGameEvent_player_death( params )
 	local ragdoll = null;
 	// cs_ragdoll can crash if proper netprops aren't set, some future-proofing
 	// get rid of uninitialized ragdoll if something goes wrong here
-	try {
-		ragdoll = SpawnEntityFromTable("cs_ragdoll", {})
-		NetProps.SetPropVector(ragdoll, "m_vecOrigin", clOrigin);
-		NetProps.SetPropVector(ragdoll, "m_vecRagdollOrigin", clOrigin);
-		NetProps.SetPropInt(ragdoll, "m_nModelIndex", NetProps.GetPropInt(victim, "m_nModelIndex"));
-		NetProps.SetPropInt(ragdoll, "m_iTeamNum", NetProps.GetPropInt(victim, "m_iTeamNum"));
-		NetProps.SetPropEntity(ragdoll, "m_hPlayer", victim);
-		NetProps.SetPropInt(ragdoll, "m_iDeathPose", NetProps.GetPropInt(victim, "m_nSequence"));
-		NetProps.SetPropInt(ragdoll, "m_iDeathFrame", NetProps.GetPropInt(victim, "m_flAnimTime"));
-		NetProps.SetPropInt(ragdoll, "m_bClientSideAnimation", 1);
-		NetProps.SetPropInt(ragdoll, "m_iTeamNum", NetProps.GetPropInt(victim, "m_iTeamNum"));
-		NetProps.SetPropInt(ragdoll, "m_nForceBone", NetProps.GetPropInt(victim, "m_nForceBone"));
-		NetProps.SetPropInt(ragdoll, "m_ragdollType", 4);
-		NetProps.SetPropInt(ragdoll, "m_survivorCharacter", NetProps.GetPropInt(victim, "m_survivorCharacter"));
-		NetProps.SetPropEntity(victim, "m_hRagdoll", ragdoll);
+	try
+	{
+		ragdoll = SpawnEntityFromTable( "cs_ragdoll", {} )
+		NetProps.SetPropVector( ragdoll, "m_vecOrigin", clOrigin );
+		NetProps.SetPropVector( ragdoll, "m_vecRagdollOrigin", clOrigin );
+		NetProps.SetPropInt( ragdoll, "m_nModelIndex", NetProps.GetPropInt( victim, "m_nModelIndex" ) );
+		NetProps.SetPropInt( ragdoll, "m_iTeamNum", NetProps.GetPropInt( victim, "m_iTeamNum" ) );
+		NetProps.SetPropEntity( ragdoll, "m_hPlayer", victim );
+		NetProps.SetPropInt( ragdoll, "m_iDeathPose", NetProps.GetPropInt( victim, "m_nSequence" ) );
+		NetProps.SetPropInt( ragdoll, "m_iDeathFrame", NetProps.GetPropInt( victim, "m_flAnimTime" ) );
+		NetProps.SetPropInt( ragdoll, "m_bClientSideAnimation", 1 );
+		NetProps.SetPropInt( ragdoll, "m_iTeamNum", NetProps.GetPropInt( victim, "m_iTeamNum" ) );
+		NetProps.SetPropInt( ragdoll, "m_nForceBone", NetProps.GetPropInt( victim, "m_nForceBone" ) );
+		NetProps.SetPropInt( ragdoll, "m_ragdollType", 4 );
+		NetProps.SetPropInt( ragdoll, "m_survivorCharacter", NetProps.GetPropInt( victim, "m_survivorCharacter" ) );
+		NetProps.SetPropEntity( victim, "m_hRagdoll", ragdoll );
 
 		//EntFire( "survivor_death_model", "Kill" );
 		// EntFire is too slow and you can see one-frame image of death model
-		local body = null;
-		while ((body = Entities.FindByClassname(body, "survivor_death_model")) != null)
+		for ( local body; body = Entities.FindByClassname( body, "survivor_death_model" ); )
 		{
 			body.Kill();
 		}
-	} catch (err) {
-		if (ragdoll != null && ragdoll.IsValid())
+	}
+	catch (err)
+	{
+		if ( ragdoll != null && ragdoll.IsValid() )
 			ragdoll.Kill();
 
 		EntFire( "survivor_death_model", "BecomeRagdoll" );
