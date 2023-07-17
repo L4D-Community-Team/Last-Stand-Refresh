@@ -51,7 +51,7 @@ function OnGameEvent_round_start( params )
 {
 	Convars.SetValue( "pain_pills_decay_rate", 0.0 );
 
-	for ( local player; player = Entities.FindByClassname( player, "player" ); ) // will only work in restarts, which is desired
+	for ( local player; player = Entities.FindByClassname( player, "player" ); ) // only works in restarts, which is desired
 	{
 		if ( player.IsSurvivor() && !IsPlayerABot( player ) )
 			player.GetScriptScope().HeartbeatOn = false;
@@ -63,7 +63,7 @@ function OnGameEvent_player_left_safe_area( params )
 	SessionOptions.TempHealthDecayRate = 0.27;
 }
 
-function OnGameEvent_player_hurt_concise( params )
+function OnGameEvent_player_hurt( params )
 {
 	local player = GetPlayerFromUserID( params["userid"] );
 	if ( !player || !player.IsSurvivor() || player.IsHangingFromLedge() )
@@ -72,20 +72,22 @@ function OnGameEvent_player_hurt_concise( params )
 	if ( NetProps.GetPropInt( player, "m_bIsOnThirdStrike" ) == 0 )
 	{
 		local health = player.GetHealth();
-
-		if ( !IsPlayerABot( player ) )
+		if ( health > 0 )
 		{
-			local scope = player.GetScriptScope();
-			if ( !scope.HeartbeatOn && health < player.GetMaxHealth() / 4 )
+			if ( !IsPlayerABot( player ) )
 			{
-				EmitSoundOnClient( "Player.Heartbeat", player );
-				scope.HeartbeatOn = true;
+				local scope = player.GetScriptScope();
+				if ( !scope.HeartbeatOn && health < player.GetMaxHealth() / 4 )
+				{
+					EmitSoundOnClient( "Player.Heartbeat", player );
+					scope.HeartbeatOn = true;
+				}
 			}
-		}
-		if ( health == 1 )
-		{
-			NetProps.SetPropInt( player, "m_bIsOnThirdStrike", 1 );
-			NetProps.SetPropInt( player, "m_isGoingToDie", 1 );
+			if ( health == 1 )
+			{
+				NetProps.SetPropInt( player, "m_bIsOnThirdStrike", 1 );
+				NetProps.SetPropInt( player, "m_isGoingToDie", 1 );
+			}
 		}
 	}
 }
@@ -197,7 +199,7 @@ function OnGameEvent_player_death( params )
 function OnGameEvent_player_bot_replace( params )
 {
 	local player = GetPlayerFromUserID( params["player"] );
-	if ( !player )
+	if ( !player || !player.IsSurvivor() ) // in case an infected player uses jointeam 1
 		return;
 
 	local scope = player.GetScriptScope();
@@ -214,10 +216,13 @@ function OnGameEvent_bot_player_replace( params )
 	if ( !player )
 		return;
 
-	if ( player.GetHealth() < player.GetMaxHealth() / 4 )
-		player.GetScriptScope().HeartbeatOn = true; // unreliable if sb_takecontrol was used
-	else
-		StopSoundOn( "Player.Heartbeat", player );
+	if ( !player.IsDead() ) // in case jointeam 2 or sb_takecontrol was used on a dead bot
+	{
+		if ( player.GetHealth() < player.GetMaxHealth() / 4 )
+			player.GetScriptScope().HeartbeatOn = true; // unreliable if sb_takecontrol was used
+		else
+			StopSoundOn( "Player.Heartbeat", player );
+	}
 }
 
 function OnGameEvent_player_complete_sacrifice( params )
@@ -278,7 +283,7 @@ if ( !Director.IsSessionStartMap() )
 			return;
 
 		if ( NetProps.GetPropInt( player, "m_lifeState" ) == 2 )
-			EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.PlayerSpawnDeadAfterTransition(" + params["userid"] + ")" );
+			EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.PlayerSpawnDeadAfterTransition(" + params["userid"] + ")", 0.03 );
 		else
 			EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.PlayerSpawnAliveAfterTransition(" + params["userid"] + ")" );
 	}
