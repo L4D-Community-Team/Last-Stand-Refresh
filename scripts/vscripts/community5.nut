@@ -282,7 +282,7 @@ if ( !Director.IsSessionStartMap() )
 		if ( !player || !player.IsSurvivor() )
 			return;
 
-		if ( NetProps.GetPropInt( player, "m_lifeState" ) == 2 )
+		if ( player.IsDead() )
 			EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.PlayerSpawnDeadAfterTransition(" + params["userid"] + ")", 0.03 );
 		else
 			EntFire( "worldspawn", "RunScriptCode", "g_ModeScript.PlayerSpawnAliveAfterTransition(" + params["userid"] + ")" );
