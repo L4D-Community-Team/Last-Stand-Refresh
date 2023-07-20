@@ -266,7 +266,6 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/448b827e1b8e41384b1f8c573e916114697c6ee4) Defibrillator now heals 1 permanent + 99 temporary HP (still B&W).<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room respawn now heals 24 permanent + 26 temporary HP (only heartbeat sound).<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room transition now heals 80% of the missing HP to half health of living survivors, e.g. 1 to 40 (no health effects).<br/>
-[12:13 PM]alexiscoutinho:
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed an issue that caused the mission to fail for Sacrifice type finales when the player presses the final button.<br/>
 
 ### VS Survival (mutation15.nut):
