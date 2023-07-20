@@ -245,23 +245,29 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Added cm_TankRun key to fix not being able to open the train car door on Sacrifice 1.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) The first map of a Campaign will now spawn two Tier 1 weapons near the start area if no other Tier 1's are nearby.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Made it so Survivors are auto-revived instantly when incapacitated or hanging from a ledge.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Car alarms will now spawn a Tank if triggered.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Disabled water slowdown for all maps.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/cbe2c7ebbb800d7514b46445bdff372b286e80f2) Set Survivor revive health to 50.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/2b233a46bbebedfded51fe3249692f66a06e938c) Added auto self-revive mechanic with a delay based on the "survivor_revive_duration" Cvar (default 5 seconds).<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/2b233a46bbebedfded51fe3249692f66a06e938c) Slight buff to pistol and melee damage against the Tank.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/21958e437a0454a80f18db1edc03f3e52ae853ff) Fixed issue where the sacrificing player would get auto-revived after restarting the generator.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/21958e437a0454a80f18db1edc03f3e52ae853ff) Fixed issue where the finale would result in a failed screen if players that jumped off of the bridge to restart the generator got incapped.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1b74c065deb36b89d1672b6614428f975fd5dc75) Fixed issue where players going idle, switching characters or leaving the game would break the auto-revive for that Survivor.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1b74c065deb36b89d1672b6614428f975fd5dc75) Fixed issue if a Tank was deleted while being biled, it would break the script.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1b74c065deb36b89d1672b6614428f975fd5dc75) Fixed issue where Tanks would not retain their slowdown when biled, if they were hit with another vomitjar while already being biled.<br/>
 
 ### Death's Door (community5.nut):
 
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/448b827e1b8e41384b1f8c573e916114697c6ee4) Enabled heartbeat sound when under 25% health.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/448b827e1b8e41384b1f8c573e916114697c6ee4) Enabled B&W state when at 1 permanent HP.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed heartbeat sound when taking over bot.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed Fallen Survivors being able to drop medkits.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed temporary health decay in the safe room, loading players will no longer decay temp health.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed B&W state transition when hanging.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed heartbeat sound on chapter transition.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Defibrillator now heals 24 permanent + 36 temporary HP (still B&W).<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room respawn now heals 24 permanent + 26 temporary HP (still B&W).<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room transitions now heal 80% of the missing HP to half health of living survivors, i.e. 1 -> 40 (never B&W).<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed an issue that caused the mission to fail for Sacrifice type finales when the player presses the final button, by adding a workaround.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Enabled B&W state when under 25% health.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed heartbeat sound when taking over bot.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/448b827e1b8e41384b1f8c573e916114697c6ee4) Defibrillator now heals 1 permanent + 99 temporary HP (still B&W).<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room respawn now heals 24 permanent + 26 temporary HP (only heartbeat sound).<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room transition now heals 80% of the missing HP to half health of living survivors, e.g. 1 to 40 (no health effects).<br/>
+[12:13 PM]alexiscoutinho:
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed an issue that caused the mission to fail for Sacrifice type finales when the player presses the final button.<br/>
 
 ### VS Survival (mutation15.nut):
 
@@ -276,9 +282,11 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15) Players no longer need to wait for incapped Survivors in order to progress at areas like elevators.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15) Fixed Director variable typo from "BehindSurvivorsSpawnDistance" to "SpawnBehindSurvivorsDistance".<br/>
 
-### L4D1 Coop & Survival:
+### L4D1 Coop & Survival & Versus:
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/80c18965ec5da81dc414045685708b6fdf51e40e) Set `"z_tank_autoshotgun_dmg_scale"` to 1.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Set the claw viewmodels for the L4D1 SI to the proper L4D1 models for L4D1 Versus.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Disabled water slowdown for L4D1 Survival.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Defibrillators now convert to pain pills instead of medkits; previously, when converted to medkits the game kept trying to spawn more defibs which led to an oversaturation of medkits.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/371ba96d045fc17e361c508f2195222d6313420a) Changed noise levels for running and talking to their values from L4D1; this will make it slightly harder for Common Infected to notice Survivors, like their L4D1 counterparts.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e0ef7756f860a75fa55783d8b0b644cb712d48f4) Updated "BecomeRagdoll" to instead use "cs_ragdoll" to result in much more accurate L4D1-like looking ragdolls.<br/>
