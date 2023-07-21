@@ -27,8 +27,8 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 ### Weapons:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L91) Knife slash pattern goes from left to right (W2E) instead of left to bottom-right (W2SE) to restore its old behavior. `[knife.txt]`<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L96-L97) Knife world animations now swing in the same direction as the viewmodel's. `[knife.txt]`<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L91) Knife's slash pattern is restored to its old behavior, going from left to right instead of left to bottom-right. `[knife.txt]`<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L96-L97) Knife's world animations no longer swings in the direction opposite to the viewmodel's. `[knife.txt]`<br/>
 
 ### Effects:
 
@@ -87,7 +87,15 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 5:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/d54a5911e92d75ebb1e8c88ac9120cf7da4f8933) Fixed issue where THE MAIN ATTRACTION Achievement would not unlock if a player disconnects or idles while in the trigger; added multiple trigger volumes that detect if a Survivor leaves the stage instead of only one that checked if a Survivor stopped touching it.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/d54a5911e92d75ebb1e8c88ac9120cf7da4f8933) Addressed several issues in attaining the `THE MAIN ATTRACTION` achievement:<br/>
+&emsp;&emsp;- Fixed the achievement failing for all survivors if any of them disconnects or idles while on the stage.<br/>
+&emsp;&emsp;- Fixed the achievement being attained without ever getting on the stage.
+<!--
+Technical detail is interesting to modders, but is too busy to everyone else:
+
+1. Added multiple trigger volumes that detect if a Survivor leaves the stage instead of only one that checked if a Survivor stopped touching it.
+2. The FAILED state persists through map resets... too bad!
+-->
 
 ### Swamp Fever
 
