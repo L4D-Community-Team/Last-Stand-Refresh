@@ -7,20 +7,15 @@ DirectorOptions <-
 	MobSpawnMaxTime = 16
 	MobSpawnSize = 4
 	MobMaxPending = 10
-	IntensityRelaxThreshold = 0.99
-	RelaxMinInterval = 3
-	RelaxMaxInterval = 5
-	SustainPeakMinTime = 8
-	SustainPeakMaxTime = 16
+	IntensityRelaxThreshold = 1.1
+	RelaxMinInterval = 6
+	RelaxMaxInterval = 10
+	SustainPeakMinTime = 10
+	SustainPeakMaxTime = 15
 	SpecialRespawnInterval = 40
 	LockTempo = false
 	PreferredMobDirection = SPAWN_ANYWHERE
 	PanicForever = true
-}
-
-if ( Director.IsSinglePlayerGame() )
-{
-    DirectorOptions.IntensityRelaxThreshold <- 0.94
 }
 
 Director.ResetMobTimer();

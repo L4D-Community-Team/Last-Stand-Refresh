@@ -268,7 +268,7 @@ function GasCanTouched()
 	if ( developer() > 0 )
 		Msg(" Touched: " + GasCansTouched + "\n");
 
-	if ( GasCansTouched >= 1 )
+	if ( GasCansTouched >= 2 )
 	{
 		DirectorOptions.CommonLimit <- 15;
 		DirectorOptions.MobSpawnSize <- 10;
