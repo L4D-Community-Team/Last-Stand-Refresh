@@ -395,7 +395,7 @@ function AutoRevive( userid )
 	if ( (!player) || (!player.IsSurvivor()) || (!player.IsIncapacitated() && !player.IsHangingFromLedge()) )
 		return;
 
-	if ( !(userid in SessionState.IsAutoReviving) )
+	if ( !(userid in SessionState.IsAutoReviving) || NetProps.GetPropFloat( player, "m_flProgressBarDuration" ) == 0 )
 	{
 		local time = Time();
 		local reviveDuration = Convars.GetFloat( "survivor_revive_duration" );
