@@ -27,7 +27,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 ### Weapons:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L91) Knife slash pattern goes from left to right (W2E) instead of left to bottom-right (W2SE) to restore its old behavior. `[knife.txt]`<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L91) Knife slash pattern is restored to its old behavior, going from left to right instead of left to bottom-right. `[knife.txt]`<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/melee/knife.txt#L96-L97) Knife world animations now swing in the same direction as the viewmodel's. `[knife.txt]`<br/>
 
 ### Effects:
@@ -87,7 +87,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 5:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/d54a5911e92d75ebb1e8c88ac9120cf7da4f8933) Fixed issue where THE MAIN ATTRACTION Achievement would not unlock if a player disconnects or idles while in the trigger; added multiple trigger volumes that detect if a Survivor leaves the stage instead of only one that checked if a Survivor stopped touching it.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/d54a5911e92d75ebb1e8c88ac9120cf7da4f8933) Addressed some issues with "THE MAIN ATTRACTION" Achievement by adding more triggers so it no longer fails if any Survivor disconnects or goes idle while on stage.<br/>
 
 ### Swamp Fever
 
@@ -184,7 +184,8 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 #### Map 3:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/6b399a8c0c873021ffd93418f47bf342d500a5bb) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3752-L3753) Updated clip brushes and navmesh to allow Survivors into the hallway next to the end saferoom, and Special Infected players onto a previously blocked pipe that has a ladder leading up to it; it is now consistent with L4D1.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/6b399a8c0c873021ffd93418f47bf342d500a5bb) Updated clip brushes and navmesh to allow SI players onto a previously blocked pipe that has an Infected ladder leading up to it.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/6b399a8c0c873021ffd93418f47bf342d500a5bb) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L3752-L3753) Updated clip brushes and navmesh so that Survivors may now enter the hallway next to the end saferoom, which was accidentally blocked by a roof clip in the port from L4D1.<br/>
 
 #### Map 4:
 
@@ -237,7 +238,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Changed the start of the Scavenge phase to spawn less horde until players start picking up the gascans.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8afafd74d80f3c93dfee10d5ce79199521299517) Added the Final Nail music before the last horde phase on Advanced/Expert difficulties.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_versus.nut#L3147) <ins>Versus</ins>: Fixed an out of bounds exploit to get under a cliffside.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4724) <ins>Versus</ins>: Fixed an SI permstuck spot between a fence and tree cluster at the cliff overlooking the beach.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/blob/main/scripts/vscripts/anv_mapfixes.nut#L4724) <ins>Versus</ins>: Fixed a permstuck spot between a tree cluster and Versus-only fence at the cliff that overlooks the beach.<br/>
 
 # Mutations
 
@@ -255,6 +256,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1b74c065deb36b89d1672b6614428f975fd5dc75) Fixed issue where players going idle, switching characters or leaving the game would break the auto-revive for that Survivor.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1b74c065deb36b89d1672b6614428f975fd5dc75) Fixed issue if a Tank was deleted while being biled, it would break the script.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1b74c065deb36b89d1672b6614428f975fd5dc75) Fixed issue where Tanks would not retain their slowdown when biled, if they were hit with another vomitjar while already being biled.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/8b74d67b5ec2c1a7b5580b7dff402722dcb02eb0) Fixed issue where Survivors could get instantly revived when hit with a car.<br/>
 
 ### Death's Door (community5.nut):
 
@@ -265,7 +267,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed temporary health decay in the safe room, loading players will no longer decay temp health.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) [*](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/448b827e1b8e41384b1f8c573e916114697c6ee4) Defibrillator now heals 1 permanent + 99 temporary HP (still B&W).<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room respawn now heals 24 permanent + 26 temporary HP (only heartbeat sound).<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room transition now heals 80% of the missing HP to half health of living survivors, e.g. 1 to 40 (no health effects).<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Safe room transition now heals 80% of the missing HP to half health of living Survivors, e.g. 1 to 40 (no health effects).<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/bcfeeb93868ea9ad0787f9f10e14943265444c34) Fixed an issue that caused the mission to fail for Sacrifice type finales when the player presses the final button.<br/>
 
 ### VS Survival (mutation15.nut):
@@ -283,7 +285,7 @@ This changelog comprehensively summarizes all differences from the live game to 
 
 ### L4D1 Coop & Survival & Versus:
 
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/80c18965ec5da81dc414045685708b6fdf51e40e) Set `"z_tank_autoshotgun_dmg_scale"` to 1.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/80c18965ec5da81dc414045685708b6fdf51e40e) Set `"z_tank_autoshotgun_dmg_scale"` to 1 for L4D1 Coop & Survival.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Set the claw viewmodels for the L4D1 SI to the proper L4D1 models for L4D1 Versus.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Disabled water slowdown for L4D1 Survival.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Defibrillators now convert to pain pills instead of medkits; previously, when converted to medkits the game kept trying to spawn more defibs which led to an oversaturation of medkits.<br/>
