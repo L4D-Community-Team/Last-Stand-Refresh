@@ -279,13 +279,13 @@ This changelog comprehensively summarizes all differences from the live game to 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e4309d4938a8a5f50397ca1421281f81e49116e2) Thickened 24 clips across 10 maps to dramatically reduce stuck Tank spawns.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e4309d4938a8a5f50397ca1421281f81e49116e2) Map-specific fixes for stuck spawns on c1m2, c2m2, c3m1, c5m2, c5m4, c6m1, c8m1-3, c9m2, c10m1-4, c11m1-3, and c12m1-4.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15) Players no longer need to wait for incapped Survivors in order to progress at areas like elevators.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15) Fixed Director variable typo from "BehindSurvivorsSpawnDistance" to "SpawnBehindSurvivorsDistance".<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/0d071ae0647c6016133d2772006f6ad0d6168f15#diff-66f69c76241cc0df620ac136028d95e4ffdf4994df270823afc405985b9291ccL15-R14) Fixed Director variable typo from "BehindSurvivorsSpawnDistance" to "SpawnBehindSurvivorsDistance".<br/>
 
 ### L4D1 Coop & Survival & Versus:
 
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/80c18965ec5da81dc414045685708b6fdf51e40e) Set `"z_tank_autoshotgun_dmg_scale"` to 1 for L4D1 Coop & Survival.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Set the claw viewmodels for the L4D1 SI to the proper L4D1 models for L4D1 Versus.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Disabled water slowdown for L4D1 Survival.<br/>
-&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e) Defibrillators now convert to pain pills instead of medkits; previously, when converted to medkits the game kept trying to spawn more defibs which led to an oversaturation of medkits.<br/>
+&emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/1085be20737e1860f507c626fa7bd4802d76556e#diff-c92b6d6d0d55b63769c7f61b79c5d6ea118ab42fea0679fc5aca9a33bfb5cb6bL29-R29) Defibrillators now convert to pain pills instead of medkits; previously, when converted to medkits the game kept trying to spawn more defibs which led to an oversaturation of medkits.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/371ba96d045fc17e361c508f2195222d6313420a) Changed noise levels for running and talking to their values from L4D1; this will make it slightly harder for Common Infected to notice Survivors, like their L4D1 counterparts.<br/>
 &emsp;[+](https://github.com/L4D-Community-Team/Last-Stand-Refresh/commit/e0ef7756f860a75fa55783d8b0b644cb712d48f4) Updated "BecomeRagdoll" to instead use "cs_ragdoll" to result in much more accurate L4D1-like looking ragdolls.<br/>
